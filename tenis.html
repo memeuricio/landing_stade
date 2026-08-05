@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenis — Stade Français 1929</title>
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Rama de tenis del Club Stade Français 1929. Canchas de arcilla, academia y torneos en Las Condes, Santiago de Chile." />
+  <link rel="canonical" href="https://stadefrancais.cl/tenis.html" />
+  <link rel="icon" type="image/png" href="assets/images/logo/logo_stade.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Club Stade Français 1929" />
+  <meta property="og:title" content="Tenis — Stade Français 1929" />
+  <meta property="og:description" content="Rama de tenis del Club Stade Français 1929. Canchas de arcilla, academia y torneos en Las Condes, Santiago." />
+  <meta property="og:image" content="https://stadefrancais.cl/assets/images/logo/logo_stade.png" />
+  <meta property="og:url" content="https://stadefrancais.cl/tenis.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsClub","name":"Club Stade Français 1929","url":"https://stadefrancais.cl","logo":"https://stadefrancais.cl/assets/images/logo/logo_stade.png","image":"https://stadefrancais.cl/assets/images/logo/logo_stade.png","description":"Club deportivo y social fundado en 1929, ubicado en Las Condes, Santiago de Chile.","foundingDate":"1929","address":{"@type":"PostalAddress","addressLocality":"Las Condes","addressRegion":"Región Metropolitana","addressCountry":"CL"}}</script>
+  <style>
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Light.ttf'); font-weight: 300; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Regular.ttf'); font-weight: 400; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Bold.ttf'); font-weight: 700; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-ExtraBold.ttf'); font-weight: 800; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Black.ttf'); font-weight: 900; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul:#29285C; --azul-dark:#1A1A2E; --rojo:#E31E27; --dorado:#F6AA0C; --blanco:#FFFFFF; --gris:#F5F5F7; --gris-mid:#6b7280; --t:0.35s cubic-bezier(.4,0,.2,1); }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'SonnyVol2', sans-serif; color: var(--azul); background: var(--blanco); overflow-x: hidden; }
+    .top-stripe { height: 4px; position: fixed; top: 0; left: 0; right: 0; z-index: 1100; background: linear-gradient(90deg, var(--azul) 60%, var(--rojo) 60% 80%, var(--dorado) 80%); }
+    nav { position: fixed; top: 4px; left: 0; right: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 68px; transition: background var(--t), box-shadow var(--t); }
+    nav.scrolled { background: rgba(41,40,92,.97); box-shadow: 0 2px 24px rgba(0,0,0,.3); }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo img { height: 34px; width: auto; filter: brightness(0) invert(1); }
+    .nav-logo-text { font-size: 15px; font-weight: 900; color: var(--blanco); line-height: 1.1; text-transform: uppercase; letter-spacing: .08em; }
+    .nav-logo-text span { display: block; font-size: 8px; font-weight: 400; letter-spacing: .16em; color: var(--dorado); }
+    .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+    .nav-links a { display: block; padding: 8px 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.8); text-decoration: none; border-radius: 4px; transition: color var(--t); }
+    .nav-links a:hover, .nav-links a.active { color: var(--dorado); }
+    .nav-links li { position: relative; }
+    .nav-links .dropdown > a::after { content: ' ▾'; font-size: 8px; }
+    .nav-links .dropdown-menu { display: none; position: absolute; top: 100%; padding-top: 6px; left: 0; background: var(--azul); border-top: 2px solid var(--rojo); border-radius: 0 0 6px 6px; padding: 6px; min-width: 180px; box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+    .nav-links .dropdown:hover .dropdown-menu { display: block; }
+    .nav-links .dropdown-menu a { font-size: 11px; text-transform: none; letter-spacing: 0; padding: 10px 12px; }
+    .nav-cta { background: var(--rojo) !important; color: var(--blanco) !important; font-weight: 800 !important; border-radius: 4px !important; padding: 10px 18px !important; }
+    .nav-portal { background: var(--blanco) !important; color: var(--azul) !important; font-weight: 800 !important; border-radius: 4px !important; padding: 8px 16px !important; border: 2px solid var(--blanco) !important; }
+    .nav-portal:hover { background: var(--azul) !important; color: var(--blanco) !important; border-color: var(--azul) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--blanco); border-radius: 2px; }
+
+    .page-hero { position: relative; height: 80vh; min-height: 520px; display: flex; align-items: flex-end; overflow: hidden; }
+    .page-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-image: url('assets/images/general/0y3a3206.jpg'); }
+    .page-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,26,46,.97) 0%, rgba(41,40,92,.65) 40%, rgba(41,40,92,.25) 100%); }
+    .page-hero-content { position: relative; z-index: 2; padding: 56px 64px; max-width: 1200px; width: 100%; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 16px; }
+    .breadcrumb a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--dorado); }
+    .breadcrumb-sep { color: var(--rojo); }
+    .page-hero-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--dorado); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    .page-hero-label::after { content: ''; display: block; width: 36px; height: 2px; background: var(--dorado); }
+    .page-hero h1 { font-size: clamp(52px, 8vw, 96px); font-weight: 900; color: var(--blanco); line-height: .9; text-transform: uppercase; letter-spacing: -.01em; margin-bottom: 16px; }
+    .page-hero h1 span { color: var(--dorado); }
+    .page-hero p { font-size: 17px; color: rgba(255,255,255,.65); font-weight: 300; line-height: 1.75; max-width: 560px; }
+
+    section { padding: 80px 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    .section-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--rojo); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+    .section-label::after { content: ''; display: block; width: 32px; height: 2px; background: var(--rojo); }
+    .section-title { font-size: clamp(24px, 3.5vw, 40px); font-weight: 900; color: var(--azul); margin-bottom: 14px; text-transform: uppercase; letter-spacing: -.01em; line-height: 1; }
+    .section-sub { font-size: 16px; color: var(--gris-mid); line-height: 1.75; max-width: 540px; font-weight: 400; }
+
+    #sobre { background: var(--gris); }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .sobre-img { border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; }
+    .sobre-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sobre-text p { font-size: 16px; color: #374151; line-height: 1.85; margin-bottom: 18px; font-weight: 400; }
+    .stats-inline { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 32px; }
+    .stat-box { background: var(--azul); border-radius: 8px; padding: 20px 16px; text-align: center; }
+    .stat-box-num { font-size: 30px; font-weight: 900; color: var(--dorado); line-height: 1; }
+    .stat-box-label { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: 4px; }
+
+    /* GALERÍA FOTOS ACCIÓN */
+    #galeria-tenis { background: var(--blanco); }
+    .photo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 40px; }
+    .photo-item { border-radius: 6px; overflow: hidden; aspect-ratio: 3/4; }
+    .photo-item img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; transition: transform 0.5s ease; }
+    .photo-item:hover img { transform: scale(1.05); }
+
+    #categorias { background: var(--gris); }
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 20px; margin-top: 40px; }
+    .cat-card { border-radius: 8px; overflow: hidden; border-top: 4px solid var(--azul); background: var(--blanco); transition: transform var(--t), box-shadow var(--t); }
+    .cat-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(41,40,92,.12); border-top-color: var(--rojo); }
+    .cat-card-body { padding: 22px 18px; }
+    .cat-age { display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--dorado); border: 1px solid rgba(246,170,12,.4); padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+    .cat-card h3 { font-size: 17px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+    .cat-card p { font-size: 12px; color: var(--gris-mid); line-height: 1.6; font-weight: 400; }
+    .cat-schedule { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(0,0,0,.08); font-size: 11px; font-weight: 700; color: var(--azul); letter-spacing: .04em; }
+
+    #academia { background: var(--blanco); }
+    .academia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .academia-img { border-radius: 8px; overflow: hidden; aspect-ratio: 2/3; }
+    .academia-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .academia-text p { font-size: 16px; color: #374151; line-height: 1.85; margin-bottom: 18px; font-weight: 400; }
+    .academia-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: var(--blanco); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 10px 18px; border-radius: 4px; margin-top: 8px; }
+    .academia-badge span { color: var(--dorado); }
+
+    #cuerpo { background: var(--azul); }
+    .staff-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 24px; margin-top: 40px; }
+    .staff-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; overflow: hidden; transition: transform var(--t); }
+    .staff-card:hover { transform: translateY(-4px); }
+    .staff-photo { aspect-ratio: 1; background: rgba(255,255,255,.05); display: flex; align-items: center; justify-content: center; font-size: 56px; border-bottom: 3px solid var(--rojo); }
+    .staff-body { padding: 20px 18px; }
+    .staff-role { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--dorado); margin-bottom: 6px; }
+    .staff-card h4 { font-size: 17px; font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+    .staff-card p { font-size: 12px; color: rgba(255,255,255,.45); line-height: 1.6; font-weight: 400; }
+
+    .directiva-sub { margin-top: 64px; padding-top: 56px; border-top: 1px solid rgba(255,255,255,.1); }
+    .directiva-sub .section-label { color: var(--dorado); }
+    .directiva-sub .section-label::after { background: var(--dorado); }
+    .directiva-sub .section-title { color: var(--blanco); }
+    .dir-rama-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 20px; margin-top: 36px; }
+    .dir-rama-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 24px 18px; text-align: center; transition: transform var(--t), background var(--t); }
+    .dir-rama-card:hover { transform: translateY(-4px); background: rgba(255,255,255,.1); }
+    .dir-rama-initial { width: 64px; height: 64px; border-radius: 50%; background: var(--rojo); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 900; color: var(--blanco); margin: 0 auto 16px; letter-spacing: .02em; }
+    .dir-rama-role { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--dorado); margin-bottom: 6px; }
+    .dir-rama-card h4 { font-size: 15px; font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: .03em; line-height: 1.2; }
+
+    /* TORNEOS */
+    #torneos { background: var(--azul-dark); position: relative; overflow: hidden; }
+    #torneos::before { content: '🎾'; position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-size: 320px; opacity: .04; pointer-events: none; }
+    .torneos-intro { font-size: 16px; color: rgba(255,255,255,.55); line-height: 1.85; max-width: 680px; font-weight: 400; margin-bottom: 48px; }
+    .nivel-cats { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: -24px; margin-bottom: 48px; }
+    .nivel-cat { font-size: 14px; font-weight: 900; color: var(--blanco); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); border-radius: 4px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; }
+    .nivel-sep { color: rgba(255,255,255,.2); font-size: 18px; }
+    .torneos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+    .torneo-card { background: rgba(255,255,255,.06); padding: 36px 32px; border-top: 3px solid transparent; transition: background var(--t), border-color var(--t); }
+    .torneo-card:hover { background: rgba(255,255,255,.1); border-top-color: var(--dorado); }
+    .torneo-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .t-badge { font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 3px; }
+    .t-badge.cat { color: var(--azul); background: var(--dorado); }
+    .t-badge.age { color: var(--blanco); background: var(--rojo); }
+    .t-badge.mod { color: rgba(255,255,255,.7); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
+    .torneo-card h3 { font-size: 22px; font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: .03em; margin-bottom: 14px; line-height: 1.1; }
+    .torneo-card p { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.8; font-weight: 400; margin-bottom: 10px; }
+    .torneo-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .torneo-link { display: inline-block; font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; padding: 7px 14px; border-radius: 3px; text-decoration: none; transition: opacity var(--t); }
+    .torneo-link.gold { color: var(--azul); background: var(--dorado); }
+    .torneo-link.gold:hover { opacity: .85; }
+    .torneo-link.outline { color: rgba(255,255,255,.7); border: 1px solid rgba(255,255,255,.25); }
+    .torneo-link.outline:hover { background: rgba(255,255,255,.1); }
+
+    #inscripcion { background: var(--gris); }
+    .inscripcion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    .inscripcion-info h3 { font-size: 20px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 16px; margin-top: 32px; }
+    .inscripcion-info h3:first-child { margin-top: 0; }
+    .inscripcion-info p { font-size: 15px; color: var(--gris-mid); line-height: 1.75; margin-bottom: 12px; font-weight: 400; }
+    .req-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .req-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: #374151; font-weight: 400; line-height: 1.5; }
+    .req-list li::before { content: ''; width: 14px; min-width: 14px; height: 14px; border-radius: 2px; background: var(--rojo); margin-top: 2px; }
+    .contact-form { background: var(--blanco); border-radius: 8px; padding: 36px; border-top: 4px solid var(--rojo); box-shadow: 0 4px 24px rgba(41,40,92,.08); display: flex; flex-direction: column; gap: 14px; }
+    .contact-form h3 { font-size: 18px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+    .form-group label { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: rgba(41,40,92,.5); }
+    .form-group input, .form-group textarea, .form-group select { background: var(--gris); border: 1px solid rgba(41,40,92,.12); border-radius: 4px; padding: 12px 14px; font-size: 14px; font-family: 'SonnyVol2', sans-serif; color: var(--azul); outline: none; transition: border-color var(--t); font-weight: 400; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--rojo); }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .btn-primary { background: var(--rojo); color: var(--blanco); font-weight: 900; font-family: 'SonnyVol2', sans-serif; padding: 15px 32px; border-radius: 4px; border: none; cursor: pointer; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; transition: var(--t); align-self: flex-start; }
+    .btn-primary:hover { background: #c0181f; transform: translateY(-2px); }
+
+    footer { background: var(--azul-dark); border-top: 3px solid var(--rojo); padding: 36px 32px; text-align: center; }
+    .footer-logo-img { height: 36px; filter: brightness(0) invert(1); margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 14px 0; }
+    .footer-links a { font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.35); text-decoration: none; transition: color var(--t); }
+    .footer-links a:hover { color: var(--dorado); }
+    .footer-copy { font-size: 10px; color: rgba(255,255,255,.2); font-weight: 400; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .1s; } .reveal-delay-2 { transition-delay: .2s; } .reveal-delay-3 { transition-delay: .3s; }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 20px; } .nav-links { display: none; } .hamburger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--azul); padding: 12px; border-top: 2px solid var(--rojo); }
+      .nav-links .dropdown-menu { position: static; box-shadow: none; min-width: unset; background: rgba(255,255,255,.08); border: none; border-radius: 4px; margin: 4px 0 4px 12px; padding: 4px; }
+      .nav-links .dropdown > a::after { content: ' ▾'; }
+      .sobre-grid, .inscripcion-grid, .academia-grid { grid-template-columns: 1fr; gap: 36px; }
+      .torneos-grid { grid-template-columns: 1fr; }
+      .page-hero-content { padding: 36px 24px; }
+      .photo-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .academia-img { aspect-ratio: 16/9; }
+    }
+    @media (max-width: 600px) {
+      .photo-grid { grid-template-columns: 1fr; }
+      .dir-rama-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      section { padding: 56px 0; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .page-hero-content { padding: 24px 16px 36px; }
+      .dir-rama-grid { grid-template-columns: 1fr; gap: 10px; }
+      .dir-rama-card { padding: 18px 14px; }
+      .contact-form { padding: 24px 20px; }
+      section { padding: 44px 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="top-stripe"></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
+    <div class="nav-logo-text">Stade Français<span>Club Deportivo · Est. 1929</span></div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li class="dropdown">
+      <a href="#" class="active">Ramas</a>
+      <ul class="dropdown-menu">
+        <li><a href="rugby.html">Rugby</a></li>
+        <li><a href="tenis.html" class="active">Tenis</a></li>
+        <li><a href="natacion.html">Natación</a></li>
+      </ul>
+    </li>
+    <li><a href="deportes.html">Deportes</a></li>
+    <li><a href="gimnasio.html">Gimnasio</a></li>
+    <li><a href="arriendos.html">Arriendos</a></li>
+    <li><a href="restaurantes.html">Restaurantes</a></li>
+    <li><a href="beneficios.html">Beneficios</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="hazte-socio.html" class="nav-cta">Hazte Socio</a></li>
+    <li><a href="https://mistade.cl/Account/Login" target="_blank" rel="noopener" class="nav-portal">Portal de Socios</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a><span class="breadcrumb-sep">›</span>Ramas<span class="breadcrumb-sep">›</span>Tenis</div>
+    <div class="page-hero-label">Rama Deportiva</div>
+    <h1>TENIS<br/><span>STADE</span></h1>
+    <p>Canchas de arcilla en el corazón de Las Condes. Torneos interclubes, academia y una comunidad apasionada por el tenis.</p>
+  </div>
+</div>
+
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img reveal">
+        <img src="assets/images/instalaciones/canchas-tenis.jpg" alt="Tenis Stade Français" />
+      </div>
+      <div class="sobre-text">
+        <div class="section-label reveal">Nuestra Rama</div>
+        <h2 class="section-title reveal reveal-delay-1">Tenis de Alto Nivel en Las Condes</h2>
+        <p class="reveal reveal-delay-2">La rama de tenis de Stade Français cuenta con canchas de arcilla de primer nivel y una tradición de torneos interclubes que nos posiciona como uno de los clubes de tenis más reconocidos de Santiago.</p>
+        <p class="reveal reveal-delay-2">Ofrecemos programas para todos los niveles, desde niños aprendiendo sus primeros golpes hasta jugadores competitivos que representan al club en campeonatos nacionales.</p>
+        <div class="stats-inline reveal reveal-delay-3">
+          <div class="stat-box"><div class="stat-box-num">8+</div><div class="stat-box-label">Canchas</div></div>
+          <div class="stat-box"><div class="stat-box-num">6</div><div class="stat-box-label">Torneos / año</div></div>
+          <div class="stat-box"><div class="stat-box-num">Todo</div><div class="stat-box-label">El año</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria-tenis">
+  <div class="container">
+    <div class="section-label reveal">En Acción</div>
+    <h2 class="section-title reveal reveal-delay-1">Tenis Stade Français</h2>
+    <div class="photo-grid">
+      <div class="photo-item reveal"><img src="assets/images/instalaciones/cancha-tenis-2.jpg" alt="Tenis" /></div>
+      <div class="photo-item reveal reveal-delay-1"><img src="assets/images/instalaciones/cancha-tenis-4.jpg" alt="Tenis" /></div>
+      <div class="photo-item reveal reveal-delay-2"><img src="assets/images/instalaciones/canchas-tenis.jpg" alt="Tenis" style="object-position:center"/></div>
+    </div>
+  </div>
+</section>
+
+<section id="categorias">
+  <div class="container">
+    <div class="section-label reveal">Divisiones</div>
+    <h2 class="section-title reveal reveal-delay-1">Categorías y Programas</h2>
+    <p class="section-sub reveal reveal-delay-2">Desde la iniciación infantil hasta el circuito competitivo adulto. Encuentra tu nivel.</p>
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <div class="cat-card-body">
+          <span class="cat-age">18+ años</span>
+          <h3>Interclub Adulto</h3>
+          <p>Competencia interclubes, parejas y torneos internos. Clasificados por nivel de juego.</p>
+          <div class="cat-schedule">🕐 Mar, Jue y Sáb · horario variable</div>
+        </div>
+      </div>
+      <div class="cat-card reveal reveal-delay-1">
+        <div class="cat-card-body">
+          <span class="cat-age">Todos</span>
+          <h3>Clases Particulares</h3>
+          <p>Clases individuales o en duplas con nuestros profesores certificados. Todos los niveles.</p>
+          <div class="cat-schedule">🕐 Bajo reserva · app EasyCancha</div>
+        </div>
+      </div>
+      <div class="cat-card reveal reveal-delay-2">
+        <div class="cat-card-body">
+          <span class="cat-age">Externo</span>
+          <h3>Arriendo de Canchas</h3>
+          <p>Usuarios externos pueden reservar canchas a través de la app EasyCancha.</p>
+          <div class="cat-schedule">🕐 Descarga EasyCancha</div>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-card-body">
+          <span class="cat-age">Internacional</span>
+          <h3>ITF 700 Omar Pabst</h3>
+          <p>Torneo internacional ITF que lleva el nombre de un destacado miembro del club. Competencia de nivel internacional disputada en las canchas de Stade Français.</p>
+          <div class="cat-schedule">🏆 Torneo Internacional ITF</div>
+        </div>
+      </div>
+      <div class="cat-card reveal reveal-delay-1">
+        <div class="cat-card-body">
+          <span class="cat-age">Internacional</span>
+          <h3>ITF 1000 Santiago</h3>
+          <p>Uno de los torneos ITF de mayor categoría disputados en Chile. Stade Français es sede de este prestigioso evento internacional de tenis.</p>
+          <div class="cat-schedule">🏆 Torneo Internacional ITF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="academia">
+  <div class="container">
+    <div class="academia-grid">
+      <div class="academia-img reveal">
+        <img src="assets/images/instalaciones/academia-tenis.jpg" alt="Academia W-Tenis Pro Stade Français" />
+      </div>
+      <div class="academia-text">
+        <div class="section-label reveal">Clases de Tenis</div>
+        <h2 class="section-title reveal reveal-delay-1">Academia W-Tenis Pro</h2>
+        <p class="reveal reveal-delay-2">Nuestra academia de tenis ofrece un programa estructurado para niños y jóvenes que quieren aprender y mejorar en canchas de arcilla de primer nivel en Las Condes.</p>
+        <p class="reveal reveal-delay-2">Con metodología progresiva, grupos reducidos y entrenadores certificados, W-Tenis Pro forma jugadores con bases sólidas técnicas y tácticas desde temprana edad.</p>
+        <div class="academia-badge reveal reveal-delay-3">Escuela de Tenis <span>Stade Français</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="torneos">
+  <div class="container">
+    <div class="section-label light reveal">Competencia</div>
+    <h2 class="section-title light reveal reveal-delay-1">Torneos de Tenis</h2>
+    <p class="torneos-intro reveal reveal-delay-2">Jugamos torneos mixtos de tenis todo el año con carácter social. En algunos casos se entregan copas o medallas a los ganadores. Contamos con una categorización interna por nivel de juego — aunque los límites no siempre son tan claros.</p>
+    <div class="nivel-cats reveal reveal-delay-2">
+      <span class="nivel-cat">A</span><span class="nivel-sep">·</span>
+      <span class="nivel-cat">B</span><span class="nivel-sep">·</span>
+      <span class="nivel-cat">C</span><span class="nivel-sep">·</span>
+      <span class="nivel-cat">D</span><span class="nivel-sep">·</span>
+      <span class="nivel-cat">E</span>
+    </div>
+
+    <div class="torneos-grid">
+
+      <div class="torneo-card reveal">
+        <div class="torneo-badges">
+          <span class="t-badge cat">A</span><span class="t-badge cat">B</span><span class="t-badge cat">C</span><span class="t-badge cat">D</span><span class="t-badge cat">E</span>
+          <span class="t-badge mod">Todo el año</span>
+        </div>
+        <h3>Staderilla</h3>
+        <p>Ranking único donde cada semana se asigna un partido contra un rival cercano en posición — el "desafío". Un jugador puede escalar hasta 5 puestos o defender su posición ante un rival hasta 5 puestos más abajo.</p>
+        <p>Los desafíos se asignan automáticamente todos los <strong style="color:rgba(255,255,255,.75)">domingos a las 20:00 hrs.</strong> junto con la actualización del ranking. Los jugadores pueden bloquear su participación por el tiempo que determinen.</p>
+      </div>
+
+      <div class="torneo-card reveal reveal-delay-1">
+        <div class="torneo-badges">
+          <span class="t-badge cat">A</span><span class="t-badge cat">B</span><span class="t-badge cat">C</span><span class="t-badge cat">D</span><span class="t-badge cat">E</span>
+          <span class="t-badge mod">Dobles</span><span class="t-badge mod">4 versiones / año</span>
+        </div>
+        <h3>GrandStade</h3>
+        <p>Simula un Grand Slam. Se juegan 4 versiones al año en cuadros de 16 o 32 jugadores en modalidad doble eliminación — se requiere perder dos veces para quedar eliminado.</p>
+        <p>Los finalistas del cuadro principal y del repechaje pueden <strong style="color:rgba(255,255,255,.75)">ascender de categoría</strong>. Los cuatro peores lugares descienden.</p>
+        <div class="torneo-links">
+          <a href="https://stadefrancais.club/*" target="_blank" rel="noopener" class="torneo-link gold">A+</a>
+          <a href="https://challonge.com/rg2aytu0" target="_blank" rel="noopener" class="torneo-link gold">A</a>
+          <a href="https://challonge.com/nkhh9cyq" target="_blank" rel="noopener" class="torneo-link gold">B</a>
+          <a href="https://challonge.com/jqlzre4p" target="_blank" rel="noopener" class="torneo-link gold">C</a>
+          <a href="https://challonge.com/2rn0gbaa" target="_blank" rel="noopener" class="torneo-link gold">D</a>
+          <a href="https://challonge.com/8ysxl55q" target="_blank" rel="noopener" class="torneo-link gold">E</a>
+        </div>
+      </div>
+
+      <div class="torneo-card reveal">
+        <div class="torneo-badges">
+          <span class="t-badge age">–40 años</span>
+          <span class="t-badge cat">A</span><span class="t-badge cat">B</span><span class="t-badge cat">C</span>
+          <span class="t-badge mod">Marzo – Diciembre</span>
+        </div>
+        <h3>Nextgen</h3>
+        <p>Enfocado a jóvenes y nuevos socios. Cuadros de 32 jugadores en formato Stay&Play — se juega cada fecha, gane o pierda — con ranking acumulado anual.</p>
+        <div class="torneo-links">
+          <a href="https://docs.google.com/spreadsheets/d/1kvwSZwfA8PBogRoyz_aGcIvlo9aXG1q4bPBuApUF8Dg/edit?usp=sharing" target="_blank" rel="noopener" class="torneo-link gold">Ver resultados →</a>
+        </div>
+      </div>
+
+      <div class="torneo-card reveal reveal-delay-1">
+        <div class="torneo-badges">
+          <span class="t-badge age">+40 años</span>
+          <span class="t-badge cat">C</span><span class="t-badge cat">D</span>
+          <span class="t-badge mod">Marzo – Diciembre</span>
+        </div>
+        <h3>Gerardo Olguín</h3>
+        <p>El torneo más antiguo del club, nombrado en honor a un destacado socio. Cuadros de 32 jugadores en formato Stay&Play, todo el año de Marzo a Diciembre.</p>
+        <div class="torneo-links">
+          <a href="mailto:cramirez@hotmail.com?subject=Inscripci%C3%B3n%20Torneo%20&body=Estimado%20Carlos%2C%0A%0AMe%20interesa%20participar%20del%20torneo%20Gerardo%20Olgu%C3%ADn%20de%20los%20martes." class="torneo-link gold">Inscribirse →</a>
+        </div>
+      </div>
+
+      <div class="torneo-card reveal">
+        <div class="torneo-badges">
+          <span class="t-badge mod">Octubre</span>
+          <span class="t-badge mod">Todas las categorías</span>
+          <span class="t-badge mod">Dobles</span>
+        </div>
+        <h3>Copa Laver</h3>
+        <p>Torneo tradicional de octubre inspirado en la Copa Laver internacional. Se juega por equipos: <strong style="color:rgba(255,255,255,.75)">Rojo vs Azul</strong>. Durante dos fines de semana se disputan partidos de singles y dobles, sumando puntos por cada victoria de equipo.</p>
+      </div>
+
+      <div class="torneo-card reveal reveal-delay-1">
+        <div class="torneo-badges">
+          <span class="t-badge mod">Todas las categorías</span>
+          <span class="t-badge mod">Singles y Dobles</span>
+        </div>
+        <h3>Torneos Femeninos</h3>
+        <p>La rama organiza torneos femeninos de singles y dobles con distintos formatos — algunos se juegan en un mes, otros en un fin de semana. Destacan los torneos <strong style="color:rgba(255,255,255,.75)">Clarita Popelka</strong> y <strong style="color:rgba(255,255,255,.75)">Mafalda Quiroga</strong>, que honran a destacadas socias del club.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="cuerpo">
+  <div class="container">
+    <div class="directiva-sub" style="margin-top:0; padding-top:0; border-top:none;">
+      <div class="section-label reveal">Directiva</div>
+      <h2 class="section-title reveal reveal-delay-1">Directiva de la Rama</h2>
+      <div class="dir-rama-grid">
+        <div class="dir-rama-card reveal">
+          <div class="dir-rama-initial">PH</div>
+          <div class="dir-rama-role">Presidenta</div>
+          <h4>Patricia Hernández</h4>
+        </div>
+        <div class="dir-rama-card reveal reveal-delay-1">
+          <div class="dir-rama-initial">JG</div>
+          <div class="dir-rama-role">Secretario</div>
+          <h4>Joaquín Guerra</h4>
+        </div>
+        <div class="dir-rama-card reveal reveal-delay-2">
+          <div class="dir-rama-initial">JR</div>
+          <div class="dir-rama-role">Tesorero</div>
+          <h4>Jose Luis Reyes</h4>
+        </div>
+        <div class="dir-rama-card reveal reveal-delay-3">
+          <div class="dir-rama-initial">SR</div>
+          <div class="dir-rama-role">Directora</div>
+          <h4>Sofia Rojas</h4>
+        </div>
+        <div class="dir-rama-card reveal reveal-delay-1">
+          <div class="dir-rama-initial">SN</div>
+          <div class="dir-rama-role">Director</div>
+          <h4>Sergio Negrete</h4>
+        </div>
+        <div class="dir-rama-card reveal reveal-delay-2">
+          <div class="dir-rama-initial">RB</div>
+          <div class="dir-rama-role">Director</div>
+          <h4>Rafael Bustos</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inscripcion">
+  <div class="container">
+    <div class="inscripcion-grid">
+      <div class="inscripcion-info">
+        <div class="section-label reveal">Contacto</div>
+        <h2 class="section-title reveal reveal-delay-1">Juega con Nosotros</h2>
+        <p class="section-sub reveal reveal-delay-2" style="max-width:100%">Completa el formulario y la directiva de la rama te contactará con la información que necesitas.</p>
+        <h3 class="reveal reveal-delay-2">Directiva Rama Tenis</h3>
+        <ul class="req-list reveal reveal-delay-3">
+          <li>Patricia Hernández — Presidenta</li>
+          <li>Joaquín Guerra — Secretario</li>
+          <li>Jose Luis Reyes — Tesorero</li>
+        </ul>
+        <h3 class="reveal reveal-delay-2">Reserva de Canchas</h3>
+        <p class="reveal reveal-delay-3">Socios y usuarios externos pueden reservar canchas a través de la app <strong>EasyCancha</strong>. Busca "Stade Français" para ver disponibilidad y tarifas.</p>
+        <h3 class="reveal reveal-delay-2">Torneos</h3>
+        <p class="reveal reveal-delay-3">Los cuadros del GrandStade están disponibles en Challonge. El ranking Staderilla se actualiza cada domingo a las 20:00 hrs. Para inscripción al Gerardo Olguín escribe a <strong>cramirez@hotmail.com</strong>.</p>
+      </div>
+      <form class="contact-form reveal reveal-delay-2" method="POST" action="https://formspree.io/f/XXXXXXXX">
+        <input type="hidden" name="_subject" value="Inscripción Tenis — Stade Français" />
+        <h3>Formulario de Contacto</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" required /></div>
+          <div class="form-group"><label>Apellido</label><input type="text" name="apellido" placeholder="Tu apellido" required /></div>
+        </div>
+        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="tu@email.com" required /></div>
+        <div class="form-group"><label>Teléfono</label><input type="tel" name="telefono" placeholder="+56 9 XXXX XXXX" /></div>
+        <div class="form-group">
+          <label>¿En qué estás interesado?</label>
+          <select name="interes">
+            <option value="">Selecciona una opción</option>
+            <optgroup label="Clases y Academia">
+              <option>Academia W-Tenis Pro</option>
+              <option>Clases Particulares</option>
+              <option>Interclub Adulto</option>
+            </optgroup>
+            <optgroup label="Torneos">
+              <option>Torneo Staderilla (ranking semanal)</option>
+              <option>Torneo GrandStade</option>
+              <option>Torneo Nextgen (–40 años)</option>
+              <option>Torneo Gerardo Olguín (+40 años)</option>
+              <option>Copa Laver</option>
+              <option>Torneos Femeninos</option>
+              <option>ITF 700 Omar Pabst</option>
+              <option>ITF 1000 Santiago</option>
+            </optgroup>
+            <optgroup label="Canchas">
+              <option>Arriendo de Canchas (EasyCancha)</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Categoría de juego</label>
+          <select name="categoria">
+            <option value="">Selecciona tu categoría</option>
+            <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option>
+            <option>No sé / Soy nuevo</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Mensaje (opcional)</label><textarea name="mensaje" placeholder="¿Tienes alguna pregunta sobre torneos, clases o canchas?"></textarea></div>
+        <button type="submit" class="btn-primary">Enviar Consulta</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div style="max-width:1200px;margin:0 auto">
+    <img src="assets/images/logo/logo_stade.png" alt="Stade Français" class="footer-logo-img" />
+    <div class="footer-links">
+      <a href="index.html">Inicio</a><a href="rugby.html">Rugby</a>
+      <a href="tenis.html">Tenis</a><a href="natacion.html">Natación</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 Club Stade Français · Las Condes, Santiago</div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(r => io.observe(r));
+</script>
+
+
+<!-- WHATSAPP FLOTANTE -->
+<style>
+  .wa-float { position: fixed; bottom: 96px; right: 24px; z-index: 9000; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .wa-btn-main { width: 58px; height: 58px; border-radius: 50%; background: #25D366; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.5); transition: transform 0.2s, box-shadow 0.2s; position: relative; }
+  .wa-btn-main:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.65); }
+  .wa-btn-main svg { width: 32px; height: 32px; fill: #fff; }
+  .wa-badge { position: absolute; top: -4px; right: -4px; background: #E31E27; color: #fff; border-radius: 50%; width: 20px; height: 20px; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; font-family: sans-serif; }
+  .wa-panel { background: #fff; border-radius: 18px; box-shadow: 0 8px 48px rgba(0,0,0,.2); width: 310px; max-height: 80vh; display: none; flex-direction: column; overflow: hidden; animation: waFadeIn 0.22s ease; }
+  .wa-panel.open { display: flex; }
+  @keyframes waFadeIn { from { opacity:0; transform: scale(.95) translateY(10px); } to { opacity:1; transform: scale(1) translateY(0); } }
+
+  /* HEADER */
+  .wa-header { background: #075E54; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 6px; position: relative; }
+  .wa-header-top { display: flex; align-items: center; justify-content: space-between; }
+  .wa-header-brand { display: flex; align-items: center; gap: 10px; }
+  .wa-header-ico { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; }
+  .wa-header-ico svg { width: 22px; height: 22px; fill: #fff; }
+  .wa-header-name { font-family: 'SonnyVol2', sans-serif; font-size: 14px; font-weight: 900; color: #fff; line-height: 1.1; }
+  .wa-header-sub { font-family: 'SonnyVol2', sans-serif; font-size: 11px; color: rgba(255,255,255,.6); font-weight: 400; }
+  .wa-close { background: rgba(255,255,255,.12); border: none; color: #fff; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
+  .wa-close:hover { background: rgba(255,255,255,.25); }
+  .wa-status { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+  .wa-status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .wa-status-dot.open { background: #25D366; box-shadow: 0 0 0 2px rgba(37,211,102,.3); }
+  .wa-status-dot.closed { background: #aaa; }
+  .wa-status-text { font-family: 'SonnyVol2', sans-serif; font-size: 11px; color: rgba(255,255,255,.75); font-weight: 400; }
+
+  /* CALL BUTTON */
+  .wa-call-btn { display: flex; align-items: center; gap: 10px; background: #128C7E; margin: 12px 14px 4px; border-radius: 10px; padding: 11px 14px; text-decoration: none; transition: background 0.15s; }
+  .wa-call-btn:hover { background: #0a6b5e; }
+  .wa-call-ico { width: 32px; height: 32px; background: rgba(255,255,255,.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .wa-call-ico svg { width: 16px; height: 16px; fill: #fff; }
+  .wa-call-info { display: flex; flex-direction: column; }
+  .wa-call-label { font-family: 'SonnyVol2', sans-serif; font-size: 11px; color: rgba(255,255,255,.65); font-weight: 400; }
+  .wa-call-num { font-family: 'SonnyVol2', sans-serif; font-size: 14px; color: #fff; font-weight: 700; }
+
+  /* CONTACTS */
+  .wa-body { overflow-y: auto; padding: 8px 0 12px; flex: 1; }
+  .wa-cat-label { font-family: 'SonnyVol2', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #075E54; padding: 10px 16px 4px; }
+  .wa-contact { display: flex; align-items: center; gap: 12px; padding: 9px 14px; text-decoration: none; transition: background 0.12s; cursor: pointer; border: none; background: none; width: 100%; text-align: left; }
+  .wa-contact:hover { background: #f5f5f5; }
+  .wa-c-ico { width: 38px; height: 38px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 17px; line-height: 1; }
+  .wa-c-ico.alt { background: #29285C; }
+  .wa-c-info { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+  .wa-c-name { font-family: 'SonnyVol2', sans-serif; font-size: 13px; font-weight: 700; color: #1a1a2e; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wa-c-role { font-family: 'SonnyVol2', sans-serif; font-size: 11px; color: #6b7280; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wa-c-arrow { color: #25D366; font-size: 13px; flex-shrink: 0; }
+  .wa-divider { height: 1px; background: #f0f0f0; margin: 4px 14px; }
+  .wa-footer { padding: 10px 14px; text-align: center; font-family: 'SonnyVol2', sans-serif; font-size: 10px; color: #aaa; border-top: 1px solid #f0f0f0; }
+
+  @media (max-width: 480px) {
+    .wa-float { bottom: 80px; right: 14px; }
+    .wa-panel { width: 290px; max-height: 75vh; }
+  }
+</style>
+
+<div class="wa-float" id="waFloat">
+  <div class="wa-panel" id="waPanel">
+    <!-- HEADER -->
+    <div class="wa-header">
+      <div class="wa-header-top">
+        <div class="wa-header-brand">
+          <div class="wa-header-ico">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.847L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.643-.497-5.17-1.361l-.371-.22-3.762.982.997-3.671-.241-.379A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </div>
+          <div>
+            <div class="wa-header-name">Stade Français 1929</div>
+            <div class="wa-header-sub">Las Condes, Santiago</div>
+          </div>
+        </div>
+        <button class="wa-close" onclick="document.getElementById('waPanel').classList.remove('open')">✕</button>
+      </div>
+      <div class="wa-status">
+        <div class="wa-status-dot" id="waStatusDot"></div>
+        <span class="wa-status-text" id="waStatusText">Verificando horario...</span>
+      </div>
+    </div>
+
+    <!-- LLAMADA DIRECTA -->
+    <a class="wa-call-btn" href="tel:+56222343924">
+      <div class="wa-call-ico">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      </div>
+      <div class="wa-call-info">
+        <span class="wa-call-label">Llamar al club</span>
+        <span class="wa-call-num">+56 2 2234 3924</span>
+      </div>
+    </a>
+
+    <!-- CONTACTOS -->
+    <div class="wa-body">
+
+      <div class="wa-cat-label">🏠 Atención al Cliente</div>
+      <a class="wa-contact" href="https://wa.me/56990210287?text=Hola%20Am%C3%A9rico%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20el%20club." target="_blank">
+        <div class="wa-c-ico">🏠</div>
+        <div class="wa-c-info"><span class="wa-c-name">Américo Tapia</span><span class="wa-c-role">Atención general del club</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="https://wa.me/56947986881?text=Hola%2C%20quisiera%20enviar%20una%20sugerencia%20o%20reclamo." target="_blank">
+        <div class="wa-c-ico">📋</div>
+        <div class="wa-c-info"><span class="wa-c-name">Sugerencias y Reclamos</span><span class="wa-c-role">Buzón oficial del club</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+      <div class="wa-divider"></div>
+      <div class="wa-cat-label">📅 Arriendos</div>
+      <a class="wa-contact" href="https://wa.me/56990209720?text=Hola%20Benjam%C3%ADn%2C%20me%20gustar%C3%ADa%20consultar%20por%20arriendo%20de%20espacios%20sociales." target="_blank">
+        <div class="wa-c-ico">🎉</div>
+        <div class="wa-c-info"><span class="wa-c-name">Benjamín Leiva</span><span class="wa-c-role">Arriendo espacios sociales</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="mailto:coordinaciondeportiva@stadefrancais.cl">
+        <div class="wa-c-ico alt">🏟️</div>
+        <div class="wa-c-info"><span class="wa-c-name">Convenios Instalaciones</span><span class="wa-c-role">coordinaciondeportiva@stadefrancais.cl</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+      <div class="wa-divider"></div>
+      <div class="wa-cat-label">🏉 Ramas Deportivas</div>
+      <a class="wa-contact" href="https://wa.me/56994321330?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20Rama%20de%20Rugby." target="_blank">
+        <div class="wa-c-ico">🏉</div>
+        <div class="wa-c-info"><span class="wa-c-name">Rama Rugby</span><span class="wa-c-role">Inscripciones y consultas</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="mailto:ramanatacion@stadefrancais.cl">
+        <div class="wa-c-ico alt">🏊</div>
+        <div class="wa-c-info"><span class="wa-c-name">Rama Natación</span><span class="wa-c-role">ramanatacion@stadefrancais.cl</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+      <div class="wa-divider"></div>
+      <div class="wa-cat-label">🎾 Tenis</div>
+      <a class="wa-contact" href="https://wa.me/56934885162?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20Escuela%20de%20Tenis." target="_blank">
+        <div class="wa-c-ico">🎾</div>
+        <div class="wa-c-info"><span class="wa-c-name">Escuela de Tenis</span><span class="wa-c-role">Academia e inscripciones</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="https://wa.me/56947986455?text=Hola%2C%20consulto%20sobre%20la%20coordinaci%C3%B3n%20de%20tenis." target="_blank">
+        <div class="wa-c-ico">🏆</div>
+        <div class="wa-c-info"><span class="wa-c-name">Coordinación Tenis</span><span class="wa-c-role">Torneos y canchas</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="https://wa.me/56965789922?text=Hola%20Jos%C3%A9%2C%20consulto%20por%20el%20Raquetazo." target="_blank">
+        <div class="wa-c-ico">🏓</div>
+        <div class="wa-c-info"><span class="wa-c-name">José Sánchez</span><span class="wa-c-role">Raquetazo</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+      <div class="wa-divider"></div>
+      <div class="wa-cat-label">💪 Servicios</div>
+      <a class="wa-contact" href="https://wa.me/56990342448?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20el%20gimnasio." target="_blank">
+        <div class="wa-c-ico">💪</div>
+        <div class="wa-c-info"><span class="wa-c-name">Gimnasio</span><span class="wa-c-role">Planes y evaluaciones</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="https://wa.me/56993384466?text=Hola%20Marcelo%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Protrainer." target="_blank">
+        <div class="wa-c-ico">🏋️</div>
+        <div class="wa-c-info"><span class="wa-c-name">Marcelo Clavero</span><span class="wa-c-role">Protrainer</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+      <div class="wa-divider"></div>
+      <div class="wa-cat-label">🍽️ Restaurantes</div>
+      <a class="wa-contact" href="https://wa.me/56942703559?text=Hola%2C%20quisiera%20hacer%20una%20reserva%20en%20Restaurant%20La%20Maison." target="_blank">
+        <div class="wa-c-ico">🥂</div>
+        <div class="wa-c-info"><span class="wa-c-name">Restaurant La Maison</span><span class="wa-c-role">Reservas y consultas</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+      <a class="wa-contact" href="https://wa.me/56958587608?text=Hola%2C%20quisiera%20consultar%20sobre%20Sabores%20del%20Mundo." target="_blank">
+        <div class="wa-c-ico">🍽️</div>
+        <div class="wa-c-info"><span class="wa-c-name">Sabores del Mundo</span><span class="wa-c-role">Reservas y consultas</span></div>
+        <span class="wa-c-arrow">›</span>
+      </a>
+
+    </div>
+    <div class="wa-footer">Lu–Vi 09:00–20:00 · Sáb 09:00–14:00</div>
+  </div>
+
+  <button class="wa-btn-main" id="waBtnMain" onclick="document.getElementById('waPanel').classList.toggle('open')" aria-label="Contacto WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.847L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.643-.497-5.17-1.361l-.371-.22-3.762.982.997-3.671-.241-.379A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="wa-badge">12</span>
+  </button>
+</div>
+
+<script>
+(function(){
+  // Estado horario en tiempo real (zona Santiago)
+  function getStatus() {
+    try {
+      const now = new Date();
+      const parts = new Intl.DateTimeFormat('es-CL', {
+        timeZone: 'America/Santiago',
+        hour: 'numeric', minute: 'numeric', weekday: 'short', hour12: false
+      }).formatToParts(now);
+      const p = {};
+      parts.forEach(x => p[x.type] = x.value);
+      const h = parseInt(p.hour), m = parseInt(p.minute);
+      const min = h * 60 + m;
+      const day = (p.weekday || '').toLowerCase();
+      if (day.startsWith('dom')) return { open: false, txt: 'Cerrado hoy · Domingo' };
+      if (day.startsWith('s')) {
+        if (min >= 540 && min < 840) return { open: true, txt: 'Abierto · Cierra 14:00' };
+        return { open: false, txt: min < 540 ? 'Abre a las 09:00' : 'Cerrado · Abre el lunes' };
+      }
+      if (min >= 540 && min < 1200) return { open: true, txt: 'Abierto · Cierra 20:00' };
+      return { open: false, txt: min < 540 ? 'Abre a las 09:00' : 'Cerrado · Abre mañana' };
+    } catch(e) { return { open: true, txt: 'Lu–Vi 09:00–20:00' }; }
+  }
+  function updateStatus() {
+    var s = getStatus();
+    var dot = document.getElementById('waStatusDot');
+    var txt = document.getElementById('waStatusText');
+    if (dot) { dot.className = 'wa-status-dot ' + (s.open ? 'open' : 'closed'); }
+    if (txt) txt.textContent = s.txt;
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  // Cerrar al hacer clic fuera
+  document.addEventListener('click', function(e) {
+    var fl = document.getElementById('waFloat');
+    if (fl && !fl.contains(e.target)) {
+      var p = document.getElementById('waPanel');
+      if (p) p.classList.remove('open');
+    }
+  });
+})();
+</script>
+<!-- FIN WHATSAPP FLOTANTE -->
+
+
+</body>
+</html>
