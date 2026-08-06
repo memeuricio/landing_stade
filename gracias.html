@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje Enviado · Stade Français</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="Tu mensaje fue enviado correctamente al Club Stade Français 1929." />
+  <link rel="canonical" href="https://stadefrancais.cl/gracias.html" />
+  <link rel="icon" type="image/webp" href="assets/images/logo/logo.webp" />
+  <style>
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Light.ttf'); font-weight: 300; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Regular.ttf'); font-weight: 400; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Bold.ttf'); font-weight: 700; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-ExtraBold.ttf'); font-weight: 800; }
+    @font-face { font-family: 'SonnyVol2'; src: url('assets/fonts/sonny_vol2/SonnyVol2-Black.ttf'); font-weight: 900; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul:#29285C; --azul-dark:#1A1A2E; --rojo:#E31E27; --dorado:#F6AA0C; --blanco:#FFFFFF; --gris:#F5F5F7; --gris-mid:#6b7280; --t:0.35s cubic-bezier(.4,0,.2,1); }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'SonnyVol2', sans-serif; color: var(--azul); background: var(--blanco); overflow-x: hidden; }
+
+    /* NAV */
+    .top-stripe { height: 4px; position: fixed; top: 0; left: 0; right: 0; z-index: 1100; background: linear-gradient(90deg, var(--azul) 60%, var(--rojo) 60% 80%, var(--dorado) 80%); }
+    nav { position: fixed; top: 4px; left: 0; right: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 68px; background: rgba(41,40,92,.97); }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo img { height: 34px; width: auto; filter: brightness(0) invert(1); }
+    .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+    .nav-links a { display: block; padding: 8px 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.8); text-decoration: none; border-radius: 4px; transition: color var(--t); }
+    .nav-links a:hover, .nav-links a.active { color: var(--dorado); }
+    .nav-links li { position: relative; }
+    .nav-links .dropdown > a::after { content: ' ▾'; font-size: 8px; }
+    .nav-links .dropdown-menu { display: none; position: absolute; top: 100%; padding-top: 6px; left: 0; background: var(--azul); border-top: 2px solid var(--rojo); border-radius: 0 0 6px 6px; padding: 6px; min-width: 180px; box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+    .nav-links .dropdown:hover .dropdown-menu { display: block; }
+    .nav-links .dropdown-menu a { font-size: 11px; text-transform: none; letter-spacing: 0; padding: 10px 12px; }
+    .nav-cta { background: var(--rojo) !important; color: var(--blanco) !important; font-weight: 800 !important; border-radius: 4px !important; padding: 10px 18px !important; }
+    .nav-portal { background: var(--blanco) !important; color: var(--azul) !important; font-weight: 800 !important; border-radius: 4px !important; padding: 8px 16px !important; border: 2px solid var(--blanco) !important; }
+    .nav-portal:hover { background: var(--azul) !important; color: var(--blanco) !important; border-color: var(--azul) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--blanco); border-radius: 2px; }
+
+    /* GRACIAS */
+    .gracias-section { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--azul-dark); padding: 140px 24px 88px; text-align: center; }
+    .gracias-inner { max-width: 560px; }
+    .gracias-icon { width: 84px; height: 84px; border-radius: 50%; background: rgba(246,170,12,.12); border: 1px solid rgba(246,170,12,.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; }
+    .gracias-icon svg { width: 38px; height: 38px; }
+    .gracias-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--dorado); margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+    .gracias-label::before, .gracias-label::after { content: ''; display: block; width: 28px; height: 2px; background: var(--dorado); }
+    .gracias-section h1 { font-size: clamp(30px, 4.5vw, 46px); font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: -.01em; line-height: 1.1; margin-bottom: 18px; }
+    .gracias-section p { font-size: 16px; color: rgba(255,255,255,.55); line-height: 1.85; font-weight: 300; margin-bottom: 40px; }
+    .gracias-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--rojo); color: var(--blanco); font-family: 'SonnyVol2', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 14px 28px; border-radius: 4px; text-decoration: none; border: none; cursor: pointer; transition: background var(--t), transform var(--t); }
+    .btn-primary:hover { background: #c0161e; transform: translateY(-2px); }
+    .btn-secondary { display: inline-block; background: transparent; color: var(--blanco); font-family: 'SonnyVol2', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 14px 28px; border-radius: 4px; text-decoration: none; border: 2px solid rgba(255,255,255,.25); cursor: pointer; transition: all var(--t); }
+    .btn-secondary:hover { border-color: var(--blanco); background: var(--blanco); color: var(--azul); }
+
+    /* FOOTER */
+    footer { background: var(--azul-dark); border-top: 1px solid rgba(255,255,255,.06); padding: 48px 40px 24px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+    .footer-brand img { height: 36px; filter: brightness(0) invert(1); margin-bottom: 14px; }
+    .footer-brand p { font-size: 12px; color: rgba(255,255,255,.35); line-height: 1.8; max-width: 220px; }
+    .footer-col h5 { font-size: 9px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; color: var(--dorado); margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 12px; color: rgba(255,255,255,.4); text-decoration: none; margin-bottom: 8px; transition: color var(--t); }
+    .footer-col a:hover { color: var(--blanco); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.06); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 10px; color: rgba(255,255,255,.2); }
+    .footer-stripe { display: flex; gap: 2px; }
+    .footer-stripe span { width: 20px; height: 3px; border-radius: 1px; }
+    .footer-stripe span:nth-child(1) { background: var(--azul); width: 40px; }
+    .footer-stripe span:nth-child(2) { background: var(--rojo); }
+    .footer-stripe span:nth-child(3) { background: var(--dorado); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; } .nav-links { display: none; } .hamburger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--azul); padding: 12px; border-top: 2px solid var(--rojo); }
+      .nav-links .dropdown-menu { position: static; box-shadow: none; min-width: unset; background: rgba(255,255,255,.08); border: none; border-radius: 4px; margin: 4px 0 4px 12px; padding: 4px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 480px) {
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-stripe"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li class="dropdown">
+      <a href="nosotros.html">Nosotros</a>
+      <ul class="dropdown-menu">
+        <li><a href="nosotros.html#historia">Historia</a></li>
+        <li><a href="nosotros.html#directiva">Directiva</a></li>
+        <li><a href="nosotros.html#instalaciones">Instalaciones</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">Ramas</a>
+      <ul class="dropdown-menu">
+        <li><a href="rugby.html">Rugby</a></li>
+        <li><a href="tenis.html">Tenis</a></li>
+        <li><a href="natacion.html">Natación</a></li>
+      </ul>
+    </li>
+    <li><a href="deportes.html">Deportes</a></li>
+    <li><a href="gimnasio.html">Gimnasio</a></li>
+    <li><a href="arriendos.html">Arriendos</a></li>
+    <li><a href="restaurantes.html">Restaurantes</a></li>
+    <li><a href="beneficios.html">Beneficios</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="hazte-socio.html" class="nav-cta">Hazte Socio</a></li>
+    <li><a href="https://mistade.cl/Account/Login" target="_blank" rel="noopener" class="nav-portal">Portal de Socios</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- GRACIAS -->
+<section class="gracias-section">
+  <div class="gracias-inner">
+    <div class="gracias-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#F6AA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <div class="gracias-label">Mensaje Enviado</div>
+    <h1>Gracias por Escribirnos</h1>
+    <p>Tu mensaje fue enviado correctamente al Club Stade Français 1929. Nuestro equipo lo revisará y se pondrá en contacto contigo a la brevedad.</p>
+    <div class="gracias-btns">
+      <a href="index.html" class="btn-primary">Volver al Inicio</a>
+      <a href="contacto.html" class="btn-secondary">Ver Contacto</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
+        <p>Club deportivo y social en el corazón de Las Condes, Santiago. Desde 1929, formando atletas y comunidad.</p>
+      </div>
+      <div class="footer-col">
+        <h5>El Club</h5>
+        <a href="nosotros.html">Nuestra Historia</a>
+        <a href="nosotros.html#directiva">Directiva</a>
+        <a href="nosotros.html#instalaciones">Instalaciones</a>
+        <a href="hazte-socio.html">Hazte Socio</a>
+      </div>
+      <div class="footer-col">
+        <h5>Deportes</h5>
+        <a href="rugby.html">Rugby</a>
+        <a href="tenis.html">Tenis</a>
+        <a href="natacion.html">Natación</a>
+        <a href="deportes.html">Todos los Deportes</a>
+        <a href="gimnasio.html">Gimnasio</a>
+      </div>
+      <div class="footer-col">
+        <h5>Club</h5>
+        <a href="arriendos.html">Arriendos</a>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="hazte-socio.html">Beneficios</a>
+        <a href="hazte-socio.html">Hazte Socio</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Stade Français — Club Deportivo Las Condes. Todos los derechos reservados.</p>
+      <div class="footer-stripe">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('nav-links').classList.toggle('open'));
+  document.querySelectorAll('.nav-links .dropdown > a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        const menu = this.parentElement.querySelector('.dropdown-menu');
+        if (menu) menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
