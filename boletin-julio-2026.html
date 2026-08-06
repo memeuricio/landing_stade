@@ -134,6 +134,7 @@
     .tenis-internacional li strong { color: var(--azul); }
     .tenis-escuela { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding-top: 48px; border-top: 1px solid rgba(41,40,92,.08); }
     .tenis-escuela img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 16/10; display: block; }
+    .tenis-escuela-caption { font-size: 11px; color: var(--gris-mid); margin-top: 10px; text-align: center; font-style: italic; }
     .tenis-escuela-text h3 { font-size: 20px; font-weight: 900; color: var(--azul); margin-bottom: 12px; text-transform: uppercase; }
     .tenis-escuela-text p { font-size: 14px; color: var(--gris-mid); line-height: 1.85; margin-bottom: 10px; }
     .agosto-box { background: var(--azul); border-radius: 10px; padding: 18px 22px; margin-top: 16px; }
@@ -219,6 +220,7 @@
     .social-card-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; transition: transform 0.5s ease; }
     .social-card:hover .social-card-img img { transform: scale(1.04); }
     .social-card-badge { position: absolute; top: 14px; left: 14px; background: var(--azul); color: var(--dorado); font-size: 9px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; padding: 5px 12px; border-radius: 3px; }
+    .social-card-caption { font-size: 11px; color: var(--gris-mid); text-align: center; font-style: italic; padding: 12px 28px 0; }
     .social-card-body { padding: 24px 28px; }
     .social-card-body h3 { font-size: 17px; font-weight: 900; color: var(--azul); margin-bottom: 10px; text-transform: uppercase; letter-spacing: -.01em; }
     .social-card-body p { font-size: 13px; color: var(--gris-mid); line-height: 1.85; }
@@ -227,6 +229,7 @@
     .fiesta-section h3 { font-size: clamp(20px,2.5vw,30px); font-weight: 900; color: var(--blanco); margin-bottom: 6px; text-transform: uppercase; }
     .fiesta-section .fecha-tag { font-size: 11px; color: var(--dorado); margin-bottom: 24px; display: block; letter-spacing: .06em; }
     .fiesta-gallery { display: grid; grid-template-columns: repeat(4,1fr); grid-auto-rows: 168px; gap: 8px; }
+    .fiesta-gallery-caption { font-size: 11px; color: rgba(255,255,255,.35); margin-top: 14px; text-align: center; font-style: italic; }
     .fg-item { overflow: hidden; border-radius: 8px; }
     .fg-item.tall { grid-row: span 2; }
     .fg-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -547,14 +550,14 @@
       </div>
       <div class="tenis-highlights">
         <div class="hl-card">
-          <div class="name">Diego Painemil</div>
-          <div class="detail">🥇 Campeón — Categoría 14 años</div>
-          <div class="note">G3 Estadio Nacional</div>
-        </div>
-        <div class="hl-card">
           <div class="name">Sebastián Núñez</div>
           <div class="detail">🥇 Campeón — Categoría 14 años</div>
           <div class="note">G3 Estadio Nacional · Socio Stade Français</div>
+        </div>
+        <div class="hl-card">
+          <div class="name">Diego Painemil</div>
+          <div class="detail">🥇 Campeón — Categoría 14 años</div>
+          <div class="note">G3 Estadio Nacional</div>
         </div>
         <div class="hl-card">
           <div class="name">Emilio Slater</div>
@@ -577,7 +580,10 @@
     </div>
 
     <div class="tenis-escuela reveal">
-      <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Escuela de Tenis" />
+      <div>
+        <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Escuela de Tenis" />
+        <div class="tenis-escuela-caption">Bastian Gajardo, Trinidad Gutiérrez, Wladimir Santana, Zoe Fullen y Sofía Paredes</div>
+      </div>
       <div class="tenis-escuela-text">
         <h3>Lo que viene en agosto</h3>
         <p>Agosto traerá nuevos desafíos para nuestra rama de tenis, destacando la participación de <strong>Wladimir Santana</strong> junto a la <strong>Selección Chilena Sub 16</strong> en el Campeonato Sudamericano de Bogotá, además de la continuidad de la gira internacional de <strong>Guillermo Hormazábal</strong> con la delegación de COSAT.</p>
@@ -758,6 +764,7 @@
           <img src="assets/images/noticias/boletin%20julio/Torneo%20Padres%20e%20Hijos.jpeg" alt="Torneo Padres e Hijos" style="object-position: center 20%;" />
           <div class="social-card-badge">4 de julio · Día del Padre</div>
         </div>
+        <div class="social-card-caption">Manuel Arellano, Claudio Arellano, Alejandro Gómez y Alonso Gómez</div>
         <div class="social-card-body">
           <h3>Torneo de Padres e Hijos</h3>
           <p>El pasado <strong>4 de julio</strong>, la rama de tenis celebró una nueva edición del tradicional <strong>Torneo de Padres e Hijos</strong>, una jornada que reunió a <strong>24 parejas</strong> de socios y sus familias para conmemorar el Día del Padre a través del deporte y la sana convivencia. Dentro y fuera de la cancha, los participantes compartieron momentos de alegría, compañerismo y unión, fortaleciendo una tradición que año a año refleja los valores y el espíritu familiar que caracterizan al Stade Français.</p>
@@ -769,6 +776,7 @@
           <img src="assets/images/noticias/boletin%20julio/Feria%20Artesanal.jpg" alt="Feria Gastronómica y Artesanal" />
           <div class="social-card-badge">11 de julio · Interclubes</div>
         </div>
+        <div class="social-card-caption">Cecilia Ruiz Onofri</div>
         <div class="social-card-body">
           <h3>Feria Gastronómica y Artesanal</h3>
           <p>El Stade Français vivió una nueva edición de su Feria Gastronómica y Artesanal, el pasado sábado <strong>11 de julio</strong>, junto al desarrollo del interclubes frente a PWCC. La jornada permitió a los asistentes disfrutar de una variada propuesta de productos gastronómicos, artesanías y creaciones, todas ellas realizadas por emprendimientos de nuestros propios socios y socias, quienes compartieron sus talentos, proyectos y pasión con toda la comunidad del club.</p>
@@ -827,6 +835,7 @@
           <img src="assets/images/noticias/boletin%20julio/fiesta_de_francia_7.jpg" alt="Fiesta de Francia" />
         </div>
       </div>
+      <div class="fiesta-gallery-caption">Con la participación de: Francisca Bustamante, Mi Na Santander, Paula Popity, Soledad Maureira y Beatriz Bianchi</div>
     </div>
   </div>
 </section>
