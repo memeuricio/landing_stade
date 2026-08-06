@@ -107,11 +107,9 @@
 
     /* TENIS */
     #tenis { background: var(--blanco); padding: 88px 0; }
-    .tenis-header { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; margin-bottom: 48px; }
+    .tenis-header-text { margin-bottom: 48px; }
     .tenis-header-text h2 { font-size: clamp(24px,2.8vw,38px); font-weight: 900; color: var(--azul); line-height: 1; letter-spacing: -.02em; margin-bottom: 14px; }
     .tenis-header-text p { font-size: 14px; color: var(--gris-mid); line-height: 1.85; }
-    .tenis-foto { border-radius: 12px; overflow: hidden; aspect-ratio: 4/3; }
-    .tenis-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .results-box { background: var(--gris); border-radius: 12px; padding: 28px 32px; margin-bottom: 36px; }
     .results-title { font-size: 10px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; color: var(--rojo); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(41,40,92,.1); }
     .result-item { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid rgba(41,40,92,.06); }
@@ -119,7 +117,10 @@
     .result-cat { font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--blanco); background: var(--azul); padding: 3px 9px; border-radius: 3px; flex-shrink: 0; min-width: 86px; text-align: center; }
     .result-winner { font-size: 14px; font-weight: 800; color: var(--azul); flex: 1; }
     .result-score { font-size: 12px; color: var(--gris-mid); }
-    .tenis-highlights { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 48px; }
+    .tenis-highlights-wrap { display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; margin-bottom: 48px; }
+    .tenis-highlights-img { border-radius: 12px; overflow: hidden; }
+    .tenis-highlights-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .tenis-highlights { display: grid; grid-template-columns: 1fr; gap: 12px; }
     .hl-card { background: var(--azul-dark); border-radius: 10px; padding: 22px 20px; }
     .hl-card .name { font-size: 14px; font-weight: 900; color: var(--blanco); margin-bottom: 4px; }
     .hl-card .detail { font-size: 12px; color: var(--dorado); }
@@ -319,14 +320,14 @@
       .hero-portada { display: none; }
       .indice-inner { padding: 0 32px; }
       .sd-inner { padding: 0 32px; }
-      .editorial-grid, .gente-grid, .tenis-header, .tenis-escuela,
+      .editorial-grid, .gente-grid, .tenis-escuela,
       .natacion-intro, .rugby-galas, .emprendedor-grid, .socia-grid { grid-template-columns: 1fr; gap: 32px; }
       .gente-foto { order: -1; }
       .gaspar-feature { grid-template-columns: 1fr; }
       .gaspar-foto { height: 300px; }
       .gaspar-foto img { min-height: 300px; }
       .rugby-grid { grid-template-columns: 1fr; }
-      .tenis-highlights { grid-template-columns: 1fr 1fr; }
+      .tenis-highlights-wrap { grid-template-columns: 1fr; gap: 24px; }
       .social-cards { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
       .interclubes-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -344,7 +345,6 @@
       .hero-inner { padding: 0 20px; }
       .socia-inner { padding: 0 20px; }
       .socia-grid { grid-template-columns: 1fr; gap: 28px; }
-      .tenis-highlights { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr; }
       .fiesta-section { padding: 28px 20px; }
       .fiesta-gallery { grid-template-columns: 1fr 1fr; }
@@ -500,22 +500,17 @@
 <div class="sd"><div class="sd-inner"><span class="sd-label">Deportes</span><div class="sd-line"></div></div></div>
 <section id="tenis">
   <div class="container">
-    <div class="tenis-header reveal">
-      <div class="tenis-header-text">
-        <span class="section-tag tag-dorado">Tenis</span>
-        <h2>Un mes de grandes logros y nuevos desafíos</h2>
-        <p>El tenis sigue sumando competencias y camaradería. Durante las últimas semanas se disputaron nuevas finales de los torneos <strong>Legends</strong> y <strong>NextGen</strong>, dejando a los siguientes campeones:</p>
-      </div>
-      <div class="tenis-foto">
-        <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Tenis Stade Français" />
-      </div>
+    <div class="tenis-header-text reveal">
+      <span class="section-tag tag-dorado">Tenis</span>
+      <h2>Un mes de grandes logros y nuevos desafíos</h2>
+      <p>El tenis sigue sumando competencias y camaradería. Durante las últimas semanas se disputaron nuevas finales de los torneos <strong>Legends</strong> y <strong>NextGen</strong>, dejando a los siguientes campeones:</p>
     </div>
 
     <div class="results-box reveal">
       <div class="results-title">Campeones Legends &amp; NextGen — Julio 2026</div>
       <div class="result-item">
         <span class="result-cat">Legends A</span>
-        <span class="result-winner">Yarra</span>
+        <span class="result-winner">Felipe Yarra</span>
         <span class="result-score">venció a A. Ortiz 6-2 / 6-2</span>
       </div>
       <div class="result-item">
@@ -545,21 +540,26 @@
       </div>
     </div>
 
-    <div class="tenis-highlights reveal">
-      <div class="hl-card">
-        <div class="name">Diego Painemil</div>
-        <div class="detail">🥇 Campeón — Categoría 14 años</div>
-        <div class="note">G3 Estadio Nacional</div>
+    <div class="tenis-highlights-wrap reveal">
+      <div class="tenis-highlights-img">
+        <img src="assets/images/noticias/boletin%20julio/Escuela%20de%20Tenis.jpeg" alt="Tenis Stade Français" />
       </div>
-      <div class="hl-card">
-        <div class="name">Sebastián Núñez</div>
-        <div class="detail">🥇 Campeón — Categoría 14 años</div>
-        <div class="note">G3 Estadio Nacional · Socio Stade Français</div>
-      </div>
-      <div class="hl-card">
-        <div class="name">Emilio Slater</div>
-        <div class="detail">🥇 Campeón — Categoría 16 años</div>
-        <div class="note">G3 Estadio Nacional</div>
+      <div class="tenis-highlights">
+        <div class="hl-card">
+          <div class="name">Diego Painemil</div>
+          <div class="detail">🥇 Campeón — Categoría 14 años</div>
+          <div class="note">G3 Estadio Nacional</div>
+        </div>
+        <div class="hl-card">
+          <div class="name">Sebastián Núñez</div>
+          <div class="detail">🥇 Campeón — Categoría 14 años</div>
+          <div class="note">G3 Estadio Nacional · Socio Stade Français</div>
+        </div>
+        <div class="hl-card">
+          <div class="name">Emilio Slater</div>
+          <div class="detail">🥇 Campeón — Categoría 16 años</div>
+          <div class="note">G3 Estadio Nacional</div>
+        </div>
       </div>
     </div>
 
@@ -576,7 +576,7 @@
     </div>
 
     <div class="tenis-escuela reveal">
-      <img src="assets/images/noticias/boletin%20julio/Escuela%20de%20Tenis.jpeg" alt="Escuela de Tenis" />
+      <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Escuela de Tenis" />
       <div class="tenis-escuela-text">
         <h3>Lo que viene en agosto</h3>
         <p>Agosto traerá nuevos desafíos para nuestra rama de tenis, destacando la participación de <strong>Wladimir Santana</strong> junto a la <strong>Selección Chilena Sub 16</strong> en el Campeonato Sudamericano de Bogotá, además de la continuidad de la gira internacional de <strong>Guillermo Hormazábal</strong> con la delegación de COSAT.</p>
