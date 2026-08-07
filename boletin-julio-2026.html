@@ -60,7 +60,8 @@
     .hero-portada { display: none; }
 
     /* ÍNDICE */
-    .boletin-indice { background: var(--azul-dark); border-top: 1px solid rgba(255,255,255,.06); overflow-x: auto; }
+    .boletin-indice { position: fixed; top: 72px; left: 0; right: 0; z-index: 999; height: auto; display: block; padding: 0; background: var(--azul-dark); border-top: 1px solid rgba(255,255,255,.06); overflow-x: auto; }
+    #editorial, #gente, #tenis, #rugby, #natacion, #interclubes, #social, #socia, #emprendedor, #agenda { scroll-margin-top: 130px; }
     .indice-inner { display: flex; align-items: center; max-width: 1300px; margin: 0 auto; padding: 0 80px; }
     .indice-item { flex-shrink: 0; padding: 16px 22px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); text-decoration: none; border-bottom: 2px solid transparent; transition: all var(--t); white-space: nowrap; }
     .indice-item:hover { color: var(--dorado); border-bottom-color: var(--dorado); }
@@ -107,11 +108,9 @@
 
     /* TENIS */
     #tenis { background: var(--blanco); padding: 88px 0; }
-    .tenis-header { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; margin-bottom: 48px; }
+    .tenis-header-text { margin-bottom: 48px; }
     .tenis-header-text h2 { font-size: clamp(24px,2.8vw,38px); font-weight: 900; color: var(--azul); line-height: 1; letter-spacing: -.02em; margin-bottom: 14px; }
     .tenis-header-text p { font-size: 14px; color: var(--gris-mid); line-height: 1.85; }
-    .tenis-foto { border-radius: 12px; overflow: hidden; aspect-ratio: 4/3; }
-    .tenis-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .results-box { background: var(--gris); border-radius: 12px; padding: 28px 32px; margin-bottom: 36px; }
     .results-title { font-size: 10px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; color: var(--rojo); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(41,40,92,.1); }
     .result-item { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid rgba(41,40,92,.06); }
@@ -119,7 +118,10 @@
     .result-cat { font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--blanco); background: var(--azul); padding: 3px 9px; border-radius: 3px; flex-shrink: 0; min-width: 86px; text-align: center; }
     .result-winner { font-size: 14px; font-weight: 800; color: var(--azul); flex: 1; }
     .result-score { font-size: 12px; color: var(--gris-mid); }
-    .tenis-highlights { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 48px; }
+    .tenis-highlights-wrap { display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; margin-bottom: 48px; }
+    .tenis-highlights-img { border-radius: 12px; overflow: hidden; }
+    .tenis-highlights-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .tenis-highlights { display: grid; grid-template-columns: 1fr; gap: 12px; }
     .hl-card { background: var(--azul-dark); border-radius: 10px; padding: 22px 20px; }
     .hl-card .name { font-size: 14px; font-weight: 900; color: var(--blanco); margin-bottom: 4px; }
     .hl-card .detail { font-size: 12px; color: var(--dorado); }
@@ -132,6 +134,7 @@
     .tenis-internacional li strong { color: var(--azul); }
     .tenis-escuela { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding-top: 48px; border-top: 1px solid rgba(41,40,92,.08); }
     .tenis-escuela img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 16/10; display: block; }
+    .tenis-escuela-caption { font-size: 11px; color: var(--gris-mid); margin-top: 10px; text-align: center; font-style: italic; }
     .tenis-escuela-text h3 { font-size: 20px; font-weight: 900; color: var(--azul); margin-bottom: 12px; text-transform: uppercase; }
     .tenis-escuela-text p { font-size: 14px; color: var(--gris-mid); line-height: 1.85; margin-bottom: 10px; }
     .agosto-box { background: var(--azul); border-radius: 10px; padding: 18px 22px; margin-top: 16px; }
@@ -169,8 +172,8 @@
     .nat-logro { background: var(--blanco); border-radius: 10px; padding: 16px 18px; border-left: 3px solid var(--rojo); }
     .nat-logro .athlete { font-size: 13px; font-weight: 900; color: var(--azul); margin-bottom: 4px; }
     .nat-logro .achievement { font-size: 12px; color: var(--gris-mid); line-height: 1.5; }
-    .natacion-intro-foto { border-radius: 12px; overflow: hidden; }
-    .natacion-intro-foto img { width: 100%; display: block; object-fit: cover; aspect-ratio: 3/4; }
+    .natacion-intro-foto img { width: 100%; display: block; object-fit: cover; aspect-ratio: 3/4; border-radius: 12px; }
+    .natacion-foto-caption { font-size: 11px; color: var(--gris-mid); margin-top: 10px; text-align: center; font-style: italic; }
     .nat-nacional { background: var(--blanco); border-radius: 14px; padding: 32px 36px; margin-bottom: 32px; }
     .nat-nacional h3 { font-size: 18px; font-weight: 900; color: var(--azul); margin-bottom: 12px; text-transform: uppercase; }
     .nat-nacional p { font-size: 14px; color: var(--gris-mid); line-height: 1.9; }
@@ -195,8 +198,8 @@
     /* INTERCLUBES */
     #interclubes { background: var(--azul-dark); padding: 88px 0; }
     .interclubes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-    .interclubes-img { border-radius: 14px; overflow: hidden; }
-    .interclubes-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .interclubes-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; border-radius: 14px; }
+    .interclubes-foto-caption { font-size: 11px; color: rgba(255,255,255,.35); margin-top: 10px; text-align: center; font-style: italic; }
     .interclubes-text .rtag { display: inline-block; background: var(--rojo); color: var(--blanco); font-size: 9px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 18px; }
     .interclubes-text h2 { font-size: clamp(26px,3vw,44px); font-weight: 900; color: var(--blanco); line-height: 1.05; letter-spacing: -.02em; margin-bottom: 20px; }
     .interclubes-text p { font-size: 15px; color: rgba(255,255,255,.5); line-height: 1.9; font-weight: 300; }
@@ -217,6 +220,7 @@
     .social-card-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; transition: transform 0.5s ease; }
     .social-card:hover .social-card-img img { transform: scale(1.04); }
     .social-card-badge { position: absolute; top: 14px; left: 14px; background: var(--azul); color: var(--dorado); font-size: 9px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; padding: 5px 12px; border-radius: 3px; }
+    .social-card-caption { font-size: 11px; color: var(--gris-mid); text-align: center; font-style: italic; padding: 12px 28px 0; }
     .social-card-body { padding: 24px 28px; }
     .social-card-body h3 { font-size: 17px; font-weight: 900; color: var(--azul); margin-bottom: 10px; text-transform: uppercase; letter-spacing: -.01em; }
     .social-card-body p { font-size: 13px; color: var(--gris-mid); line-height: 1.85; }
@@ -225,6 +229,7 @@
     .fiesta-section h3 { font-size: clamp(20px,2.5vw,30px); font-weight: 900; color: var(--blanco); margin-bottom: 6px; text-transform: uppercase; }
     .fiesta-section .fecha-tag { font-size: 11px; color: var(--dorado); margin-bottom: 24px; display: block; letter-spacing: .06em; }
     .fiesta-gallery { display: grid; grid-template-columns: repeat(4,1fr); grid-auto-rows: 168px; gap: 8px; }
+    .fiesta-gallery-caption { font-size: 11px; color: rgba(255,255,255,.35); margin-top: 14px; text-align: center; font-style: italic; }
     .fg-item { overflow: hidden; border-radius: 8px; }
     .fg-item.tall { grid-row: span 2; }
     .fg-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -319,14 +324,14 @@
       .hero-portada { display: none; }
       .indice-inner { padding: 0 32px; }
       .sd-inner { padding: 0 32px; }
-      .editorial-grid, .gente-grid, .tenis-header, .tenis-escuela,
+      .editorial-grid, .gente-grid, .tenis-escuela,
       .natacion-intro, .rugby-galas, .emprendedor-grid, .socia-grid { grid-template-columns: 1fr; gap: 32px; }
       .gente-foto { order: -1; }
       .gaspar-feature { grid-template-columns: 1fr; }
       .gaspar-foto { height: 300px; }
       .gaspar-foto img { min-height: 300px; }
       .rugby-grid { grid-template-columns: 1fr; }
-      .tenis-highlights { grid-template-columns: 1fr 1fr; }
+      .tenis-highlights-wrap { grid-template-columns: 1fr; gap: 24px; }
       .social-cards { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
       .interclubes-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -344,7 +349,6 @@
       .hero-inner { padding: 0 20px; }
       .socia-inner { padding: 0 20px; }
       .socia-grid { grid-template-columns: 1fr; gap: 28px; }
-      .tenis-highlights { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr; }
       .fiesta-section { padding: 28px 20px; }
       .fiesta-gallery { grid-template-columns: 1fr 1fr; }
@@ -377,10 +381,9 @@
 <div class="top-stripe"></div>
 
 <!-- NAV -->
-<nav id="nav">
+<nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
-    <div class="nav-logo-text">Stade Français<span>Club Deportivo · Est. 1929</span></div>
   </a>
   <ul class="nav-links" id="nav-links">
     <li class="dropdown">
@@ -407,7 +410,7 @@
     <li><a href="noticias.html" class="active">Noticias</a></li>
     <li><a href="contacto.html">Contacto</a></li>
     <li><a href="hazte-socio.html" class="nav-cta">Hazte Socio</a></li>
-    <li><a href="https://mistade.cl/Account/Login" target="_blank" rel="noopener" class="nav-portal">Portal Socios</a></li>
+    <li><a href="https://mistade.cl/Account/Login" target="_blank" rel="noopener" class="nav-portal">Portal de Socios</a></li>
   </ul>
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
@@ -501,22 +504,17 @@
 <div class="sd"><div class="sd-inner"><span class="sd-label">Deportes</span><div class="sd-line"></div></div></div>
 <section id="tenis">
   <div class="container">
-    <div class="tenis-header reveal">
-      <div class="tenis-header-text">
-        <span class="section-tag tag-dorado">Tenis</span>
-        <h2>Un mes de grandes logros y nuevos desafíos</h2>
-        <p>El tenis sigue sumando competencias y camaradería. Durante las últimas semanas se disputaron nuevas finales de los torneos <strong>Legends</strong> y <strong>NextGen</strong>, dejando a los siguientes campeones:</p>
-      </div>
-      <div class="tenis-foto">
-        <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Tenis Stade Français" />
-      </div>
+    <div class="tenis-header-text reveal">
+      <span class="section-tag tag-dorado">Tenis</span>
+      <h2>Un mes de grandes logros y nuevos desafíos</h2>
+      <p>El tenis sigue sumando competencias y camaradería. Durante las últimas semanas se disputaron nuevas finales de los torneos <strong>Legends</strong> y <strong>NextGen</strong>, dejando a los siguientes campeones:</p>
     </div>
 
     <div class="results-box reveal">
       <div class="results-title">Campeones Legends &amp; NextGen — Julio 2026</div>
       <div class="result-item">
         <span class="result-cat">Legends A</span>
-        <span class="result-winner">Yarra</span>
+        <span class="result-winner">Felipe Yarra</span>
         <span class="result-score">venció a A. Ortiz 6-2 / 6-2</span>
       </div>
       <div class="result-item">
@@ -546,21 +544,26 @@
       </div>
     </div>
 
-    <div class="tenis-highlights reveal">
-      <div class="hl-card">
-        <div class="name">Diego Painemil</div>
-        <div class="detail">🥇 Campeón — Categoría 14 años</div>
-        <div class="note">G3 Estadio Nacional</div>
+    <div class="tenis-highlights-wrap reveal">
+      <div class="tenis-highlights-img">
+        <img src="assets/images/noticias/boletin%20julio/Escuela%20de%20Tenis.jpeg" alt="Tenis Stade Français" />
       </div>
-      <div class="hl-card">
-        <div class="name">Sebastián Núñez</div>
-        <div class="detail">🥇 Campeón — Categoría 14 años</div>
-        <div class="note">G3 Estadio Nacional · Socio Stade Français</div>
-      </div>
-      <div class="hl-card">
-        <div class="name">Emilio Slater</div>
-        <div class="detail">🥇 Campeón — Categoría 16 años</div>
-        <div class="note">G3 Estadio Nacional</div>
+      <div class="tenis-highlights">
+        <div class="hl-card">
+          <div class="name">Sebastián Núñez</div>
+          <div class="detail">🥇 Campeón — Categoría 14 años</div>
+          <div class="note">G3 Estadio Nacional · Socio Stade Français</div>
+        </div>
+        <div class="hl-card">
+          <div class="name">Diego Painemil</div>
+          <div class="detail">🥇 Campeón — Categoría 14 años</div>
+          <div class="note">G3 Estadio Nacional</div>
+        </div>
+        <div class="hl-card">
+          <div class="name">Emilio Slater</div>
+          <div class="detail">🥇 Campeón — Categoría 16 años</div>
+          <div class="note">G3 Estadio Nacional</div>
+        </div>
       </div>
     </div>
 
@@ -577,7 +580,10 @@
     </div>
 
     <div class="tenis-escuela reveal">
-      <img src="assets/images/noticias/boletin%20julio/Escuela%20de%20Tenis.jpeg" alt="Escuela de Tenis" />
+      <div>
+        <img src="assets/images/noticias/boletin%20julio/Tenis.jpeg" alt="Escuela de Tenis" />
+        <div class="tenis-escuela-caption">Bastian Gajardo, Trinidad Gutiérrez, Wladimir Santana, Zoe Fullen y Sofía Paredes</div>
+      </div>
       <div class="tenis-escuela-text">
         <h3>Lo que viene en agosto</h3>
         <p>Agosto traerá nuevos desafíos para nuestra rama de tenis, destacando la participación de <strong>Wladimir Santana</strong> junto a la <strong>Selección Chilena Sub 16</strong> en el Campeonato Sudamericano de Bogotá, además de la continuidad de la gira internacional de <strong>Guillermo Hormazábal</strong> con la delegación de COSAT.</p>
@@ -668,6 +674,7 @@
       </div>
       <div class="natacion-intro-foto">
         <img src="assets/images/noticias/boletin%20julio/Romina%20Acevedo.jpg" alt="Romina Acevedo" />
+        <div class="natacion-foto-caption">Romina Acevedo</div>
       </div>
     </div>
 
@@ -721,6 +728,7 @@
     <div class="interclubes-grid reveal">
       <div class="interclubes-img">
         <img src="assets/images/noticias/boletin%20julio/Interclubes.jpg" alt="Interclubes Stade Français vs PWCC" />
+        <div class="interclubes-foto-caption">Fernanda González y María José Merino</div>
       </div>
       <div class="interclubes-text">
         <span class="rtag">Interclubes</span>
@@ -756,6 +764,7 @@
           <img src="assets/images/noticias/boletin%20julio/Torneo%20Padres%20e%20Hijos.jpeg" alt="Torneo Padres e Hijos" style="object-position: center 20%;" />
           <div class="social-card-badge">4 de julio · Día del Padre</div>
         </div>
+        <div class="social-card-caption">Manuel Arellano, Claudio Arellano, Alejandro Gómez y Alonso Gómez</div>
         <div class="social-card-body">
           <h3>Torneo de Padres e Hijos</h3>
           <p>El pasado <strong>4 de julio</strong>, la rama de tenis celebró una nueva edición del tradicional <strong>Torneo de Padres e Hijos</strong>, una jornada que reunió a <strong>24 parejas</strong> de socios y sus familias para conmemorar el Día del Padre a través del deporte y la sana convivencia. Dentro y fuera de la cancha, los participantes compartieron momentos de alegría, compañerismo y unión, fortaleciendo una tradición que año a año refleja los valores y el espíritu familiar que caracterizan al Stade Français.</p>
@@ -767,6 +776,7 @@
           <img src="assets/images/noticias/boletin%20julio/Feria%20Artesanal.jpg" alt="Feria Gastronómica y Artesanal" />
           <div class="social-card-badge">11 de julio · Interclubes</div>
         </div>
+        <div class="social-card-caption">Cecilia Ruiz Onofri</div>
         <div class="social-card-body">
           <h3>Feria Gastronómica y Artesanal</h3>
           <p>El Stade Français vivió una nueva edición de su Feria Gastronómica y Artesanal, el pasado sábado <strong>11 de julio</strong>, junto al desarrollo del interclubes frente a PWCC. La jornada permitió a los asistentes disfrutar de una variada propuesta de productos gastronómicos, artesanías y creaciones, todas ellas realizadas por emprendimientos de nuestros propios socios y socias, quienes compartieron sus talentos, proyectos y pasión con toda la comunidad del club.</p>
@@ -801,7 +811,7 @@
       <span class="section-tag tag-dorado-dark" style="margin-bottom:10px;">Fiesta Nacional de Francia</span>
       <h3>Una noche para celebrar nuestras tradiciones</h3>
       <span class="fecha-tag">Sábado 25 de julio · Club House Stade Français</span>
-      <p style="font-size:14px;color:rgba(255,255,255,.5);line-height:1.85;margin-bottom:24px;">Los asistentes disfrutaron de un entretenido recorrido por las distintas regiones de Francia, preparado por nuestras socias, además de una exquisita cena, la presentación de un bandoneonista, un espectáculo de magia, la rutina de humor de <strong style="color:rgba(255,255,255,.75);">Javier Contador</strong>, actividades para los más pequeños con <strong style="color:rgba(255,255,255,.75);">Stade Kids</strong>, sorteos con grandes premios y una gran fiesta bailable.</p>
+      <p style="font-size:14px;color:rgba(255,255,255,.5);line-height:1.85;margin-bottom:24px;">Los asistentes disfrutaron de un entretenido recorrido por las distintas regiones de Francia, preparado por nuestras socias, además de una exquisita cena, la presentación de un bandoneonista, un espectáculo de magia, la rutina de humor de <strong style="color:rgba(255,255,255,.75);">Javiera Contador</strong>, actividades para los más pequeños con <strong style="color:rgba(255,255,255,.75);">Stade Kids</strong>, sorteos con grandes premios y una gran fiesta bailable.</p>
       <div class="fiesta-gallery">
         <div class="fg-item tall">
           <img src="assets/images/noticias/boletin%20julio/fiesta_de_francia_1.jpg" alt="Fiesta de Francia" />
@@ -825,6 +835,7 @@
           <img src="assets/images/noticias/boletin%20julio/fiesta_de_francia_7.jpg" alt="Fiesta de Francia" />
         </div>
       </div>
+      <div class="fiesta-gallery-caption">Con la participación de: Francisca Bustamante, Mi Na Santander, Paula Popity, Soledad Maureira y Beatriz Bianchi</div>
     </div>
   </div>
 </section>
@@ -833,8 +844,7 @@
 <section id="socia">
   <div class="socia-inner reveal">
     <span class="section-tag tag-dorado-dark">Socia Destacada</span>
-    <div class="socia-years">55+</div>
-    <h2 class="socia-name">Lilia Camus Ferrada</h2>
+    <h2 class="socia-name">Lilia Camus: "El Stade Français es parte de mi casa"</h2>
     <p class="socia-sub">Socia desde hace más de 55 años</p>
     <div class="socia-grid">
       <div class="socia-foto">
@@ -897,7 +907,7 @@
       <div class="agenda-special-body">
         <div class="ico">🎉</div>
         <h4>Día del Niño — 8 de agosto</h4>
-        <p>Entre las 11:00 y las 13:00 horas, actividades recreativas, juegos y sorpresas en el marco del ARUSA Top 10: Stade Français vs Old John's.</p>
+        <p>Entre las 10:00 y las 12:00 horas, actividades recreativas, juegos y sorpresas en el sector de pelota vasca.</p>
       </div>
     </div>
 
@@ -928,7 +938,6 @@
         <div class="agenda-body">
           <span class="atype top10">ARUSA Top 10 – F.14</span>
           <div class="adesc">Stade Français vs Old John's</div>
-          <div class="adetail">🎉 Día del Niño · 11:00–13:00 hrs</div>
         </div>
       </div>
       <div class="agenda-item">

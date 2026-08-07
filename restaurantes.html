@@ -204,10 +204,9 @@
 
 <div class="top-stripe"></div>
 
-<nav id="nav">
+<nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
-    <div class="nav-logo-text">Stade Français<span>Club Deportivo · Est. 1929</span></div>
   </a>
   <ul class="nav-links" id="nav-links">
     <li class="dropdown">
@@ -284,10 +283,6 @@
     <div class="stat">
       <div class="stat-num">15% OFF</div>
       <div class="stat-label">Descuento para socios activos</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">Badajoz 115</div>
-      <div class="stat-label">Las Condes, Santiago</div>
     </div>
   </div>
 </div>
@@ -500,7 +495,7 @@
 </footer>
 
 <script>
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });

@@ -213,10 +213,9 @@
 
 <div class="top-stripe"></div>
 
-<nav id="nav">
+<nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="assets/images/logo/logo_stade.png" alt="Stade Français" />
-    <div class="nav-logo-text">Stade Français<span>Club Deportivo · Est. 1929</span></div>
   </a>
   <ul class="nav-links" id="nav-links">
     <li class="dropdown">
@@ -240,7 +239,7 @@
     <li><a href="arriendos.html">Arriendos</a></li>
     <li><a href="restaurantes.html">Restaurantes</a></li>
     <li><a href="beneficios.html" class="active">Beneficios</a></li>
-    <li><a href="#cta">Contacto</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
     <li><a href="hazte-socio.html" class="nav-cta">Hazte Socio</a></li>
     <li><a href="https://mistade.cl/Account/Login" target="_blank" rel="noopener" class="nav-portal">Portal de Socios</a></li>
   </ul>
@@ -481,7 +480,7 @@
 </footer>
 
 <script>
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });
