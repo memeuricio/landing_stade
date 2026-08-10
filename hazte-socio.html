@@ -76,7 +76,7 @@
     .hero-form .sub { font-size: 12px; color: var(--gris-mid); margin-bottom: 22px; font-weight: 400; }
     .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
     .form-group label { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: rgba(41,40,92,.5); }
-    .form-group input, .form-group select, .form-group textarea { background: var(--gris); border: 1px solid rgba(41,40,92,.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; font-family: 'SonnyVol2', sans-serif; color: var(--azul); outline: none; transition: border-color var(--t); font-weight: 400; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--gris); border: 1px solid rgba(41,40,92,.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; font-family: 'SonnyVol2', sans-serif; color: var(--azul); outline: none; transition: border-color var(--t); font-weight: 400; }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--rojo); }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .hero-form .btn-primary { width: 100%; text-align: center; margin-top: 4px; padding: 15px; }
@@ -216,7 +216,7 @@
       .nav-links .dropdown-menu { position: static; box-shadow: none; min-width: unset; background: rgba(255,255,255,.08); border: none; border-radius: 4px; margin: 4px 0 4px 12px; padding: 4px; }
       .nav-links .dropdown > a::after { content: ' ▾'; }
       .page-hero-content { padding: 100px 24px 56px; } .stats-bar-inner { grid-template-columns: 1fr 1fr; }
-      .desc-grid { grid-template-columns: 1fr; } .desc-card.featured { grid-column: span 1; grid-template-columns: 1fr; } .desc-card[style*="span 2"] { grid-column: span 1 !important; } .promo-who { grid-template-columns: 1fr; } .promo-main { grid-template-columns: 1fr; } .promo-pagos { grid-template-columns: 1fr; }
+      .desc-grid { grid-template-columns: 1fr; } .desc-card.featured { grid-column: span 1; grid-template-columns: 1fr; } .desc-card[style*="span 2"] { grid-column: span 1 !important; } .promo-who { grid-template-columns: 1fr; } .promo-main { grid-template-columns: 1fr; } .promo-pagos { grid-template-columns: 1fr; } .promo-header { grid-template-columns: 1fr; } .promo-countdown { white-space: normal; }
       .perks-grid { grid-template-columns: 1fr; } .pasos-grid { grid-template-columns: 1fr 1fr; } .pasos-grid::before { display: none; }
       .inst-scroll { grid-template-columns: 1fr 1fr; } .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
       .hero-form { max-width: 100%; }
