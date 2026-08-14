@@ -510,7 +510,7 @@
   <div class="container">
     <div class="section-header centered">
       <div class="section-label reveal">03 — Actividades</div>
-      <h2 class="section-title reveal reveal-delay-1">Algo Para Todos</h2>
+      <h2 class="section-title reveal reveal-delay-1">Un Club Para Todos</h2>
       <p class="section-sub reveal reveal-delay-2">Desde los 6 hasta los 60: actividades para todos los gustos y edades.</p>
     </div>
     <div class="act-grid">
@@ -566,12 +566,27 @@
   </div>
 </section>
 
+<!-- NOTICIAS -->
+<section id="noticias">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label reveal">04 — Noticias</div>
+      <h2 class="section-title reveal reveal-delay-1">Lo Último del Club</h2>
+      <p class="section-sub reveal reveal-delay-2">Mantente al día con torneos, actividades y novedades del Stade.</p>
+    </div>
+    <div class="news-grid" id="home-news-grid"></div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="noticias.html" class="news-link" style="font-size:11px;">Ver todas las noticias →</a>
+    </div>
+  </div>
+</section>
+
 <!-- MEMBRESÍA -->
 <section id="membresia">
   <div class="container">
     <div class="mem-grid">
       <div class="mem-text">
-        <div class="section-label reveal">04 — Hazte Socio</div>
+        <div class="section-label reveal">05 — Hazte Socio</div>
         <h2 class="section-title reveal reveal-delay-1">Únete a la<br/>Familia Stade</h2>
         <p class="section-sub reveal reveal-delay-2">Accede a todos los beneficios con descuentos exclusivos en la cuota de incorporación por tiempo limitado.</p>
         <ul class="mem-benefits reveal reveal-delay-3">
@@ -609,7 +624,7 @@
 <section id="galeria">
   <div class="container">
     <div class="section-header">
-      <div class="section-label reveal">05 — Galería</div>
+      <div class="section-label reveal">06 — Galería</div>
       <h2 class="section-title reveal reveal-delay-1">El Club en Imágenes</h2>
     </div>
     <div class="gallery-grid reveal reveal-delay-2">
@@ -629,7 +644,7 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="section-label reveal">06 — Contacto</div>
+        <div class="section-label reveal">07 — Contacto</div>
         <h2 class="section-title reveal reveal-delay-1">Estamos Aquí<br/>Para Ayudarte</h2>
         <p class="section-sub reveal reveal-delay-2">¿Tienes preguntas sobre membresía, actividades o arriendos? Escríbenos.</p>
         <div class="contact-items reveal reveal-delay-3">
@@ -723,6 +738,7 @@
   </div>
 </footer>
 
+<script src="assets/js/noticias-data.js"></script>
 <script>
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
@@ -754,6 +770,28 @@
   const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(r => io.observe(r));
 
+  /* ── ÚLTIMAS 3 NOTICIAS (desde assets/js/noticias-data.js) ── */
+  function fmtFechaHome(str) {
+    const [y, m, d] = str.split('-');
+    const meses = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+    return `${parseInt(d)} ${meses[parseInt(m)-1]} ${y}`;
+  }
+  if (typeof NOTICIAS_DATA !== 'undefined') {
+    const ultimas = [...NOTICIAS_DATA].sort((a, b) => b.fecha.localeCompare(a.fecha)).slice(0, 3);
+    const grid = document.getElementById('home-news-grid');
+    grid.innerHTML = ultimas.map(n => `
+      <a href="${n.url || 'noticias.html'}" class="news-card reveal" style="text-decoration:none;display:block;">
+        <div class="news-thumb" style="background-image:url('${n.imagen}')"></div>
+        <div class="news-body">
+          <div class="news-date">${fmtFechaHome(n.fecha)}</div>
+          <h3>${n.titulo}</h3>
+          <p>${n.resumen}</p>
+          <span class="news-link">Leer más →</span>
+        </div>
+      </a>
+    `).join('');
+    grid.querySelectorAll('.reveal').forEach(r => io.observe(r));
+  }
 </script>
 
 
