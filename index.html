@@ -229,12 +229,13 @@
     #galeria .section-title { color: var(--blanco); }
     #galeria .section-label { color: var(--dorado); }
     #galeria .section-label::after { background: var(--dorado); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: auto auto; gap: 6px; margin-top: 40px; }
-    .gallery-item { overflow: hidden; border-radius: 4px; cursor: pointer; }
-    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; aspect-ratio: 1; }
-    .gallery-item:nth-child(1) img { aspect-ratio: auto; height: 100%; }
+    .gallery-carousel { overflow: hidden; margin-top: 40px; -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); }
+    .gallery-track { display: flex; gap: 6px; width: max-content; animation: galleryScroll 34s linear infinite; }
+    .gallery-carousel:hover .gallery-track { animation-play-state: paused; }
+    .gallery-item { flex-shrink: 0; width: 320px; height: 240px; overflow: hidden; border-radius: 4px; cursor: pointer; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
     .gallery-item:hover img { transform: scale(1.05); }
+    @keyframes galleryScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* ── NOTICIAS ── */
     #noticias { background: var(--blanco); }
@@ -325,8 +326,7 @@
       .about-grid, .mem-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
       .ramas-grid { grid-template-columns: 1fr; }
       .rama-card { aspect-ratio: 16/9; }
-      .gallery-grid { grid-template-columns: repeat(2,1fr); }
-      .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+      .gallery-item { width: 240px; height: 180px; }
       .form-row { grid-template-columns: 1fr; }
       .stats-bar { flex-wrap: wrap; }
       .stat { min-width: 50%; }
@@ -339,8 +339,7 @@
       section { padding: 60px 0; }
       .container { padding: 0 18px; }
       .hero-actions { flex-direction: column; align-items: center; }
-      .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-item:nth-child(1) { grid-column: 1; }
+      .gallery-item { width: 200px; height: 150px; }
       .stat { min-width: 100%; border-right: none; }
       .act-grid { grid-template-columns: 1fr; }
     }
@@ -511,7 +510,7 @@
     <div class="section-header centered">
       <div class="section-label reveal">03 — Actividades</div>
       <h2 class="section-title reveal reveal-delay-1">Un Club Para Todos</h2>
-      <p class="section-sub reveal reveal-delay-2">Desde los 6 hasta los 60: actividades para todos los gustos y edades.</p>
+      <p class="section-sub reveal reveal-delay-2">Actividades para todos los gustos y edades.</p>
     </div>
     <div class="act-grid">
       <div class="act-card reveal">
@@ -627,14 +626,23 @@
       <div class="section-label reveal">06 — Galería</div>
       <h2 class="section-title reveal reveal-delay-1">El Club en Imágenes</h2>
     </div>
-    <div class="gallery-grid reveal reveal-delay-2">
-      <div class="gallery-item"><img src="assets/images/instalaciones/cancha-rugby.jpg" alt="Rugby Stade Français" style="object-position:center 30%"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/cancha-tenis-2.jpg" alt="Tenis"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/canchas-de-padel.jpg" alt="Pádel"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/piscina-2.jpg" alt="Natación"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/mukticancha.jpg" alt="Multicancha"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/cancha-tenis-4.jpg" alt="Tenis femenino"/></div>
-      <div class="gallery-item"><img src="assets/images/instalaciones/canchas-tenis.jpg" alt="Tenis"/></div>
+    <div class="gallery-carousel reveal reveal-delay-2">
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="assets/images/instalaciones/cancha-rugby.jpg" alt="Rugby Stade Français" style="object-position:center 30%"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/cancha-tenis-2.jpg" alt="Tenis"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/canchas-de-padel.jpg" alt="Pádel"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/piscina-2.jpg" alt="Natación"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/mukticancha.jpg" alt="Multicancha"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/cancha-tenis-4.jpg" alt="Tenis femenino"/></div>
+        <div class="gallery-item"><img src="assets/images/instalaciones/canchas-tenis.jpg" alt="Tenis"/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/cancha-rugby.jpg" alt="" style="object-position:center 30%"/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/cancha-tenis-2.jpg" alt=""/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/canchas-de-padel.jpg" alt=""/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/piscina-2.jpg" alt=""/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/mukticancha.jpg" alt=""/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/cancha-tenis-4.jpg" alt=""/></div>
+        <div class="gallery-item" aria-hidden="true"><img src="assets/images/instalaciones/canchas-tenis.jpg" alt=""/></div>
+      </div>
     </div>
   </div>
 </section>
