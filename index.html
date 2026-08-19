@@ -205,6 +205,13 @@
     .act-card p { font-size: 14px; color: var(--gris-mid); line-height: 1.7; margin-bottom: 14px; font-weight: 400; }
     .act-tag { display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--dorado); border: 1px solid rgba(246,170,12,.4); padding: 3px 9px; border-radius: 2px; }
 
+    .easycancha-banner { margin-top: 32px; background: var(--blanco); border-radius: 8px; padding: 32px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; box-shadow: 0 4px 24px rgba(41,40,92,.06); }
+    .easycancha-banner-info { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+    .easycancha-banner img { height: 34px; width: auto; }
+    .easycancha-banner-text strong { display: block; font-size: 14px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: .02em; margin-bottom: 4px; }
+    .easycancha-banner-text span { font-size: 13px; color: var(--gris-mid); font-weight: 400; }
+    @media (max-width: 600px) { .easycancha-banner { flex-direction: column; text-align: center; padding: 28px 24px; } .easycancha-banner-info { flex-direction: column; } }
+
     /* ── MEMBRESÍA ── */
     #membresia { background: var(--azul); background-image: radial-gradient(ellipse at top right, rgba(227,30,39,.14) 0%, transparent 55%); }
     .mem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
@@ -561,6 +568,16 @@
           <span class="act-tag">Restaurante</span>
         </div>
       </div>
+    </div>
+    <div class="easycancha-banner reveal">
+      <div class="easycancha-banner-info">
+        <img src="assets/images/partners/easycancha-logo.png" alt="EasyCancha" />
+        <div class="easycancha-banner-text">
+          <strong>Reserva tus canchas online</strong>
+          <span>Pádel, tenis y más — disponibilidad en tiempo real a través de EasyCancha.</span>
+        </div>
+      </div>
+      <a href="https://www.easycancha.com/book/clubs/381/sports" target="_blank" rel="noopener" class="btn-primary">Reservar Ahora</a>
     </div>
   </div>
 </section>
