@@ -91,14 +91,15 @@
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--blanco); border-radius: 2px; }
 
     /* ── HERO ── */
-    #hero { position: relative; height: 100vh; height: 100svh; min-height: 640px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    #hero { position: relative; height: 62vh; min-height: 460px; max-height: 660px; overflow: hidden; }
     .hero-slides { position: absolute; inset: 0; }
     .hero-slide {
       position: absolute; inset: 0; opacity: 0;
       background-size: cover; background-position: center;
       transition: opacity 1.2s ease;
+      display: flex; align-items: center; justify-content: center;
     }
-    .hero-slide.active { opacity: 1; }
+    .hero-slide.active { opacity: 1; z-index: 1; }
     .hero-slide::after {
       content: ''; position: absolute; inset: 0;
       background: linear-gradient(135deg, rgba(41,40,92,.88) 0%, rgba(41,40,92,.6) 50%, rgba(26,26,46,.35) 100%);
@@ -109,13 +110,13 @@
 
     .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 860px; }
     .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 12px; margin-bottom: 24px;
+      display: inline-flex; align-items: center; gap: 12px; margin-bottom: 16px;
       font-size: 10px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--dorado);
     }
     .hero-eyebrow::before, .hero-eyebrow::after { content: ''; width: 36px; height: 1px; background: rgba(246,170,12,.4); }
-    .hero-title { font-size: clamp(52px, 9vw, 104px); font-weight: 900; color: var(--blanco); line-height: .92; text-transform: uppercase; letter-spacing: -.01em; margin-bottom: 8px; }
-    .hero-year { display: block; font-size: clamp(12px, 1.8vw, 18px); font-weight: 300; color: var(--dorado); letter-spacing: .36em; text-transform: uppercase; margin-bottom: 28px; }
-    .hero-sub { font-size: clamp(14px, 1.6vw, 17px); color: rgba(255,255,255,.7); font-weight: 300; line-height: 1.75; margin-bottom: 44px; max-width: 500px; margin-inline: auto; }
+    .hero-title { font-size: clamp(38px, 6.5vw, 76px); font-weight: 900; color: var(--blanco); line-height: .95; text-transform: uppercase; letter-spacing: -.01em; margin-bottom: 6px; }
+    .hero-year { display: block; font-size: clamp(11px, 1.6vw, 16px); font-weight: 300; color: var(--dorado); letter-spacing: .32em; text-transform: uppercase; margin-bottom: 18px; }
+    .hero-sub { font-size: clamp(13px, 1.5vw, 16px); color: rgba(255,255,255,.7); font-weight: 300; line-height: 1.7; margin-bottom: 28px; max-width: 500px; margin-inline: auto; }
     .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
     .btn-primary { background: var(--rojo); color: var(--blanco); font-weight: 800; padding: 16px 40px; border-radius: 4px; text-decoration: none; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; transition: var(--t); box-shadow: 0 4px 20px rgba(227,30,39,.4); font-family: 'SonnyVol2', sans-serif; }
@@ -399,21 +400,47 @@
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — banners semanales: cada .hero-slide es un banner independiente (imagen + texto). Para cambiar el banner de la semana, edita el contenido dentro del slide correspondiente. -->
 <section id="hero">
   <div class="hero-slides">
-    <div class="hero-slide active"></div>
-    <div class="hero-slide"></div>
-    <div class="hero-slide"></div>
-  </div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Club Deportivo · Las Condes · Santiago</div>
-    <h1 class="hero-title">STADE<br/>FRANÇAIS</h1>
-    <span class="hero-year">· 1929 ·</span>
-    <p class="hero-sub">Tradición francesa, espíritu chileno. Rugby, tenis, natación y mucho más — una comunidad unida por el deporte y la excelencia.</p>
-    <div class="hero-actions">
-      <a href="hazte-socio.html" class="btn-primary">Hazte Socio</a>
-      <a href="#ramas" class="btn-outline">Conoce el Club</a>
+    <!-- BANNER 1 -->
+    <div class="hero-slide active">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Club Deportivo · Las Condes · Santiago</div>
+        <h1 class="hero-title">STADE<br/>FRANÇAIS</h1>
+        <span class="hero-year">· 1929 ·</span>
+        <p class="hero-sub">Tradición francesa, espíritu chileno. Rugby, tenis, natación y mucho más — una comunidad unida por el deporte y la excelencia.</p>
+        <div class="hero-actions">
+          <a href="hazte-socio.html" class="btn-primary">Hazte Socio</a>
+          <a href="#ramas" class="btn-outline">Conoce el Club</a>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER 2 -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Rama Tenis</div>
+        <h1 class="hero-title">ESCUELA<br/>DE TENIS</h1>
+        <span class="hero-year">· TODAS LAS EDADES ·</span>
+        <p class="hero-sub">Aprende y compite en nuestras canchas de arcilla de primer nivel, con profesores certificados y academias para niños y adultos.</p>
+        <div class="hero-actions">
+          <a href="tenis.html" class="btn-primary">Conoce la Escuela</a>
+          <a href="contacto.html" class="btn-outline">Inscríbete</a>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER 3 -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Rama Rugby</div>
+        <h1 class="hero-title">LA BANDA<br/>DEL GALLO</h1>
+        <span class="hero-year">· DESDE MINI RUGBY HASTA PRIMERA ·</span>
+        <p class="hero-sub">Una de las ramas más tradicionales del rugby chileno. Formación integral para todas las edades, del club a la cancha nacional.</p>
+        <div class="hero-actions">
+          <a href="rugby.html" class="btn-primary">Conoce el Gallo</a>
+          <a href="contacto.html" class="btn-outline">Inscríbete</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="hero-dots" id="hero-dots">
