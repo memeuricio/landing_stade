@@ -104,9 +104,7 @@
       content: ''; position: absolute; inset: 0;
       background: linear-gradient(135deg, rgba(41,40,92,.88) 0%, rgba(41,40,92,.6) 50%, rgba(26,26,46,.35) 100%);
     }
-    .hero-slide:nth-child(1) { background-image: url('assets/images/instalaciones/acceso-principal.jpg'); background-position: center 30%; }
-    .hero-slide:nth-child(2) { background-image: url('assets/images/instalaciones/cancha-tenis-4_2.png'); background-position: center 20%; }
-    .hero-slide:nth-child(3) { background-image: url('assets/images/instalaciones/cancha-rugby.jpg'); background-position: center 40%; }
+    .hero-slide.hero-slide-flat::after { content: none; }
 
     .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 860px; }
     .hero-eyebrow {
@@ -403,8 +401,10 @@
 <!-- HERO — banners semanales: cada .hero-slide es un banner independiente (imagen + texto). Para cambiar el banner de la semana, edita el contenido dentro del slide correspondiente. -->
 <section id="hero">
   <div class="hero-slides">
-    <!-- BANNER 1 -->
-    <div class="hero-slide active">
+    <!-- BANNER 1 — Fiestas Patrias (vigente hasta el 12 de septiembre) -->
+    <div class="hero-slide hero-slide-flat active" style="background-image:url('assets/images/banners/fiestas-patrias-2026.png');"></div>
+    <!-- BANNER 2 -->
+    <div class="hero-slide" style="background-image:url('assets/images/instalaciones/acceso-principal.jpg'); background-position:center 30%;">
       <div class="hero-content">
         <div class="hero-eyebrow">Club Deportivo · Las Condes · Santiago</div>
         <h1 class="hero-title">STADE<br/>FRANÇAIS</h1>
@@ -416,8 +416,8 @@
         </div>
       </div>
     </div>
-    <!-- BANNER 2 -->
-    <div class="hero-slide">
+    <!-- BANNER 3 -->
+    <div class="hero-slide" style="background-image:url('assets/images/instalaciones/cancha-tenis-4_2.png'); background-position:center 20%;">
       <div class="hero-content">
         <div class="hero-eyebrow">Rama Tenis</div>
         <h1 class="hero-title">ESCUELA<br/>DE TENIS</h1>
@@ -429,8 +429,8 @@
         </div>
       </div>
     </div>
-    <!-- BANNER 3 -->
-    <div class="hero-slide">
+    <!-- BANNER 4 -->
+    <div class="hero-slide" style="background-image:url('assets/images/instalaciones/cancha-rugby.jpg'); background-position:center 40%;">
       <div class="hero-content">
         <div class="hero-eyebrow">Rama Rugby</div>
         <h1 class="hero-title">LA BANDA<br/>DEL GALLO</h1>
@@ -447,6 +447,7 @@
     <button class="hero-dot active" data-index="0"></button>
     <button class="hero-dot" data-index="1"></button>
     <button class="hero-dot" data-index="2"></button>
+    <button class="hero-dot" data-index="3"></button>
   </div>
 </section>
 
