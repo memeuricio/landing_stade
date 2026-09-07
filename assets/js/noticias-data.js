@@ -5,7 +5,7 @@ const NOTICIAS_DATA = [
     fecha: "2026-08-31",
     categoria: "Club",
     resumen: "Editorial de Gerardo Moreno, Los Gallos rumbo a las semifinales del ARUSA Top 10, tercer lugar en el Torneo Hispanidad de Natación, GrandStade Wimbledon, nueva etapa del Pádel, Fiesta de Francia Golden y toda la agenda de septiembre.",
-    imagen: "assets/images/noticias/boletin%20agosto/rugby-hero.jpg",
+    imagen: "assets/images/noticias/boletin%20agosto/PORTADA_BOLETIN_AGOSTO.png",
     url: "boletin-agosto-2026.html"
   },
   {
