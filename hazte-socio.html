@@ -57,8 +57,6 @@
     .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 20px; }
     .breadcrumb a { color: rgba(255,255,255,.4); text-decoration: none; } .breadcrumb a:hover { color: var(--dorado); }
     .breadcrumb-sep { color: var(--rojo); }
-    .oferta-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--rojo); border-radius: 4px; padding: 8px 16px; margin-bottom: 22px; }
-    .oferta-badge span { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--blanco); }
     .page-hero-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--dorado); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
     .page-hero-label::after { content: ''; display: block; width: 36px; height: 2px; background: var(--dorado); }
     .page-hero h1 { font-size: clamp(52px, 7vw, 88px); font-weight: 900; color: var(--blanco); line-height: .88; text-transform: uppercase; letter-spacing: -.02em; margin-bottom: 22px; }
@@ -84,7 +82,7 @@
 
     /* STATS */
     .stats-bar { background: var(--rojo); padding: 28px 40px; }
-    .stats-bar-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .stats-bar-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
     .sbar-item { text-align: center; }
     .sbar-num { font-size: 36px; font-weight: 900; color: var(--blanco); line-height: 1; }
     .sbar-label { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 4px; }
@@ -98,39 +96,6 @@
     .section-title { font-size: clamp(26px, 3.5vw, 42px); font-weight: 900; color: var(--azul); margin-bottom: 14px; text-transform: uppercase; letter-spacing: -.01em; line-height: 1; }
     .section-title.light { color: var(--blanco); }
     .section-sub { font-size: 16px; color: var(--gris-mid); line-height: 1.8; max-width: 580px; }
-
-    /* PROMO INVERNAL */
-    #promo { background: var(--azul-dark); position: relative; overflow: hidden; }
-    #promo::before { content: '50%'; position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-size: 320px; font-weight: 900; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none; letter-spacing: -.05em; }
-    .promo-header { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start; margin-bottom: 48px; }
-    .promo-countdown { background: var(--rojo); border-radius: 8px; padding: 20px 28px; text-align: center; white-space: nowrap; }
-    .promo-countdown-label { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-bottom: 4px; }
-    .promo-countdown-date { font-size: 20px; font-weight: 900; color: var(--blanco); }
-    .promo-main { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 3px; }
-    .promo-price-card { background: rgba(255,255,255,.06); padding: 36px 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; transition: background var(--t); }
-    .promo-price-card:hover { background: rgba(255,255,255,.1); }
-    .promo-price-card.highlight { background: var(--rojo); }
-    .promo-tipo { font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--dorado); margin-bottom: 6px; }
-    .promo-price-card.highlight .promo-tipo { color: rgba(255,255,255,.7); }
-    .promo-price-card h4 { font-size: 20px; font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: .04em; }
-    .promo-uf { font-size: 52px; font-weight: 900; color: var(--blanco); line-height: 1; }
-    .promo-uf span { font-size: 20px; font-weight: 400; opacity: .5; }
-    .promo-desc-original { font-size: 14px; color: rgba(255,255,255,.4); font-weight: 400; text-decoration: line-through; margin-top: 4px; }
-    .promo-who { background: rgba(255,255,255,.06); padding: 32px; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .who-item { display: flex; align-items: flex-start; gap: 12px; }
-    .who-check { width: 28px; min-width: 28px; height: 28px; background: var(--rojo); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 15px; color: var(--blanco); font-weight: 900; }
-    .who-item p { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.6; font-weight: 400; }
-    .promo-pagos { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 3px; }
-    .pago-card { background: rgba(255,255,255,.06); padding: 28px 28px; transition: background var(--t); }
-    .pago-card:hover { background: rgba(255,255,255,.1); }
-    .pago-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: var(--dorado); border-radius: 4px; font-size: 12px; font-weight: 900; color: var(--azul); margin-bottom: 14px; }
-    .pago-card h5 { font-size: 14px; font-weight: 900; color: var(--blanco); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 10px; }
-    .pago-steps { display: flex; flex-direction: column; gap: 6px; }
-    .pago-step { font-size: 12px; color: rgba(255,255,255,.55); font-weight: 400; display: flex; align-items: baseline; gap: 8px; }
-    .pago-step::before { content: '·'; color: var(--dorado); font-weight: 900; flex-shrink: 0; }
-    .promo-disclaimer { margin-top: 20px; padding: 16px 20px; background: rgba(255,255,255,.04); border-left: 3px solid var(--dorado); border-radius: 0 4px 4px 0; }
-    .promo-disclaimer p { font-size: 12px; color: rgba(255,255,255,.4); font-weight: 400; line-height: 1.65; }
-    .promo-disclaimer strong { color: rgba(255,255,255,.6); }
 
     /* BENEFICIOS */
     #beneficios { background: var(--gris); }
@@ -216,7 +181,7 @@
       .nav-links .dropdown-menu { position: static; box-shadow: none; min-width: unset; background: rgba(255,255,255,.08); border: none; border-radius: 4px; margin: 4px 0 4px 12px; padding: 4px; }
       .nav-links .dropdown > a::after { content: ' ▾'; }
       .page-hero-content { padding: 100px 24px 56px; } .stats-bar-inner { grid-template-columns: 1fr 1fr; }
-      .desc-grid { grid-template-columns: 1fr; } .desc-card.featured { grid-column: span 1; grid-template-columns: 1fr; } .desc-card[style*="span 2"] { grid-column: span 1 !important; } .promo-who { grid-template-columns: 1fr; } .promo-main { grid-template-columns: 1fr; } .promo-pagos { grid-template-columns: 1fr; } .promo-header { grid-template-columns: 1fr; } .promo-countdown { white-space: normal; }
+      .desc-grid { grid-template-columns: 1fr; } .desc-card.featured { grid-column: span 1; grid-template-columns: 1fr; } .desc-card[style*="span 2"] { grid-column: span 1 !important; }
       .perks-grid { grid-template-columns: 1fr; } .pasos-grid { grid-template-columns: 1fr 1fr; } .pasos-grid::before { display: none; }
       .inst-scroll { grid-template-columns: 1fr 1fr; } .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
       .hero-form { max-width: 100%; }
@@ -274,7 +239,6 @@
   <div class="page-hero-content">
     <div class="hero-left">
       <div class="breadcrumb"><a href="index.html">Inicio</a><span class="breadcrumb-sep">›</span>Hazte Socio</div>
-      <div class="oferta-badge"><span>🔥 Promoción Invernal 2026 · 50% de descuento · Válido hasta el 21 de septiembre</span></div>
       <div class="page-hero-label">Únete al Club · Barrio El Golf, Las Condes</div>
       <h1>SÉ PARTE<br/>DE <em>STADE</em></h1>
       <p>Casi 100 años de historia, sport y comunidad. Accede a instalaciones de primer nivel, programas deportivos para toda la familia y una red de socios que comparten tus valores.</p>
@@ -319,94 +283,8 @@
     <div class="sbar-item"><div class="sbar-num">95</div><div class="sbar-label">Años de historia</div></div>
     <div class="sbar-item"><div class="sbar-num">36K</div><div class="sbar-label">m² de instalaciones</div></div>
     <div class="sbar-item"><div class="sbar-num">3+</div><div class="sbar-label">Ramas deportivas</div></div>
-    <div class="sbar-item"><div class="sbar-num">50%</div><div class="sbar-label">Promo Invernal 2026</div></div>
   </div>
 </div>
-
-<!-- PROMO INVERNAL 2026 -->
-<section id="promo">
-  <div class="container">
-    <div class="promo-header">
-      <div>
-        <div class="section-label light reveal">🔥 Campaña Especial</div>
-        <h2 class="section-title light reveal reveal-delay-1">Promoción Invernal 2026</h2>
-        <p class="section-sub reveal reveal-delay-2" style="color:rgba(255,255,255,.5)">Vuelve a casa — o únete por primera vez. Este invierno, Stade Français te ofrece el mayor descuento de su historia en la cuota de incorporación.</p>
-      </div>
-      <div class="promo-countdown reveal reveal-delay-1">
-        <div class="promo-countdown-label">Válido hasta</div>
-        <div class="promo-countdown-date">21 Sep 2026</div>
-      </div>
-    </div>
-
-    <!-- PRECIOS -->
-    <div class="promo-main">
-      <div class="promo-price-card highlight reveal">
-        <div>
-          <div class="promo-tipo">Membresía Familiar</div>
-          <h4>Grupo Familiar</h4>
-        </div>
-        <div>
-          <div class="promo-uf">30 <span>UF</span></div>
-          <div class="promo-desc-original">60 UF valor original</div>
-        </div>
-      </div>
-      <div class="promo-price-card reveal reveal-delay-1">
-        <div>
-          <div class="promo-tipo">Membresía Individual</div>
-          <h4>Individual</h4>
-        </div>
-        <div>
-          <div class="promo-uf">27,5 <span>UF</span></div>
-          <div class="promo-desc-original">55 UF valor original</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- BENEFICIARIOS -->
-    <div class="promo-who reveal">
-      <div class="who-item">
-        <div class="who-check">✓</div>
-        <p><strong style="display:block;color:rgba(255,255,255,.8);font-weight:900;margin-bottom:3px">Ex Socios</strong>Socios que deseen reincorporarse al club después de haber dado de baja su membresía.</p>
-      </div>
-      <div class="who-item">
-        <div class="who-check">✓</div>
-        <p><strong style="display:block;color:rgba(255,255,255,.8);font-weight:900;margin-bottom:3px">Referidos por Socios Activos</strong>Postulantes recomendados directamente por un socio activo del club.</p>
-      </div>
-      <div class="who-item">
-        <div class="who-check">✓</div>
-        <p><strong style="display:block;color:rgba(255,255,255,.8);font-weight:900;margin-bottom:3px">Usuarios Habituales</strong>Usuarios regulares de las actividades deportivas del club (piscina, pádel, gimnasio, etc.).</p>
-      </div>
-    </div>
-
-    <!-- FORMAS DE PAGO -->
-    <div style="margin-top:32px">
-      <div class="section-label light reveal" style="margin-bottom:20px">Formas de Pago</div>
-      <div class="promo-pagos">
-        <div class="pago-card reveal">
-          <div class="pago-num">1</div>
-          <h5>Pago en 3 Cuotas</h5>
-          <div class="pago-steps">
-            <div class="pago-step">1ª cuota al momento de incorporarse</div>
-            <div class="pago-step">2ª cuota entre octubre y diciembre 2026</div>
-            <div class="pago-step">3ª cuota entre octubre y diciembre 2027</div>
-          </div>
-        </div>
-        <div class="pago-card reveal reveal-delay-1">
-          <div class="pago-num">2</div>
-          <h5>Cuotas Indexadas a Membresía</h5>
-          <div class="pago-steps">
-            <div class="pago-step">Tarjeta de crédito en cuotas</div>
-            <div class="pago-step">PAC bancario (Pago Automático de Cuentas)</div>
-            <div class="pago-step">Las cuotas se indexan al pago de la membresía mensual</div>
-          </div>
-        </div>
-      </div>
-      <div class="promo-disclaimer reveal">
-        <p><strong>⚠ Condiciones:</strong> Descuentos no acumulables con otras promociones vigentes. Promoción válida hasta el 21 de septiembre de 2026. Para menores de edad, la incorporación debe hacerse como grupo familiar. Consultas a <strong>patriciacaceres@stadefrancais.cl</strong> o <strong>americotapia@stadefrancais.cl</strong> — también por WhatsApp.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- BENEFICIOS -->
 <section id="beneficios">
