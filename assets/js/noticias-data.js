@@ -1,5 +1,14 @@
 const NOTICIAS_DATA = [
   {
+    id: 11,
+    titulo: "Boletín Septiembre 2026",
+    fecha: "2026-09-30",
+    categoria: "Club",
+    resumen: "Trabajador destacado Pedro Nieto, cierre del ARUSA Top 10 y tres categorías de rugby a la final, Gaspar Enríquez en el Mundial Junior de Aguas Abiertas, Carolina Palma deportista destacada del tenis, Fonda Stade 2026 y la agenda de octubre.",
+    imagen: "assets/images/noticias/boletin%20septiembre/fonda-stade-3.jpg", // TODO: reemplazar por PORTADA_BOLETIN_SEPTIEMBRE cuando esté lista
+    url: "boletin-septiembre-2026.html"
+  },
+  {
     id: 10,
     titulo: "Boletín Agosto 2026",
     fecha: "2026-08-31",
