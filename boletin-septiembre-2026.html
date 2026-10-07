@@ -166,6 +166,10 @@
     .rugby-galas img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3; display: block; }
     .rugby-galas-text h3 { font-size: clamp(20px,2.5vw,30px); font-weight: 900; color: var(--blanco); margin-bottom: 14px; text-transform: uppercase; letter-spacing: -.01em; }
     .rugby-galas-text p { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.9; margin-bottom: 14px; }
+    .rugby-finales { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; margin-bottom: 48px; }
+    .rugby-final img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3; display: block; margin-bottom: 22px; }
+    .rugby-final h3 { font-size: clamp(18px,2vw,24px); font-weight: 900; color: var(--blanco); margin-bottom: 12px; text-transform: uppercase; letter-spacing: -.01em; }
+    .rugby-final p { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.9; }
     .rugby-convocados { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 340px 1fr; }
     .conv-img { position: relative; }
     .conv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
@@ -324,6 +328,7 @@
       .fiesta-section { padding: 28px 20px; }
       .fiesta-gallery { grid-template-columns: 1fr 1fr; }
       .rugby-convocados { grid-template-columns: 1fr; }
+      .rugby-finales { grid-template-columns: 1fr; }
       .conv-img { max-height: 260px; }
       .conv-text { padding: 24px 20px; }
     }
@@ -412,15 +417,20 @@
   <div class="container">
     <div class="editorial-grid reveal">
       <div class="editorial-foto">
-        <div class="editorial-foto-pending"><span>Foto pendiente</span></div>
+        <img src="assets/images/directorio/liliana-martinez-covarrubias.jpg" alt="Liliana Martínez Covarrubias, Segunda Vicepresidenta" style="object-position:center top;" />
       </div>
       <div class="editorial-body">
         <span class="section-tag tag-dorado-dark">Saludo Editorial</span>
-        <h2>Mensaje de la Segunda Vicepresidenta</h2>
-        <p style="font-style:italic;">Texto editorial pendiente — Liliana Martínez enviará el contenido próximamente.</p>
+        <h2>Un mes de identidad, trayectoria y futuro</h2>
+        <p>Septiembre ha constituido para el Stade Français la oportunidad de desplegarse en su más amplia versión como un club donde conviven en armonía la vida comunitaria, el alto rendimiento deportivo, el reconocimiento a nuestra historia y una firme proyección hacia el futuro. Durante estas semanas, cada rincón vibró con el compromiso de sus socios, deportistas y trabajadores.</p>
+        <p>La fortaleza e integridad de nuestra comunidad no se refleja solo en marcadores deportivos, sino en las personas que la construyen día a día. Nuestro profesor de natación, Pedro Nieto, es una de ellas y por eso el merecido reconocimiento a sus 24 años de trayectoria. Este premio pone en valor al mismo tiempo a quienes sostienen la historia cotidiana del Stade y fortalecen el vínculo afectivo entre colaboradores y socios de distintas generaciones.</p>
+        <p>Esa misma solidez institucional se proyecta con fuerza en el deporte. En el rugby, celebramos el buen momento de Las Galas, la M16 y la M18, tras clasificar a las finales de ARUSA. En el plano internacional, nos llena de orgullo la participación de Gaspar Enríquez en el Mundial Junior de Aguas Abiertas. A ello se suma la realización del COSAT G1 – Open Stade Français, certamen que vuelve a situar a nuestro club como el escenario de este Sudamericano que trae a Chile a los mejores tenistas juveniles de la región, muchos de los cuales brillarán en los próximos años en los grandes circuitos internacionales.</p>
+        <p>Asimismo, la historia de Carolina Palma como campeona en singles y vice campeona en dobles, del ITF400 de la Copa Fundadores encarna la esencia de las decenas de tenistas seniors de nuestro club que siguen compitiendo y logrando triunfos en los distintos torneos ITFs de Chile y la región. Para ellos, vestir nuestros colores representa el verdadero sentido de pertenencia, donde el valor de la amistad y el respaldo incondicional de la familia Stade permanece intacto más allá de cualquier resultado.</p>
+        <p>Septiembre fue un espacio para el reencuentro y la apertura de nuevos horizontes. La celebración de la tradicional Fonda Stade volvió a reunir a las familias en un ambiente de camaradería, mientras que la firma del nuevo convenio de reciprocidad con el Costa Rica Tennis Club reafirma nuestro compromiso de seguir ampliando las experiencias y beneficios para todos los socios.</p>
+        <p>En octubre nos espera una agenda repleta de desafíos: las trascendentales finales de ARUSA y la Copa Italia forman parte de esta intensa actividad deportiva. Continuamos avanzando juntos —socios, deportistas y familias— para hacer del Stade Français un espacio único donde niños, jóvenes y adultos encuentran un lugar acogedor y amistoso para practicar su deporte favorito.</p>
         <div class="editorial-firma">
-          <strong>Liliana Martínez</strong>
-          <span>Segunda Vicepresidenta · Stade Français</span>
+          <strong>Liliana Martínez Covarrubias</strong>
+          <span>Segunda Vicepresidenta · Directorio Stade</span>
         </div>
       </div>
     </div>
@@ -434,7 +444,7 @@
     <div class="gente-grid reveal">
       <div class="gente-body">
         <span class="section-tag tag-rojo">Trabajador destacado</span>
-        <h2>Pedro Nieto</h2>
+        <h2>Pedro Nieto: 24 años de historia, dedicación y cariño por el Stade Français</h2>
         <p class="subtitle">Profesor de Natación e Hidrogimnasia · 24 años en el Stade</p>
         <p>Hace 24 años, Pedro Nieto llegó al Stade Français para trabajar con los más pequeños de la piscina. Lo que comenzó como una oportunidad laboral se convirtió en una historia de más de dos décadas ligada al club, donde ha desarrollado gran parte de su trayectoria como profesor de natación y, actualmente, como instructor de hidrogimnasia y natación para adultos.</p>
         <div class="quote"><p>"Estoy tan adaptado que me encanta, me gusta mucho. Principalmente por la gente, por el cariño que uno recibe y por tratar de lograr los objetivos."</p></div>
@@ -464,31 +474,30 @@
         <span class="rtag">ARUSA Top 10 · Fecha Final</span>
         <div class="score">52<em>-</em>28</div>
         <div class="match">Stade Français vs Sporting RC</div>
-        <p>Los Gallos cerraron su participación en la fase regular del ARUSA Top 10 2026 con un sólido triunfo por 52-28 ante Sporting RC, en la última fecha del campeonato.</p>
+        <h3>Los Gallos cierran el Top10 Arusa con un triunfo ante Sporting</h3>
+        <p>Nuestro equipo de rugby cerró su participación en la fase regular del ARUSA Top 10 2026 con un sólido triunfo por 52-28 ante Sporting RC, en la última fecha del campeonato.</p>
       </div>
       <div class="rugby-card reveal reveal-delay-1">
         <span class="rtag">Cierre de Temporada</span>
         <h3 style="font-size:20px;margin-bottom:10px;">Un año de trabajo, amistad y esfuerzo colectivo</h3>
-        <p>Con este resultado, Stade Français finalizó la fase regular con 51 puntos, quedando fuera de la clasificación a los playoffs. Más allá del resultado, la temporada deja importantes aprendizajes y logros para un equipo que creció, compitió y enfrentó cada desafío con compromiso y unidad. Jugadores, cuerpo técnico, familias y la Banda del Gallo fueron parte fundamental de este camino.</p>
+        <p>Con este resultado, Stade Français finalizó la fase regular con 51 puntos, quedando fuera de la clasificación a los playoffs. Más allá del resultado, la temporada deja importantes aprendizajes y logros para un equipo que creció, compitió y enfrentó cada desafío con compromiso y unidad. Fue un año de trabajo, amistad y esfuerzo colectivo, dentro y fuera de la cancha, donde jugadores, cuerpo técnico, familias y la Banda del Gallo fueron parte fundamental de este camino.</p>
       </div>
     </div>
 
+    <h3 class="reveal" style="font-size:clamp(20px,2.5vw,30px);font-weight:900;color:var(--blanco);margin-bottom:14px;text-transform:uppercase;letter-spacing:-.01em;">Rugby Stade Français: tres categorías a la final de ARUSA</h3>
     <p class="reveal" style="font-size:14px;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:32px;max-width:760px;">El rugby juvenil y femenino del Stade Français vive un gran momento competitivo, con tres categorías clasificadas a las finales del Torneo ARUSA.</p>
 
-    <div class="rugby-galas reveal">
-      <div class="rugby-galas-text">
+    <div class="rugby-finales">
+      <div class="rugby-final reveal">
+        <img src="assets/images/noticias/boletin%20septiembre/rugby-m16-final.jpg" alt="M16 Rugby a la final" style="object-position:center 86%;" />
         <h3>M16 a la final de la Copa de Plata</h3>
         <p>La M16 derrotó por 15-12 a DOBS en las semifinales de la Copa de Plata, asegurando su paso a la gran final.</p>
       </div>
-      <img src="assets/images/noticias/boletin%20septiembre/rugby-m16-final.jpg" alt="M16 Rugby a la final" />
-    </div>
-
-    <div class="rugby-galas reveal">
-      <div class="rugby-galas-text">
+      <div class="rugby-final reveal reveal-delay-1">
+        <img src="assets/images/noticias/boletin%20septiembre/rugby-m18-final.jpg" alt="M18 Rugby a la final" style="object-position:center 90%;" />
         <h3>M18 a la final de la Copa de Plata</h3>
         <p>La M18 se impuso por 40-12 ante Sporting, en Viña del Mar, y también avanzó a la final de la Copa de Plata.</p>
       </div>
-      <img src="assets/images/noticias/boletin%20septiembre/rugby-m18-final.jpg" alt="M18 Rugby a la final" />
     </div>
 
     <div class="rugby-galas reveal">
@@ -538,7 +547,7 @@
       </div>
       <div class="tenis-escuela-text">
         <h3>Primer Gran Nado en el Stade Français</h3>
-        <p>La Rama de Natación del Stade Français realizó una nueva edición de su Super Sprint, instancia en la que nuestros pequeños nadadores pudieron poner en práctica sus aprendizajes y dar sus primeros pasos en la competencia.</p>
+        <p>La Natación del Stade Français realizó una nueva edición de su Super Sprint, instancia en la que nuestros pequeños nadadores pudieron poner en práctica sus aprendizajes y dar sus primeros pasos en la competencia.</p>
         <p>La jornada marcó un importante avance para quienes se encuentran en etapa de iniciación, enfrentando nuevos desafíos en el agua y desarrollando habilidades como la respiración, la flotación y el desplazamiento.</p>
       </div>
     </div>
@@ -563,7 +572,7 @@
     <div class="tenis-header-text reveal">
       <span class="section-tag tag-dorado">Tenis</span>
       <h2>El tenis del Stade Français fortalece sus lazos en Iquique</h2>
-      <p>Un mes intenso para la Rama de Tenis: Interclubes en el norte, resultados destacados en el circuito ITF Senior y la preparación de dos grandes citas de cara a octubre — la Copa Italia y el COSAT G1 — que tendrán al Stade Français como protagonista.</p>
+      <p>Un mes intenso para la Rama de Tenis: Interclubes en el norte, resultados destacados en el circuito ITF Senior, el COSAT G1 en nuestras canchas y la preparación de la Copa Italia de octubre.</p>
     </div>
 
     <div class="tenis-escuela reveal" style="border-top:none;padding-top:0;margin-bottom:48px;">
@@ -583,7 +592,7 @@
 
     <div class="tenis-internacional reveal">
       <h3>El Stade Français se prepara para una nueva Copa Italia de Tenis</h3>
-      <p>Nuestra Rama de Tenis ya se prepara para disputar una nueva edición de la Copa Italia, tradicional competencia que se desarrollará en las instalaciones del Stadio Italiano.</p>
+      <p>Nuestros tenistas ya se preparan para disputar una nueva edición de la Copa Italia, tradicional competencia que se desarrollará en las instalaciones del Stadio Italiano.</p>
       <p>El equipo femenino llega con un importante antecedente: fue campeón de la categoría A en 2024 y 2025, y buscará nuevamente defender el título.</p>
       <p>La competencia contará con participación de nuestros equipos en distintas jornadas: los varones comenzarán el 17 de octubre y disputarán sus encuentros durante dos fines de semana, mientras que las mujeres competirán del 19 al 23 de octubre, durante las mañanas. En paralelo, los menores disputarán sus partidos durante las tardes de esas mismas fechas.</p>
       <p>Una nueva oportunidad para representar al Stade Français y seguir haciendo crecer nuestra rama de tenis.</p>
@@ -591,31 +600,38 @@
 
     <div class="tenis-internacional reveal">
       <h3>El Stade recibe la Gira Sudamericana COSAT</h3>
-      <p>Entre el 28 de septiembre y el 3 de octubre, el Stade Français será sede del COSAT G1 – Open Stade Français, una de las principales competencias juveniles del circuito sudamericano.</p>
-      <p>El torneo reunirá a destacados tenistas de las categorías 14 y 16 años, quienes competirán por posicionarse en uno de los niveles más relevantes del circuito COSAT y continuar su camino de desarrollo y proyección internacional.</p>
-      <p>Una semana de tenis de alto nivel, competencia y nuevas generaciones que tendrá como escenario nuestras canchas.</p>
+      <p>Entre el 28 de septiembre y el 3 de octubre, por segunda vez el Stade Français fue sede del COSAT G1 – Open Stade Français, una de las principales competencias juveniles del circuito sudamericano.</p>
+      <p>El torneo reunió a destacados tenistas de las categorías 14 y 16 años, quienes compitieron por posicionarse en uno de los niveles más relevantes del circuito COSAT y continuar su camino de desarrollo y proyección internacional.</p>
+      <p>Una semana de tenis de alto nivel, competencia y nuevas generaciones que tuvo como escenario nuestras canchas.</p>
     </div>
 
     <div class="tenis-header-text reveal" style="margin-bottom:24px;">
-      <h2 style="font-size:clamp(22px,2.5vw,32px);">Destacada participación del Tenis Femenino en los ITF del Club Manquehue y Stadio Italiano</h2>
-      <p>Nuestras tenistas tuvieron una destacada participación en los dos torneos ITF Senior más recientes disputados en Santiago: el ITF400 Club Manquehue Open, realizado entre el 10 y el 16 de agosto, y la Copa Fundadores ITF400 Senior, disputada en el Stadio Italiano entre el 25 y el 29 de agosto.</p>
+      <h2 style="font-size:clamp(22px,2.5vw,32px);">Destacada participación del Stade Français en los últimos ITF400 Senior</h2>
+      <p>Nuestros tenistas tuvieron una destacada participación en los dos torneos ITF Senior más recientes disputados en Santiago: el ITF400 Club Manquehue Open, realizado entre el 10 y el 16 de agosto, y la Copa Fundadores ITF400 Senior, disputada en el Stadio Italiano entre el 25 y el 29 de agosto.</p>
     </div>
 
     <div class="results-box reveal">
       <div class="results-title">Resultados ITF Senior</div>
+      <div class="result-item"><span class="result-cat">Manquehue</span><span class="result-winner">Rafael Bustos</span><span class="result-score">Campeón Singles +40</span></div>
+      <div class="result-item"><span class="result-cat">Manquehue</span><span class="result-winner">Sergio Negrete &amp; Javier Ortiz</span><span class="result-score">Campeones Dobles +40</span></div>
       <div class="result-item"><span class="result-cat">Manquehue</span><span class="result-winner">Carolina Palma &amp; Montserrat Orellana</span><span class="result-score">Campeonas Dobles +45</span></div>
       <div class="result-item"><span class="result-cat">Manquehue</span><span class="result-winner">Anita Orellana</span><span class="result-score">Finalista Dobles +45</span></div>
       <div class="result-item"><span class="result-cat">Manquehue</span><span class="result-winner">Montserrat Orellana</span><span class="result-score">Finalista Singles +40</span></div>
+      <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Pablo Rojas</span><span class="result-score">Campeón Dobles +45</span></div>
+      <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Matías González</span><span class="result-score">Campeón Singles +50</span></div>
+      <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Nicolás Negrete</span><span class="result-score">Campeón Singles +40</span></div>
       <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Alejandra Quezada</span><span class="result-score">Campeona Singles +50</span></div>
       <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Carolina Palma</span><span class="result-score">Campeona Singles +45</span></div>
       <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Carolina Palma &amp; Montserrat Orellana</span><span class="result-score">Finalistas Dobles +45</span></div>
       <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Sheryl Ravelo</span><span class="result-score">Finalista Singles +35</span></div>
       <div class="result-item"><span class="result-cat">Fundadores</span><span class="result-winner">Carolina Gasmuri</span><span class="result-score">Finalista Dobles +45</span></div>
+      <div class="result-item"><span class="result-cat">ITF Senior</span><span class="result-winner">Soledad Maureira</span><span class="result-score">Campeona Dobles Mixtos +65</span></div>
     </div>
 
     <div class="reveal" style="margin-bottom:52px;">
       <img style="width:100%;border-radius:12px;display:block;" src="assets/images/noticias/boletin%20septiembre/tenis-femenino-stadio-italiano.jpg" alt="Tenis femenino, Copa Fundadores, Stadio Italiano" />
       <div class="natacion-foto-caption">Equipo del Stade Français en la Copa Fundadores — Stadio Italiano</div>
+      <p style="margin-top:20px;font-size:14px;color:var(--gris-mid);line-height:1.85;">Una gran representación del tenis Stade en dos importantes citas del circuito ITF Senior disputadas en nuestra ciudad.</p>
     </div>
 
     <div class="gaspar-feature reveal">
@@ -635,8 +651,13 @@
         <p>Su experiencia y trayectoria también son parte de lo que Carolina aporta al Stade. A través de su participación en torneos, su compromiso con la Rama de Tenis y su presencia junto a otras socias, se ha convertido en una de las representantes del club en el circuito ITF Senior.</p>
         <p>Pero su vínculo con el Stade va más allá de la competencia. Lo que más valora de ser socia es la comunidad que ha encontrado.</p>
         <div class="gaspar-quote" style="margin-top:10px;">
-          <p>"Me gusta mucho ser socia del Stade por la gente. Las personas hacen los clubes. Me siento parte del Stade porque el club me ha hecho parte. En cada torneo que juego siempre hay apoyo, siempre hay una barra Stade."</p>
+          <p>"Me gusta mucho ser socia del Stade por la gente. Las personas hacen los clubes."</p>
         </div>
+        <p>Hoy, Carolina se siente parte de una comunidad que también la acompaña en cada competencia.</p>
+        <div class="gaspar-quote" style="margin-top:10px;">
+          <p>"Me siento parte del Stade porque el club me ha hecho parte. En cada torneo que juego siempre hay apoyo, siempre hay una barra Stade."</p>
+        </div>
+        <p>Con una extensa trayectoria y nuevos desafíos por delante, Carolina continúa representando al Stade Français y aportando su experiencia a una Rama de Tenis que sigue creciendo.</p>
       </div>
     </div>
   </div>
@@ -653,8 +674,8 @@
 
     <div class="fiesta-section reveal">
       <span class="section-tag tag-dorado-dark" style="margin-bottom:10px;">Fiestas Patrias</span>
-      <h3>Fonda Stade 2026</h3>
-      <span class="fecha-tag">Sábado 12 de septiembre · Stade Français</span>
+      <h3>Una gran jornada de Fiestas Patrias en Stade Français</h3>
+      <span class="fecha-tag">Fonda Stade 2026 · Sábado 12 de septiembre</span>
       <p style="font-size:14px;color:rgba(255,255,255,.5);line-height:1.85;margin-bottom:24px;">El sábado 12 de septiembre vivimos una nueva edición de la Fonda Stade, una jornada llena de tradiciones, música y actividades para disfrutar en familia y junto a nuestros amigos. Durante todo el día, socios y visitantes disfrutaron de juegos típicos, gastronomía, música, baile, emprendimientos y entretención para grandes y chicos, en un ambiente de encuentro y celebración que reunió a toda nuestra comunidad.</p>
       <div class="fiesta-gallery">
         <div class="fg-item tall">
