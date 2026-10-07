@@ -136,6 +136,8 @@
     .tenis-internacional li strong { color: var(--azul); }
     .tenis-escuela { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding-top: 48px; border-top: 1px solid rgba(41,40,92,.08); }
     .tenis-escuela img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 16/10; display: block; }
+    .itf-fotos { display: grid; grid-template-columns: 16fr 9fr; gap: 10px; }
+    .itf-fotos img { width: 100%; border-radius: 12px; object-fit: cover; display: block; }
     .tenis-escuela-caption { font-size: 11px; color: var(--gris-mid); margin-top: 10px; text-align: center; font-style: italic; }
     .tenis-escuela-text h3 { font-size: 20px; font-weight: 900; color: var(--azul); margin-bottom: 12px; text-transform: uppercase; }
     .tenis-escuela-text p { font-size: 14px; color: var(--gris-mid); line-height: 1.85; margin-bottom: 10px; }
@@ -163,11 +165,11 @@
     .rugby-card p { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.85; }
     .rugby-card .rtag { display: inline-block; background: var(--rojo); color: var(--blanco); font-size: 8px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 3px; margin-bottom: 14px; }
     .rugby-galas { display: grid; grid-template-columns: 1fr 420px; gap: 52px; align-items: center; margin-bottom: 40px; }
-    .rugby-galas img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3; display: block; }
+    .rugby-galas img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 3/2; display: block; }
     .rugby-galas-text h3 { font-size: clamp(20px,2.5vw,30px); font-weight: 900; color: var(--blanco); margin-bottom: 14px; text-transform: uppercase; letter-spacing: -.01em; }
     .rugby-galas-text p { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.9; margin-bottom: 14px; }
     .rugby-finales { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; margin-bottom: 48px; }
-    .rugby-final img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3; display: block; margin-bottom: 22px; }
+    .rugby-final img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 3/2; display: block; margin-bottom: 22px; }
     .rugby-final h3 { font-size: clamp(18px,2vw,24px); font-weight: 900; color: var(--blanco); margin-bottom: 12px; text-transform: uppercase; letter-spacing: -.01em; }
     .rugby-final p { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.9; }
     .rugby-convocados { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 340px 1fr; }
@@ -329,6 +331,7 @@
       .fiesta-gallery { grid-template-columns: 1fr 1fr; }
       .rugby-convocados { grid-template-columns: 1fr; }
       .rugby-finales { grid-template-columns: 1fr; }
+      .itf-fotos { grid-template-columns: 1fr; }
       .conv-img { max-height: 260px; }
       .conv-text { padding: 24px 20px; }
     }
@@ -417,7 +420,7 @@
   <div class="container">
     <div class="editorial-grid reveal">
       <div class="editorial-foto">
-        <img src="assets/images/directorio/liliana-martinez-covarrubias.jpg" alt="Liliana Martínez Covarrubias, Segunda Vicepresidenta" style="object-position:center top;" />
+        <img src="assets/images/noticias/boletin%20septiembre/liliana-martinez-editorial.jpg" alt="Liliana Martínez Covarrubias, Segunda Vicepresidenta" style="object-position:center top;" />
       </div>
       <div class="editorial-body">
         <span class="section-tag tag-dorado-dark">Saludo Editorial</span>
@@ -489,12 +492,12 @@
 
     <div class="rugby-finales">
       <div class="rugby-final reveal">
-        <img src="assets/images/noticias/boletin%20septiembre/rugby-m16-final.jpg" alt="M16 Rugby a la final" style="object-position:center 86%;" />
+        <img src="assets/images/noticias/boletin%20septiembre/rugby-m16-final.jpg" alt="M16 Rugby a la final" />
         <h3>M16 a la final de la Copa de Plata</h3>
         <p>La M16 derrotó por 15-12 a DOBS en las semifinales de la Copa de Plata, asegurando su paso a la gran final.</p>
       </div>
       <div class="rugby-final reveal reveal-delay-1">
-        <img src="assets/images/noticias/boletin%20septiembre/rugby-m18-final.jpg" alt="M18 Rugby a la final" style="object-position:center 90%;" />
+        <img src="assets/images/noticias/boletin%20septiembre/rugby-m18-final.jpg" alt="M18 Rugby a la final" />
         <h3>M18 a la final de la Copa de Plata</h3>
         <p>La M18 se impuso por 40-12 ante Sporting, en Viña del Mar, y también avanzó a la final de la Copa de Plata.</p>
       </div>
@@ -629,14 +632,17 @@
     </div>
 
     <div class="reveal" style="margin-bottom:52px;">
-      <img style="width:100%;border-radius:12px;display:block;" src="assets/images/noticias/boletin%20septiembre/tenis-femenino-stadio-italiano.jpg" alt="Tenis femenino, Copa Fundadores, Stadio Italiano" />
-      <div class="natacion-foto-caption">Equipo del Stade Français en la Copa Fundadores — Stadio Italiano</div>
+      <div class="itf-fotos">
+        <img style="aspect-ratio:4/3;" src="assets/images/noticias/boletin%20septiembre/tenis-femenino-stadio-italiano.jpg" alt="Tenis femenino, Copa Fundadores, Stadio Italiano" />
+        <img style="aspect-ratio:3/4;" src="assets/images/noticias/boletin%20septiembre/tenis-itf400-senior.jpg" alt="Tenistas del Stade Français en el ITF400 Senior" />
+      </div>
+      <div class="natacion-foto-caption">Tenistas del Stade Français en los torneos ITF400 Senior</div>
       <p style="margin-top:20px;font-size:14px;color:var(--gris-mid);line-height:1.85;">Una gran representación del tenis Stade en dos importantes citas del circuito ITF Senior disputadas en nuestra ciudad.</p>
     </div>
 
     <div class="gaspar-feature reveal">
-      <div class="gaspar-foto">
-        <img src="assets/images/noticias/boletin%20septiembre/carolina-palma-trofeos.jpg" alt="Carolina Palma" />
+      <div class="gaspar-foto" style="height:auto;">
+        <img src="assets/images/noticias/boletin%20septiembre/carolina-palma-trofeos.jpg" alt="Carolina Palma" style="height:auto;min-height:0;aspect-ratio:4/5;" />
       </div>
       <div class="gaspar-body">
         <span class="dep-tag">⭐ Deportista Destacada del Mes — Tenis</span>
