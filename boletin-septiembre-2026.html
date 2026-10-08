@@ -77,7 +77,7 @@
     .tag-dorado-dark { background: rgba(246,170,12,.12); border: 1px solid rgba(246,170,12,.3); color: var(--dorado); }
     .sd { padding: 56px 0 0; }
     .sd-inner { max-width: 1300px; margin: 0 auto; padding: 0 80px; display: flex; align-items: center; gap: 20px; }
-    .sd-label { font-size: 9px; font-weight: 900; letter-spacing: .28em; text-transform: uppercase; color: var(--rojo); white-space: nowrap; }
+    .sd-label { font-size: clamp(22px,2.6vw,32px); line-height: 1; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; color: var(--rojo); white-space: nowrap; }
     .sd-line { flex: 1; height: 1px; background: rgba(41,40,92,.12); }
 
     /* EDITORIAL */
@@ -136,6 +136,8 @@
     .tenis-internacional li strong { color: var(--azul); }
     .tenis-escuela { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding-top: 48px; border-top: 1px solid rgba(41,40,92,.08); }
     .tenis-escuela img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 16/10; display: block; }
+    .cosat-block { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .cosat-block img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 3/2; display: block; }
     .itf-fotos { display: grid; grid-template-columns: 16fr 9fr; gap: 10px; }
     .itf-fotos img { width: 100%; border-radius: 12px; object-fit: cover; display: block; }
     .tenis-escuela-caption { font-size: 11px; color: var(--gris-mid); margin-top: 10px; text-align: center; font-style: italic; }
@@ -307,6 +309,7 @@
       .editorial-grid, .gente-grid, .tenis-escuela,
       .natacion-intro, .rugby-galas, .padel-block { grid-template-columns: 1fr; gap: 32px; }
       .gente-foto { order: -1; }
+      .cosat-block { grid-template-columns: 1fr; gap: 24px; }
       .gaspar-feature { grid-template-columns: 1fr; }
       .gaspar-foto { height: 300px; }
       .gaspar-foto img { min-height: 300px; }
@@ -585,7 +588,7 @@
       </div>
       <div class="tenis-escuela-text">
         <h3>Interclubes con el Club de Tenis Huayquique</h3>
-        <p>Nuestra rama de tenis participó en un nuevo Interclubes junto al Club de Tenis Huayquique de Iquique, con la representación de 27 socios del Stade Français.</p>
+        <p>Nuestros tenistas participaron en un nuevo Interclubes junto al Club de Tenis Huayquique de Iquique, con la representación de 27 socios del Stade Français.</p>
         <p>Entre el 3 y el 6 de septiembre, nuestros tenistas participaron en las categorías de singles, dobles y dobles mixtos, compartiendo una experiencia que permitió seguir fortaleciendo los vínculos entre ambas instituciones.</p>
         <div class="agosto-box">
           <p>Agradecemos al Club de Tenis Huayquique por su cálida bienvenida y hospitalidad, y felicitamos a todos nuestros representantes por ser parte de esta jornada deportiva.</p>
@@ -601,11 +604,14 @@
       <p>Una nueva oportunidad para representar al Stade Français y seguir haciendo crecer nuestra rama de tenis.</p>
     </div>
 
-    <div class="tenis-internacional reveal">
+    <div class="tenis-internacional cosat-block reveal">
+      <div>
       <h3>El Stade recibe la Gira Sudamericana COSAT</h3>
       <p>Entre el 28 de septiembre y el 3 de octubre, por segunda vez el Stade Français fue sede del COSAT G1 – Open Stade Français, una de las principales competencias juveniles del circuito sudamericano.</p>
       <p>El torneo reunió a destacados tenistas de las categorías 14 y 16 años, quienes compitieron por posicionarse en uno de los niveles más relevantes del circuito COSAT y continuar su camino de desarrollo y proyección internacional.</p>
       <p>Una semana de tenis de alto nivel, competencia y nuevas generaciones que tuvo como escenario nuestras canchas.</p>
+      </div>
+      <img src="assets/images/noticias/boletin%20septiembre/tenis-cosat-open-stade.jpg" alt="Premiación COSAT G1 – Open Stade Français" />
     </div>
 
     <div class="tenis-header-text reveal" style="margin-bottom:24px;">
