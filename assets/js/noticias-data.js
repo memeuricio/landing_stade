@@ -5,7 +5,7 @@ const NOTICIAS_DATA = [
     fecha: "2026-09-30",
     categoria: "Club",
     resumen: "Trabajador destacado Pedro Nieto, cierre del ARUSA Top 10 y tres categorías de rugby a la final, Gaspar Enríquez en el Mundial Junior de Aguas Abiertas, Carolina Palma deportista destacada del tenis, Fonda Stade 2026 y la agenda de octubre.",
-    imagen: "assets/images/noticias/boletin%20septiembre/fonda-stade-3.jpg", // TODO: reemplazar por PORTADA_BOLETIN_SEPTIEMBRE cuando esté lista
+    imagen: "assets/images/noticias/boletin%20septiembre/PORTADA_BOLETIN_SEPTIEMBRE.png",
     url: "boletin-septiembre-2026.html"
   },
   {
