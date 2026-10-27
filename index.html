@@ -126,6 +126,55 @@
     .hero-dot { width: 28px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.25); cursor: pointer; border: none; transition: var(--t); padding: 0; }
     .hero-dot.active { background: var(--dorado); width: 52px; }
 
+    /* ── BANNER ACADEMIA DE VERANO 2027 ── */
+    .hero-slide.av-slide { background: linear-gradient(155deg, #D9002F 0%, #7A1E8C 28%, #2D2CA0 58%, #1B2280 100%); justify-content: flex-start; padding-top: 56px; }
+    .av-slide-img { position: absolute; right: 0; bottom: 0; height: 100%; width: auto; z-index: 1; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 22%); mask-image: linear-gradient(to right, transparent 0%, #000 22%); }
+    .av-slide .hero-content { text-align: left; max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 48px; }
+    .av-slide-inner { max-width: 560px; }
+    .av-slide .hero-eyebrow { margin-bottom: 10px; }
+    .av-slide .hero-eyebrow::before { content: none; }
+    .av-slide .hero-title { font-size: clamp(36px, 5.4vw, 64px); margin-bottom: 18px; }
+    .av-periodos { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .av-periodo { border: 1px solid rgba(255,255,255,.3); border-radius: 10px; padding: 9px 14px; background: rgba(27,34,128,.35); }
+    .av-periodo span { display: block; font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--dorado); }
+    .av-periodo strong { display: block; font-size: 15px; font-weight: 900; color: var(--blanco); white-space: nowrap; }
+    .av-slide-note { font-size: 13px; color: rgba(255,255,255,.8); margin-bottom: 22px; line-height: 1.6; }
+    .av-slide-note b { color: var(--dorado); }
+    .av-slide .hero-actions { justify-content: flex-start; }
+    .btn-av { background: #FFC72C; color: #1B2280; font-weight: 900; padding: 16px 36px; border-radius: 40px; text-decoration: none; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; transition: var(--t); font-family: 'SonnyVol2', sans-serif; box-shadow: 0 4px 20px rgba(0,0,0,.25); }
+    .btn-av:hover { background: #ffd760; transform: translateY(-2px); }
+    .av-slide .btn-outline { border-radius: 40px; }
+    @media (max-width: 900px) {
+      .av-slide-img { opacity: .28; -webkit-mask-image: none; mask-image: none; left: 50%; right: auto; transform: translateX(-50%); }
+      .av-slide .hero-content { padding: 0 24px; }
+    }
+    @media (max-width: 600px) {
+      .av-periodo { padding: 7px 10px; }
+      .av-periodo strong { font-size: 13px; }
+      .av-slide-note { font-size: 12px; margin-bottom: 16px; }
+      .btn-av, .av-slide .btn-outline { padding: 13px 22px; }
+    }
+
+    /* ── ACADEMIA DE VERANO (bloque informativo) ── */
+    #academia-verano { background: var(--gris); }
+    .av-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+    .av-foto { position: relative; }
+    .av-foto img.av-foto-main { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; display: block; }
+    .av-foto img.av-foto-logo { position: absolute; left: -20px; bottom: -24px; width: 130px; height: auto; filter: drop-shadow(0 8px 20px rgba(0,0,0,.25)); }
+    .av-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0 28px; }
+    .av-fact { background: var(--blanco); border-radius: 8px; padding: 16px 18px; border-left: 3px solid var(--dorado); }
+    .av-fact span { display: block; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--rojo); margin-bottom: 6px; }
+    .av-fact p { font-size: 14px; color: var(--azul); line-height: 1.55; font-weight: 700; }
+    .av-fact p small { display: block; font-size: 12px; color: var(--gris-mid); font-weight: 400; }
+    .av-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .av-link { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--azul); text-decoration: none; border-bottom: 2px solid var(--dorado); padding-bottom: 3px; }
+    .av-link:hover { color: var(--rojo); }
+    @media (max-width: 900px) {
+      .av-grid { grid-template-columns: 1fr; gap: 48px; }
+      .av-foto img.av-foto-logo { left: 12px; width: 100px; }
+    }
+    @media (max-width: 480px) { .av-facts { grid-template-columns: 1fr; } }
+
     /* ── STATS ── */
     .stats-bar { background: var(--azul-dark); display: flex; align-items: stretch; justify-content: center; border-top: 3px solid var(--rojo); }
     .stat { flex: 1; max-width: 240px; padding: 28px 24px; text-align: center; border-right: 1px solid rgba(255,255,255,.06); }
@@ -401,8 +450,28 @@
 <!-- HERO — banners semanales: cada .hero-slide es un banner independiente (imagen + texto). Para cambiar el banner de la semana, edita el contenido dentro del slide correspondiente. -->
 <section id="hero">
   <div class="hero-slides">
+    <!-- BANNER 1 — Academia de Verano 2027 (inscripciones: socios desde el 28 de octubre, todo público desde el 2 de noviembre) -->
+    <div class="hero-slide hero-slide-flat av-slide active">
+      <img class="av-slide-img" src="assets/images/academia-verano/academia-verano-portada.jpg" alt="" aria-hidden="true" />
+      <div class="hero-content">
+        <div class="av-slide-inner">
+          <div class="hero-eyebrow">Verano 2027</div>
+          <h2 class="hero-title">Academia<br/>de Verano</h2>
+          <div class="av-periodos">
+            <div class="av-periodo"><span>Periodo 1</span><strong>4 – 15 enero</strong></div>
+            <div class="av-periodo"><span>Periodo 2</span><strong>18 – 29 enero</strong></div>
+            <div class="av-periodo"><span>Periodo 3</span><strong>1 – 12 febrero</strong></div>
+          </div>
+          <p class="av-slide-note">Niños y niñas de 4 a 13 años · Lunes a viernes<br/>Inscripciones: <b>socios desde el 28 de octubre</b> · todo público desde el 2 de noviembre</p>
+          <div class="hero-actions">
+            <a href="https://forms.gle/eDvubiQfRDVrRuZQA" target="_blank" rel="noopener" class="btn-av">Inscríbete aquí →</a>
+            <a href="deportes.html#academia-verano" class="btn-outline">Ver programa</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- BANNER 2 -->
-    <div class="hero-slide active" style="background-image:url('assets/images/instalaciones/acceso-principal.jpg'); background-position:center 30%;">
+    <div class="hero-slide" style="background-image:url('assets/images/instalaciones/acceso-principal.jpg'); background-position:center 30%;">
       <div class="hero-content">
         <div class="hero-eyebrow">Club Deportivo · Las Condes · Santiago</div>
         <h1 class="hero-title">STADE<br/>FRANÇAIS</h1>
@@ -445,6 +514,7 @@
     <button class="hero-dot active" data-index="0"></button>
     <button class="hero-dot" data-index="1"></button>
     <button class="hero-dot" data-index="2"></button>
+    <button class="hero-dot" data-index="3"></button>
   </div>
 </section>
 
@@ -455,6 +525,33 @@
   <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Actividades</div></div>
   <div class="stat"><div class="stat-num">SCL</div><div class="stat-label">Las Condes, Santiago</div></div>
 </div>
+
+<!-- ACADEMIA DE VERANO 2027 -->
+<section id="academia-verano">
+  <div class="container">
+    <div class="av-grid">
+      <div class="av-foto reveal">
+        <img class="av-foto-main" src="assets/images/academia-verano/academia-verano-actividades.jpg" alt="Niños y profesora en la Academia de Verano Stade Français" />
+        <img class="av-foto-logo" src="assets/images/academia-verano/logo-academia-verano.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="section-label">Verano 2027</div>
+        <h2 class="section-title">Academia de Verano</h2>
+        <p class="section-sub">Un verano para moverse, crear y compartir. Actividades deportivas, recreativas y artísticas pensadas para el desarrollo integral de cada niño y niña, con profesores, salvavidas, enfermera y psicóloga del programa.</p>
+        <div class="av-facts">
+          <div class="av-fact"><span>Periodos</span><p>4 – 15 enero<br/>18 – 29 enero<br/>1 – 12 febrero<small>Lunes a viernes</small></p></div>
+          <div class="av-fact"><span>Horarios</span><p>Media jornada 8:30 – 13:00<br/>Jornada completa 8:30 – 17:30<small>Jornada completa incluye almuerzo y snack</small></p></div>
+          <div class="av-fact"><span>Edades</span><p>De 4 a 13 años<small>Grupos reducidos por categoría</small></p></div>
+          <div class="av-fact"><span>Inscripciones</span><p>Socios: desde el 28 de octubre<br/>Todo público: desde el 2 de noviembre<small>Cupos limitados</small></p></div>
+        </div>
+        <div class="av-actions">
+          <a href="https://forms.gle/eDvubiQfRDVrRuZQA" target="_blank" rel="noopener" class="btn-primary">Inscríbete aquí</a>
+          <a href="deportes.html#academia-verano" class="av-link">Valores, talleres y más información →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- NOSOTROS -->
 <section id="nosotros">

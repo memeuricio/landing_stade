@@ -120,6 +120,92 @@
     .pill { background: var(--gris); border-radius: 4px; padding: 6px 12px; font-size: 11px; font-weight: 700; color: var(--azul); letter-spacing: .04em; }
     .pill.dest { background: var(--dorado); color: var(--azul-dark); }
 
+    /* BANNER ACADEMIA DE VERANO (hero temporal) */
+    .avp-hero { background: linear-gradient(155deg, #D9002F 0%, #7A1E8C 28%, #2D2CA0 58%, #1B2280 100%); align-items: center; padding-top: 72px; }
+    .avp-img { position: absolute; right: 0; bottom: 0; height: 100%; width: 46%; object-fit: cover; object-position: center 25%; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 22%); mask-image: linear-gradient(to right, transparent 0%, #000 22%); }
+    .avp-hero h1 { font-size: clamp(44px, 7vw, 88px); }
+    .avp-periodos { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+    .avp-periodo { border: 1px solid rgba(255,255,255,.3); border-radius: 10px; padding: 10px 16px; background: rgba(27,34,128,.35); }
+    .avp-periodo span { display: block; font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--dorado); }
+    .avp-periodo strong { display: block; font-size: 16px; font-weight: 900; color: var(--blanco); white-space: nowrap; }
+    .page-hero p.avp-note { font-size: 14px; color: rgba(255,255,255,.85); font-weight: 400; line-height: 1.7; max-width: 640px; margin-bottom: 24px; }
+    .avp-note b { color: var(--dorado); }
+    .btn-avd.ghost { background: transparent; color: var(--blanco); border: 2px solid rgba(255,255,255,.45); padding: 13px 26px; }
+    .btn-avd.ghost:hover { border-color: #FFC72C; color: #FFC72C; background: transparent; }
+    #academia-verano { scroll-margin-top: 130px; }
+    @media (max-width: 900px) {
+      .avp-img { width: 100%; opacity: .28; -webkit-mask-image: none; mask-image: none; }
+    }
+    @media (max-width: 600px) {
+      .avp-periodo { padding: 7px 10px; }
+      .avp-periodo strong { font-size: 13px; }
+      .page-hero p.avp-note { font-size: 12px; }
+    }
+
+    /* ACADEMIA DE VERANO 2027 */
+    #academia-verano { background: var(--blanco); }
+    .avd-intro { display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center; margin-bottom: 64px; }
+    .avd-intro img { width: 100%; border-radius: 16px; display: block; }
+    .avd-intro .section-sub { max-width: none; margin-bottom: 24px; }
+    .avd-intro img.avd-logo { height: 76px; width: auto; border-radius: 0; display: block; margin-bottom: 18px; }
+    .avd-fechas { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+    .avd-fecha { background: var(--azul); border-radius: 12px; padding: 18px 20px; color: var(--blanco); }
+    .avd-fecha.pub { background: #2B44A8; }
+    .avd-fecha strong { display: block; font-size: 34px; font-weight: 900; color: #FFC72C; line-height: 1; }
+    .avd-fecha span { display: block; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin: 4px 0 8px; }
+    .avd-fecha p { font-size: 13px; color: rgba(255,255,255,.8); line-height: 1.5; }
+    .avd-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-avd { display: inline-block; background: #FFC72C; color: #1B2280; font-family: 'SonnyVol2', sans-serif; font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; padding: 15px 28px; border-radius: 40px; text-decoration: none; transition: all var(--t); }
+    .btn-avd:hover { background: #ffd760; transform: translateY(-2px); }
+    .btn-avd.wa { background: #25A244; color: var(--blanco); }
+    .btn-avd.wa:hover { background: #1e8a39; }
+    .avd-block { margin-bottom: 56px; }
+    .avd-block > h3 { font-size: 22px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: -.01em; margin-bottom: 6px; }
+    .avd-block > p.avd-sub { font-size: 14px; color: var(--gris-mid); margin-bottom: 20px; line-height: 1.7; }
+    .avd-periodos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .avd-card { background: var(--gris); border-radius: 12px; padding: 20px 22px; }
+    .avd-card span { display: block; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--rojo); margin-bottom: 6px; }
+    .avd-card strong { display: block; font-size: 20px; font-weight: 900; color: var(--azul); line-height: 1.15; }
+    .avd-card small { display: block; font-size: 12px; color: var(--gris-mid); margin-top: 6px; }
+    .avd-two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .avd-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .avd-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; font-size: 14px; }
+    .avd-table th { font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--gris-mid); text-align: left; padding: 6px 14px; white-space: nowrap; }
+    .avd-table th small { display: block; font-size: 10px; font-weight: 400; letter-spacing: 0; text-transform: none; }
+    .avd-table td { background: var(--gris); padding: 13px 14px; color: var(--azul); white-space: nowrap; }
+    .avd-table td:first-child { border-radius: 8px 0 0 8px; font-weight: 900; }
+    .avd-table td:last-child { border-radius: 0 8px 8px 0; }
+    .avd-table.precios td, .avd-table.precios th { text-align: center; }
+    .avd-table.precios td:first-child, .avd-table.precios th:first-child { text-align: left; }
+    .avd-table.precios td { font-weight: 800; }
+    .avd-table .grp-socio { background: var(--rojo); color: var(--blanco); border-radius: 6px; }
+    .avd-table .grp-ext { background: #FFC72C; color: #1B2280; border-radius: 6px; }
+    .avd-talleres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .avd-taller { background: var(--gris); border-radius: 12px; padding: 22px 24px; }
+    .avd-taller h4 { font-size: 15px; font-weight: 900; color: var(--azul); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 12px; }
+    .avd-taller ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+    .avd-taller li { font-size: 12px; color: var(--azul); background: var(--blanco); border-radius: 20px; padding: 5px 11px; }
+    .avd-horarios { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+    .avd-note { background: #FFF6DC; border-left: 4px solid #FFC72C; border-radius: 0 10px 10px 0; padding: 16px 20px; font-size: 14px; color: var(--azul); line-height: 1.7; margin-top: 14px; }
+    .avd-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+    .avd-step { background: var(--gris); border-radius: 12px; padding: 22px 24px; }
+    .avd-step b.num { display: inline-flex; width: 30px; height: 30px; border-radius: 50%; background: var(--rojo); color: var(--blanco); align-items: center; justify-content: center; font-size: 14px; margin-bottom: 10px; }
+    .avd-step h4 { font-size: 16px; font-weight: 900; color: var(--azul); margin-bottom: 8px; }
+    .avd-step p { font-size: 14px; color: var(--gris-mid); line-height: 1.7; margin-bottom: 12px; }
+    .avd-step p:last-child { margin-bottom: 0; }
+    .avd-list { list-style: none; }
+    .avd-list li { font-size: 14px; color: var(--gris-mid); line-height: 1.7; padding-left: 18px; position: relative; margin-bottom: 8px; }
+    .avd-list li::before { content: ''; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: var(--rojo); }
+    .avd-list li strong { color: var(--azul); }
+    @media (max-width: 900px) {
+      .avd-intro, .avd-two { grid-template-columns: 1fr; gap: 36px; }
+      .avd-intro img { max-width: 520px; }
+      .avd-periodos, .avd-talleres { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .avd-fechas, .avd-horarios, .avd-steps { grid-template-columns: 1fr; }
+    }
+
     /* ACADEMIAS ESPECIALES */
     #academias { background: var(--azul); }
     .acad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 44px; }
@@ -225,7 +311,28 @@
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — Banner Academia de Verano 2027 (temporal: inscripciones desde el 28 de octubre).
+     Para volver al hero habitual, borra este bloque y descomenta el "HERO HABITUAL" de abajo. -->
+<div class="page-hero avp-hero">
+  <img class="avp-img" src="assets/images/academia-verano/academia-verano-portada.jpg" alt="" aria-hidden="true" />
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a><span class="breadcrumb-sep">›</span>Deportes y Actividades</div>
+    <div class="page-hero-label">Verano 2027 · Niños y niñas de 4 a 13 años</div>
+    <h1>ACADEMIA<br/>DE <em>VERANO</em></h1>
+    <div class="avp-periodos">
+      <div class="avp-periodo"><span>Periodo 1</span><strong>4 – 15 enero</strong></div>
+      <div class="avp-periodo"><span>Periodo 2</span><strong>18 – 29 enero</strong></div>
+      <div class="avp-periodo"><span>Periodo 3</span><strong>1 – 12 febrero</strong></div>
+    </div>
+    <p class="avp-note">Lunes a viernes · Media jornada 8:30 – 13:00 · Jornada completa 8:30 – 17:30<br/>Inscripciones: <b>socios desde el 28 de octubre</b> · todo público desde el 2 de noviembre</p>
+    <div class="avd-btns">
+      <a href="https://forms.gle/eDvubiQfRDVrRuZQA" target="_blank" rel="noopener" class="btn-avd">Inscríbete aquí →</a>
+      <a href="#academia-verano" class="btn-avd ghost">Valores y toda la información ↓</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO HABITUAL
 <div class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="page-hero-content">
@@ -235,11 +342,13 @@
     <p>Desde los 3 años hasta los 80+. Academias, clases, entrenamientos y actividades recreativas para toda la familia, todo el año.</p>
   </div>
 </div>
+-->
 
 <!-- FILTROS NAV -->
 <div class="filtros-bar">
   <div class="filtros-inner">
-    <button class="filtro-btn active" onclick="scrollTo('padel')">🏓 Pádel</button>
+    <button class="filtro-btn active" onclick="scrollTo('academia-verano')">☀️ Academia de Verano</button>
+    <button class="filtro-btn" onclick="scrollTo('padel')">🏓 Pádel</button>
     <button class="filtro-btn" onclick="scrollTo('natacion-act')">🏊 Natación</button>
     <button class="filtro-btn" onclick="scrollTo('tenis-act')">🎾 Tenis</button>
     <button class="filtro-btn" onclick="scrollTo('taekwondo')">🥋 Taekwondo</button>
@@ -249,6 +358,147 @@
     <button class="filtro-btn" onclick="scrollTo('inscripcion')">📋 Inscríbete</button>
   </div>
 </div>
+
+<!-- ACADEMIA DE VERANO 2027 -->
+<section id="academia-verano">
+  <div class="container">
+    <div class="avd-intro">
+      <div class="reveal">
+        <img class="avd-logo" src="assets/images/academia-verano/logo-academia-verano.png" alt="Academia de Verano Stade Français" />
+        <div class="section-label">Verano 2027</div>
+        <h2 class="section-title">Academia de Verano 2027</h2>
+        <p class="section-sub">La Academia de Verano de Stade Français vuelve este 2027 con un programa de actividades deportivas, recreativas y artísticas pensado para el desarrollo integral de cada niño y niña. Nuestra prioridad es su seguridad y bienestar: mantenemos una comunicación constante con las familias para que ellos solo se preocupen de disfrutar sus vacaciones.</p>
+        <div class="avd-fechas">
+          <div class="avd-fecha"><strong>28</strong><span>de octubre</span><p>Comienzan las inscripciones exclusivas para <b>socios</b></p></div>
+          <div class="avd-fecha pub"><strong>2</strong><span>de noviembre</span><p>Comienzan las inscripciones para <b>todo público</b></p></div>
+        </div>
+        <div class="avd-btns">
+          <a href="https://forms.gle/eDvubiQfRDVrRuZQA" target="_blank" rel="noopener" class="btn-avd">Inscríbete aquí →</a>
+          <a href="https://wa.me/56985874540" target="_blank" rel="noopener" class="btn-avd wa">WhatsApp +56 9 8587 4540</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <img src="assets/images/academia-verano/academia-verano-actividades.jpg" alt="Niños y profesora en la Academia de Verano Stade Français" style="aspect-ratio:4/3;object-fit:cover;" />
+      </div>
+    </div>
+
+    <div class="avd-block reveal">
+      <h3>Periodos</h3>
+      <p class="avd-sub">De lunes a viernes. Cada periodo requiere un mínimo de 80 alumnos inscritos para realizarse.</p>
+      <div class="avd-periodos">
+        <div class="avd-card"><span>Periodo 1</span><strong>4 al 15 de enero</strong><small>Lunes 4 a viernes 15</small></div>
+        <div class="avd-card"><span>Periodo 2</span><strong>18 al 29 de enero</strong><small>Lunes 18 a viernes 29</small></div>
+        <div class="avd-card"><span>Periodo 3</span><strong>1 al 12 de febrero</strong><small>Lunes 1 a viernes 12</small></div>
+      </div>
+    </div>
+
+    <div class="avd-block avd-two reveal">
+      <div>
+        <h3 style="font-size:22px;font-weight:900;color:var(--azul);text-transform:uppercase;margin-bottom:6px;">Categorías</h3>
+        <p class="avd-sub" style="font-size:14px;color:var(--gris-mid);margin-bottom:14px;">Grupos por edad, con un número reducido de niños por profesor.</p>
+        <div class="avd-table-wrap">
+          <table class="avd-table">
+            <thead><tr><th>Categoría</th><th>Edad</th><th>Profesores</th></tr></thead>
+            <tbody>
+              <tr><td>Playgroup</td><td>4 años</td><td>2 cada 10 niños</td></tr>
+              <tr><td>Kinder</td><td>5 años</td><td>1 cada 8 niños</td></tr>
+              <tr><td>Junior</td><td>6 y 7 años</td><td>1 cada 9 niños</td></tr>
+              <tr><td>Super Junior</td><td>8 y 9 años</td><td>1 cada 10 niños</td></tr>
+              <tr><td>Teens</td><td>10 y 11 años</td><td>1 cada 10 niños</td></tr>
+              <tr><td>Super Teens</td><td>12 y 13 años</td><td>1 cada 10 niños</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:900;color:var(--azul);text-transform:uppercase;margin-bottom:6px;">Horarios</h3>
+        <p class="avd-sub" style="font-size:14px;color:var(--gris-mid);margin-bottom:2px;">Para todas las categorías.</p>
+        <div class="avd-horarios">
+          <div class="avd-card"><span>Media jornada</span><strong>8:30 – 13:00</strong></div>
+          <div class="avd-card"><span>Jornada completa</span><strong>8:30 – 17:30</strong><small>Incluye almuerzo y snack de la tarde</small></div>
+          <div class="avd-card"><span>Ingreso</span><strong>8:30 – 9:00</strong><small>Acceso principal, Av. Sánchez Fontecilla 498</small></div>
+          <div class="avd-card"><span>Retiro</span><strong>13:00 / 17:00 – 17:30</strong><small>Media jornada / jornada completa</small></div>
+        </div>
+        <div class="avd-note">Para retirar a un alumno es obligatorio estar registrado como persona autorizada (nombre y RUT) en la ficha de inscripción y presentar la cédula de identidad.</div>
+      </div>
+    </div>
+
+    <div class="avd-block reveal">
+      <h3>Talleres</h3>
+      <p class="avd-sub">Tres líneas de talleres que se combinan durante la semana para mantener a los niños motivados, activos y creando lazos de amistad.</p>
+      <div class="avd-talleres">
+        <div class="avd-taller"><h4>Deportivos</h4><ul><li>Fútbol</li><li>Rugby</li><li>Tenis</li><li>Natación</li><li>Básquetbol</li><li>Vóleibol</li><li>Hockey</li><li>Gimnasia rítmica</li><li>Atletismo</li><li>Ajedrez</li><li>Taekwondo kids</li><li>Yoga kids</li></ul></div>
+        <div class="avd-taller"><h4>Recreativos</h4><ul><li>Just Dance</li><li>Arcade basketball</li><li>Jenga, dominó y ajedrez</li><li>Lego</li><li>Teatro y circo</li><li>Ice hockey arcade</li><li>Slackline y frisbee</li><li>Inflables</li><li>Taca-taca</li><li>Cine</li><li>Piscina entretenida</li><li>Búsqueda del tesoro</li></ul></div>
+        <div class="avd-taller"><h4>Artísticos</h4><ul><li>Reciclaje</li><li>Confección de títeres</li><li>Baile</li><li>Teatro</li><li>Pintura</li><li>Mandalas</li><li>Let's Dance</li><li>Ciencia entretenida</li><li>Crochet</li><li>Bisutería con mostacillas</li></ul></div>
+      </div>
+    </div>
+
+    <div class="avd-block reveal">
+      <h3>Valores por periodo</h3>
+      <p class="avd-sub">Cada valor corresponde a un periodo completo e incluye almuerzo y snack de la tarde.</p>
+      <div class="avd-table-wrap">
+        <table class="avd-table precios">
+          <thead>
+            <tr><th></th><th colspan="2" class="grp-socio">Socio</th><th colspan="2" class="grp-ext">Externo</th></tr>
+            <tr><th>Categoría</th><th>Media<small>8:30 a 13:00</small></th><th>Completa<small>8:30 a 17:30</small></th><th>Media<small>8:30 a 13:00</small></th><th>Completa<small>8:30 a 17:30</small></th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Playgroup</td><td>$207.000</td><td>–</td><td>$300.000</td><td>–</td></tr>
+            <tr><td>Kinder</td><td>$189.000</td><td>$267.990</td><td>$267.990</td><td>$350.000</td></tr>
+            <tr><td>Junior</td><td>$189.000</td><td>$267.990</td><td>$267.990</td><td>$350.000</td></tr>
+            <tr><td>Super Junior</td><td>$189.000</td><td>$267.990</td><td>–</td><td>$350.000</td></tr>
+            <tr><td>Teens</td><td>$189.000</td><td>$267.990</td><td>–</td><td>$350.000</td></tr>
+            <tr><td>Super Teens</td><td>$189.000</td><td>$267.990</td><td>–</td><td>$350.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="avd-note"><b>Disponibilidad de cupos semanales.</b> Consulta por valores y disponibilidad durante enero por WhatsApp al <a href="https://wa.me/56985874540" target="_blank" rel="noopener" style="color:var(--azul);font-weight:800;">+56 9 8587 4540</a>. Para acceder al valor socio debes tener tu cuota social al día.</div>
+    </div>
+
+    <div class="avd-block reveal">
+      <h3>Cómo inscribirse</h3>
+      <p class="avd-sub">Cupos limitados.</p>
+      <div class="avd-steps">
+        <div class="avd-step">
+          <b class="num">1</b>
+          <h4>Inscríbete online</h4>
+          <p>Completa el formulario de inscripción. Recuerda indicar ahí a las personas autorizadas para retirar al alumno.</p>
+          <a href="https://forms.gle/eDvubiQfRDVrRuZQA" target="_blank" rel="noopener" class="btn-avd">Ir al formulario →</a>
+        </div>
+        <div class="avd-step">
+          <b class="num">2</b>
+          <h4>Paga en la oficina y reserva tu cupo</h4>
+          <p>El cupo se reserva solo al pagar de forma presencial en la oficina de atención al cliente. <strong style="color:var(--azul)">La inscripción online no reserva cupo.</strong> También puedes inscribirte directamente en la oficina.</p>
+          <p><strong style="color:var(--azul)">Oficina de atención al cliente</strong><br/>Av. Mariano Sánchez Fontecilla 498, Las Condes<br/>Lunes a viernes de 9:00 a 19:30 hrs. · Sábados de 10:00 a 14:00 hrs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="avd-block avd-two reveal" style="margin-bottom:0;">
+      <div>
+        <h3 style="font-size:22px;font-weight:900;color:var(--azul);text-transform:uppercase;margin-bottom:14px;">Equipo y servicios</h3>
+        <ul class="avd-list">
+          <li><strong>Profesores de Educación Física</strong> con amplia experiencia en programas de entretención</li>
+          <li><strong>Educadoras de párvulos</strong> para los más pequeños</li>
+          <li><strong>Salvavidas</strong> exclusivos del programa</li>
+          <li><strong>Enfermera certificada</strong> para el cuidado de la salud de los niños</li>
+          <li><strong>Psicóloga</strong> que acompaña y apoya a los niños durante las jornadas</li>
+          <li>Polera del color de su grupo, comunicación permanente con las familias por email y profesores comunicados con walkie-talkie</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:900;color:var(--azul);text-transform:uppercase;margin-bottom:14px;">Condiciones generales</h3>
+        <ul class="avd-list">
+          <li><strong>Devoluciones:</strong> no se realiza devolución de dinero por inasistencia ni por enfermedad.</li>
+          <li><strong>Convivencia:</strong> Stade Français se reserva el derecho de admisión y permanencia de cada alumno, para resguardar la sana convivencia y el buen desarrollo de las actividades.</li>
+          <li><strong>Salud:</strong> si un alumno presenta algún malestar o sufre un accidente, avisaremos a sus apoderados para que lo retiren.</li>
+          <li><strong>Actividades:</strong> la Academia de Verano puede modificar, eliminar o incorporar actividades según lo requieran las circunstancias.</li>
+        </ul>
+        <div class="avd-note" style="margin-top:20px;"><b>¿Tienes dudas?</b> Escríbenos por <a href="https://wa.me/56985874540" target="_blank" rel="noopener" style="color:var(--azul);font-weight:800;">WhatsApp +56 9 8587 4540</a> o a <a href="mailto:academiasverano@gmail.com" style="color:var(--azul);font-weight:800;">academiasverano@gmail.com</a>. También puedes llamar al +56 2 2234 3924.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- RESUMEN ACTIVIDADES -->
 <section id="actividades">
@@ -631,7 +881,7 @@
           <span class="acad-cat">Arte</span>
           <span class="acad-cat">Natación</span>
         </div>
-        <a href="contacto.html" class="btn-acad">Más Información</a>
+        <a href="#academia-verano" class="btn-acad">Ver Academia de Verano 2027</a>
       </div>
       <div class="acad-card reveal reveal-delay-2">
         <div class="acad-icon">👶</div>
