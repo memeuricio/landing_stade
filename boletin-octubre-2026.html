@@ -83,11 +83,14 @@
     .funcional-prueba { display: inline-block; background: var(--rojo); color: var(--blanco); font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; padding: 10px 18px; border-radius: 4px; }
     .funcional-posters { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .funcional-posters img { width: 100%; border-radius: 10px; display: block; box-shadow: 0 10px 30px rgba(41,40,92,.12); }
+    .lizana-grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: center; }
+    .lizana-grid img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: 12px; display: block; }
     .halloween-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: start; }
     .halloween-grid img { width: 100%; border-radius: 12px; display: block; }
     .halloween-grid p { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.85; margin-bottom: 12px; }
     @media (max-width: 900px) {
-      .funcional-block, .halloween-grid { grid-template-columns: 1fr; gap: 28px; }
+      .funcional-block, .halloween-grid, .lizana-grid { grid-template-columns: 1fr; gap: 28px; }
+      .lizana-grid img { max-width: 360px; }
       .laver-stats { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 600px) {
@@ -716,12 +719,15 @@
       </div>
     </div>
 
-    <div class="tenis-internacional reveal" style="margin-bottom:48px;">
+    <div class="tenis-internacional lizana-grid reveal" style="margin-bottom:48px;">
+      <div>
       <h3>Una visita llena de historia y legado en el Stade Français</h3>
       <p>El Stade Français tuvo el privilegio de recibir a Carol Lizana y su familia, en un encuentro marcado por la historia del tenis chileno.</p>
       <p>Carol, hija de Anita Lizana, una de las máximas exponentes del deporte nacional, compartió parte del legado de su madre, quien en 1937 se convirtió en la primera latinoamericana en alcanzar el número uno del mundo y conquistó el título individual del US National Championships, actual US Open.</p>
       <p>Una trayectoria histórica que abrió camino para el tenis chileno y que sigue inspirando a nuevas generaciones.</p>
       <p>Durante su visita, Carol y su familia también extendieron una invitación a participar del World Tennis Masters Tour MT1000 Santiago by MG Difor, que se realizará en nuestro club entre el 14 y el 22 de noviembre.</p>
+      </div>
+      <img src="assets/images/noticias/boletin%20octubre/carol-lizana.jpg" alt="Carol Lizana, hija de Anita Lizana, en el Stade Français" />
     </div>
 
     <div class="convenio-grid reveal">
