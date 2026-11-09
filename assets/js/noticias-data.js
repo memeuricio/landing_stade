@@ -1,5 +1,14 @@
 const NOTICIAS_DATA = [
   {
+    id: 12,
+    titulo: "Boletín Octubre 2026",
+    fecha: "2026-10-31",
+    categoria: "Club",
+    resumen: "Editorial de Tom Stark, trabajador destacado don Washington, la Coppa Italia y la Copa Laver, Las Galas subcampeonas del ARUSA, el primer Seven en el Stade, natación con la selección chilena, nuevo gimnasio funcional, Halloween y la agenda de noviembre.",
+    imagen: "assets/images/noticias/boletin%20octubre/copa-laver-campeon-rojo.jpg", // TODO: reemplazar por PORTADA_BOLETIN_OCTUBRE cuando esté lista
+    url: "boletin-octubre-2026.html"
+  },
+  {
     id: 11,
     titulo: "Boletín Septiembre 2026",
     fecha: "2026-09-30",
