@@ -1,5 +1,32 @@
 const NOTICIAS_DATA = [
   {
+    id: 13,
+    titulo: "El MT1000 se vive en el Stade",
+    fecha: "2026-11-10",
+    categoria: "Tenis",
+    resumen: "Del 14 al 22 de noviembre, el Stade Français recibe el World Tennis Masters Tour MT1000 Santiago by MG Difor, con más de 500 jugadores de más de 25 países, Fan Fest y finales transmitidas en vivo por ADN.",
+    imagen: "assets/images/noticias/mt1000-santiago-2026.jpg",
+    contenidoHtml: `
+<img class="boletin-img" src="assets/images/noticias/mt1000-santiago-logo.jpg" alt="World Tennis Masters Tour MT1000 Santiago — El corazón del tenis" />
+<p>Del 14 al 22 de noviembre, el Stade Français será el punto de encuentro del tenis senior mundial con una nueva edición del World Tennis Masters Tour MT1000 Santiago by MG Difor, que reunirá a más de 500 jugadores provenientes de más de 25 países.</p>
+<p>Por segundo año consecutivo, nuestro club será sede de este importante torneo internacional, el único MT1000 de Chile y uno de los dos que se realizan en Sudamérica. Durante nueve jornadas, destacados exponentes del tenis senior llegarán al Stade para competir, compartir experiencias y ser parte de una verdadera fiesta del tenis.</p>
+
+<h3>Mucho más que una competencia</h3>
+<p>Pero el MT1000 será mucho más que una competencia. El club contará con un Fan Fest abierto al encuentro y la entretención, con emprendedores, propuestas gastronómicas, foodtrucks, activaciones de marcas y diferentes espacios para disfrutar durante el torneo.</p>
+<p>Los jugadores también podrán vivir una experiencia integral, con acceso a las instalaciones del club, que incluyen 18 canchas de arcilla, piscina temperada, gimnasio, sauna y camarines, además de servicios y atenciones especialmente preparados para recibirlos.</p>
+<img class="boletin-img" src="assets/images/noticias/mt1000-santiago-cancha.jpg" alt="Cancha de arcilla del Stade Français preparada para el MT1000 Santiago" />
+
+<h3>Fechas clave</h3>
+<ul>
+  <li><strong>14 al 22 de noviembre:</strong> torneo MT1000 Santiago.</li>
+  <li><strong>Martes 17 de noviembre:</strong> ceremonia de apertura.</li>
+  <li><strong>Finales:</strong> transmitidas en vivo por ADN.</li>
+</ul>
+<p>Así, el Stade Français abrirá sus puertas para recibir a la comunidad tenística internacional y convertirse, durante nueve días, en el gran punto de encuentro del tenis senior mundial.</p>
+<blockquote>En el Stade Français late el corazón del tenis.</blockquote>
+    `
+  },
+  {
     id: 12,
     titulo: "Boletín Octubre 2026",
     fecha: "2026-10-31",
