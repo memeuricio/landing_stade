@@ -1,5 +1,23 @@
 const NOTICIAS_DATA = [
   {
+    id: 14,
+    titulo: "Estatutos y reglamentos: versiones definitivas",
+    fecha: "2026-11-25",
+    categoria: "Club",
+    resumen: "Ponemos a disposición de socios y socias las versiones definitivas del Reglamento de Uso de Instalaciones Deportivas, el Reglamento de la Comisión de Ética y Disciplina y los Estatutos, con los aportes recibidos incorporados.",
+    imagen: "assets/images/instalaciones/acceso-principal.jpg",
+    contenidoHtml: `
+<p>Estimados socios y socias:</p>
+<p>Ponemos a vuestra disposición las versiones definitivas de los reglamentos de uso de instalaciones y reglamento de la comisión de ética y Estatutos con los comentarios incorporados de los aportes recibidos.</p>
+<h3>Documentos</h3>
+<div class="doc-list">
+  <a class="doc-link" href="assets/pdf/reglamento-uso-instalaciones-deportivas.pdf" target="_blank" rel="noopener">📄 Reglamento sobre Uso de Instalaciones Deportivas <span>Descargar PDF</span></a>
+  <a class="doc-link" href="assets/pdf/reglamento-comision-etica-disciplina.pdf" target="_blank" rel="noopener">📄 Reglamento Comisión de Ética y Disciplina <span>Descargar PDF</span></a>
+  <a class="doc-link" href="assets/pdf/estatutos-sociedad-deportiva-stade-francais.pdf" target="_blank" rel="noopener">📄 Estatutos de la Sociedad Deportiva Stade Français <span>Descargar PDF</span></a>
+</div>
+    `
+  },
+  {
     id: 13,
     titulo: "El MT1000 se vive en el Stade",
     fecha: "2026-11-10",
