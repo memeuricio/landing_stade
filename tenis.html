@@ -101,6 +101,38 @@
     .academia-text p { font-size: 16px; color: #374151; line-height: 1.85; margin-bottom: 18px; font-weight: 400; }
     .academia-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: var(--blanco); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 10px 18px; border-radius: 4px; margin-top: 8px; }
     .academia-badge span { color: var(--dorado); }
+    .academia-valores { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 22px; }
+    .academia-valores span { background: var(--gris); border-left: 3px solid var(--rojo); padding: 8px 14px; border-radius: 4px; font-size: 11px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; color: var(--azul); }
+    .academia-sub { margin-top: 64px; }
+    .academia-sub h3 { font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; color: var(--azul); margin-bottom: 20px; }
+    .programas-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .programa-card { background: var(--azul); color: var(--blanco); border-radius: 8px; padding: 22px 18px; text-align: center; }
+    .programa-card b { display: block; font-size: 28px; font-weight: 900; color: var(--dorado); margin-bottom: 6px; }
+    .programa-card span { font-size: 12px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+    .programas-note { margin-top: 14px; font-size: 14px; font-weight: 700; color: var(--rojo); }
+    .cambia-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .cambia-card { background: var(--gris); border-radius: 8px; padding: 22px 20px; }
+    .cambia-card h4 { font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; color: var(--azul); margin-bottom: 8px; }
+    .cambia-card p { font-size: 14px; color: #374151; line-height: 1.6; }
+    .academia-footnote { margin-top: 12px; font-size: 12px; color: var(--gris-mid); line-height: 1.6; }
+    .academia-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .horarios-list { list-style: none; }
+    .horarios-list li { padding: 12px 0; border-bottom: 1px solid rgba(41,40,92,.1); font-size: 14px; color: #374151; line-height: 1.6; }
+    .horarios-list li strong { display: block; font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--azul); }
+    .precios-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .precios-table th { background: var(--azul); color: var(--blanco); font-size: 10px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; padding: 10px 12px; text-align: left; }
+    .precios-table td { padding: 9px 12px; border-bottom: 1px solid rgba(41,40,92,.1); color: #374151; }
+    .precios-table td:first-child { font-weight: 800; color: var(--azul); }
+    .precios-table td.socio { color: var(--rojo); font-weight: 800; }
+    .academia-cta { margin-top: 56px; background: var(--azul); border-radius: 12px; padding: 36px 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+    .academia-cta h3 { font-size: 24px; font-weight: 900; text-transform: uppercase; color: var(--blanco); margin-bottom: 6px; }
+    .academia-cta p { font-size: 14px; color: rgba(255,255,255,.75); line-height: 1.7; }
+    .academia-cta p a { color: var(--dorado); text-decoration: none; font-weight: 700; }
+    .academia-cta-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn-dorado { display: inline-block; background: var(--dorado); color: var(--azul); font-weight: 900; padding: 15px 28px; border-radius: 4px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: var(--t); }
+    .btn-dorado:hover { transform: translateY(-2px); }
+    .btn-ghost-light { display: inline-block; border: 1px solid rgba(255,255,255,.4); color: var(--blanco); font-weight: 900; padding: 14px 24px; border-radius: 4px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: var(--t); }
+    .btn-ghost-light:hover { border-color: var(--dorado); color: var(--dorado); }
 
     #cuerpo { background: var(--azul); }
     .staff-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 24px; margin-top: 40px; }
@@ -188,6 +220,16 @@
       .photo-grid { grid-template-columns: 1fr 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .academia-img { aspect-ratio: 16/9; }
+      .programas-grid { grid-template-columns: repeat(3, 1fr); }
+      .cambia-grid, .academia-info-grid { grid-template-columns: 1fr 1fr; }
+      .academia-info-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .programas-grid { grid-template-columns: 1fr 1fr; }
+      .cambia-grid { grid-template-columns: 1fr; }
+      .academia-cta { padding: 28px 22px; }
+      .precios-table { font-size: 13px; }
+      .precios-table th, .precios-table td { padding: 8px 8px; }
     }
     @media (max-width: 600px) {
       .photo-grid { grid-template-columns: 1fr; }
@@ -337,14 +379,76 @@
   <div class="container">
     <div class="academia-grid">
       <div class="academia-img reveal">
-        <img src="assets/images/instalaciones/academia-tenis.jpg" alt="Academia W-Tenis Pro Stade Français" />
+        <img src="assets/images/tenis-escuela/canchas-stade-tenis.jpg" alt="Canchas de arcilla del Stade Français" style="object-position:center" />
       </div>
       <div class="academia-text">
-        <div class="section-label reveal">Clases de Tenis</div>
-        <h2 class="section-title reveal reveal-delay-1">Academia W-Tenis Pro</h2>
-        <p class="reveal reveal-delay-2">Nuestra academia de tenis ofrece un programa estructurado para niños y jóvenes que quieren aprender y mejorar en canchas de arcilla de primer nivel en Las Condes.</p>
-        <p class="reveal reveal-delay-2">Con metodología progresiva, grupos reducidos y entrenadores certificados, W-Tenis Pro forma jugadores con bases sólidas técnicas y tácticas desde temprana edad.</p>
-        <div class="academia-badge reveal reveal-delay-3">Escuela de Tenis <span>Stade Français</span></div>
+        <div class="section-label reveal">Escuela de Tenis · Desde el 1 de diciembre</div>
+        <h2 class="section-title reveal reveal-delay-1">Una nueva era para el tenis del Stade</h2>
+        <p class="reveal reveal-delay-2">Desde el 1 de diciembre, la <strong>Escuela de Tenis Fernando González</strong> y la <strong>Academia Alto Tenis</strong> están a cargo del tenis en Stade Français.</p>
+        <p class="reveal reveal-delay-2">Nuestro objetivo: posicionar al Stade entre las mejores escuelas formativas de Chile y recuperar el prestigio que siempre lo ha caracterizado, sin perder los valores y el espíritu del club.</p>
+        <p class="reveal reveal-delay-2">Con casi 20 años formando jugadores, formamos a niños, jóvenes y adultos, desde sus primeras clases hasta el circuito profesional. En cada entrenamiento enseñamos a:</p>
+        <div class="academia-valores reveal reveal-delay-3"><span>Respetar al rival</span><span>Ganar con humildad</span><span>Aprender de una derrota</span></div>
+        <div class="academia-badge reveal reveal-delay-3">Stade Français Tenis <span>by Fernando González · Alto Tenis</span></div>
+      </div>
+    </div>
+
+    <div class="academia-sub">
+      <h3 class="reveal">Un programa para cada etapa</h3>
+      <div class="programas-grid reveal reveal-delay-1">
+        <div class="programa-card"><b>01</b><span>Mini Tenis</span></div>
+        <div class="programa-card"><b>02</b><span>Iniciación</span></div>
+        <div class="programa-card"><b>03</b><span>Competencia</span></div>
+        <div class="programa-card"><b>04</b><span>Alto Rendimiento</span></div>
+        <div class="programa-card"><b>05</b><span>Adultos</span></div>
+      </div>
+      <p class="programas-note reveal reveal-delay-2">Los socios del Stade tienen descuento exclusivo en todos los programas.</p>
+    </div>
+
+    <div class="academia-sub">
+      <h3 class="reveal">¿Qué cambia?</h3>
+      <div class="cambia-grid reveal reveal-delay-1">
+        <div class="cambia-card"><h4>Metodología integral</h4><p>Entrenamiento en cancha complementado con preparación física, kinesiología, nutrición y apoyo psicológico.*</p></div>
+        <div class="cambia-card"><h4>Seguimiento del progreso</h4><p>Cada jugador tiene su propia ficha, con evaluaciones mensuales y trimestrales.*</p></div>
+        <div class="cambia-card"><h4>Grupos reducidos</h4><p>Máximo 4 jugadores por cancha.*</p></div>
+        <div class="cambia-card"><h4>Más tenis para adultos</h4><p>Clases pensadas para mejorar el juego, el bienestar físico y el entretenimiento.</p></div>
+      </div>
+      <p class="academia-footnote reveal">*Exclusivo de Alto Rendimiento o Formación II, dependiendo del programa, y se contrata de forma independiente.</p>
+    </div>
+
+    <div class="academia-sub academia-info-grid">
+      <div class="reveal">
+        <h3>Horarios 2027</h3>
+        <ul class="horarios-list">
+          <li><strong>Lunes a viernes · 07:00 a 23:00</strong>Adultos en la mañana, mediodía y noche · Formación y Élite durante el día · Escuela infantil desde las 15:30</li>
+          <li><strong>Sábado · 07:00 a 18:00</strong>Adultos en la mañana · Mini Tenis e Iniciación de 10:30 a 12:30 · Reforzamiento en la tarde</li>
+          <li><strong>Domingo</strong>Mini Tenis de 10:00 a 12:00 · Reforzamiento de 14:00 a 18:00</li>
+        </ul>
+        <p class="academia-footnote">Canchas 13 a 18 y multicancha · Bloques de 30 min · Sujeto a cambios.</p>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <h3>Valores mensuales desde</h3>
+        <table class="precios-table">
+          <tr><th>Programa</th><th>Socio Stade</th><th>Público general</th></tr>
+          <tr><td>Mini Tenis</td><td class="socio">$132.000</td><td>$146.000</td></tr>
+          <tr><td>Iniciación</td><td class="socio">$154.000</td><td>$171.000</td></tr>
+          <tr><td>Formación 1</td><td class="socio">$176.000</td><td>$195.000</td></tr>
+          <tr><td>Formación 2</td><td class="socio">$362.000</td><td>$381.000</td></tr>
+          <tr><td>Élite / Alto Rendimiento</td><td class="socio">$545.000</td><td>$572.000</td></tr>
+          <tr><td>After Office</td><td class="socio">$168.000</td><td>$186.000</td></tr>
+          <tr><td>Tenis Mujer</td><td class="socio">$168.000</td><td>$186.000</td></tr>
+        </table>
+        <p class="academia-footnote">Plan mensual, frecuencia mínima. Planes trimestral (-13%), semestral (-20%) y anual (-33%). Descuento socio: 10% escuela formativa · 5% Formación 2 y Élite.</p>
+      </div>
+    </div>
+
+    <div class="academia-cta reveal">
+      <div>
+        <h3>¡Inscripciones abiertas!</h3>
+        <p>Escuela para niños, jóvenes y adultos desde el 1 de diciembre.<br/><a href="tel:+56966956889">+56 9 6695 6889</a> · <a href="mailto:ventas@escuelafernandogonzalez.cl">ventas@escuelafernandogonzalez.cl</a></p>
+      </div>
+      <div class="academia-cta-btns">
+        <a href="https://forms.cloud.microsoft/r/WiNS45peuF" target="_blank" rel="noopener" class="btn-dorado">Inscríbete aquí →</a>
+        <a href="assets/pdf/stade-francais-tenis-2027.pdf" target="_blank" rel="noopener" class="btn-ghost-light">Horarios y precios (PDF)</a>
       </div>
     </div>
   </div>
@@ -517,7 +621,7 @@
           <select name="interes">
             <option value="">Selecciona una opción</option>
             <optgroup label="Clases y Academia">
-              <option>Academia W-Tenis Pro</option>
+              <option>Escuela de Tenis Fernando González · Alto Tenis</option>
               <option>Clases Particulares</option>
               <option>Interclub Adulto</option>
             </optgroup>
@@ -714,7 +818,7 @@
 
       <div class="wa-divider"></div>
       <div class="wa-cat-label">🎾 Tenis</div>
-      <a class="wa-contact" href="https://wa.me/56934885162?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20Escuela%20de%20Tenis." target="_blank">
+      <a class="wa-contact" href="https://wa.me/56966956889?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20Escuela%20de%20Tenis." target="_blank">
         <div class="wa-c-ico">🎾</div>
         <div class="wa-c-info"><span class="wa-c-name">Escuela de Tenis</span><span class="wa-c-role">Academia e inscripciones</span></div>
         <span class="wa-c-arrow">›</span>
