@@ -251,6 +251,20 @@
     .act-card-body { padding: 22px 20px; }
     .act-card h3 { font-size: 16px; font-weight: 900; color: var(--azul); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .04em; }
     .act-card p { font-size: 14px; color: var(--gris-mid); line-height: 1.7; margin-bottom: 14px; font-weight: 400; }
+    .act-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; border-top-color: var(--rojo); }
+    .act-card.featured .act-card-photo { aspect-ratio: auto; min-height: 300px; }
+    .act-card.featured .act-card-body { padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; }
+    .act-card.featured .act-kicker { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--rojo); margin-bottom: 10px; }
+    .act-card.featured h3 { font-size: 24px; line-height: 1.15; }
+    .act-card.featured p { font-size: 15px; }
+    .act-card.featured .act-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+    .act-card.featured .act-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .act-btn { display: inline-block; font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; padding: 13px 22px; border-radius: 4px; transition: var(--t); }
+    .act-btn.primary { background: var(--rojo); color: var(--blanco); }
+    .act-btn.primary:hover { background: #c0181f; }
+    .act-btn.outline { border: 1px solid rgba(41,40,92,.25); color: var(--azul); }
+    .act-btn.outline:hover { border-color: var(--rojo); color: var(--rojo); }
+    @media (max-width: 900px) { .act-card.featured { grid-template-columns: 1fr; } .act-card.featured .act-card-photo { min-height: 0; aspect-ratio: 16/9; } .act-card.featured .act-card-body { padding: 26px 22px; } }
     .act-tag { display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--dorado); border: 1px solid rgba(246,170,12,.4); padding: 3px 9px; border-radius: 2px; }
 
     .easycancha-banner { margin-top: 32px; background: var(--blanco); border-radius: 8px; padding: 32px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; box-shadow: 0 4px 24px rgba(41,40,92,.06); }
@@ -642,6 +656,21 @@
       <p class="section-sub reveal reveal-delay-2">Actividades para todos los gustos y edades.</p>
     </div>
     <div class="act-grid">
+      <div class="act-card featured reveal">
+        <div class="act-card-photo" style="background-image:url('assets/images/tenis-escuela/canchas-stade-tenis.jpg')"></div>
+        <div class="act-card-body">
+          <div class="act-kicker">Nuevo · Desde el 1 de diciembre</div>
+          <h3>Escuela de Tenis Fernando González y Academia Alto Tenis</h3>
+          <p>Una nueva era para el tenis del Stade. Programas para niños, jóvenes y adultos, desde sus primeras clases hasta el alto rendimiento, con grupos reducidos y seguimiento del progreso.</p>
+          <div class="act-tags">
+            <span class="act-tag">Mini Tenis</span><span class="act-tag">Iniciación</span><span class="act-tag">Competencia</span><span class="act-tag">Alto Rendimiento</span><span class="act-tag">Adultos</span><span class="act-tag">Descuento socios</span>
+          </div>
+          <div class="act-btns">
+            <a href="https://forms.cloud.microsoft/r/WiNS45peuF" target="_blank" rel="noopener" class="act-btn primary">Inscríbete aquí →</a>
+            <a href="tenis.html#academia" class="act-btn outline">Programas y precios</a>
+          </div>
+        </div>
+      </div>
       <div class="act-card reveal">
         <div class="act-card-photo" style="background-image:url('assets/images/instalaciones/canchas-de-padel.jpg')"></div>
         <div class="act-card-body">
